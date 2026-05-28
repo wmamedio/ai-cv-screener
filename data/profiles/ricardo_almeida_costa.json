@@ -1,0 +1,83 @@
+{
+  "name": "Ricardo Almeida Costa",
+  "title": "Senior Embedded Systems Engineer",
+  "email": "ricardo.costa.eng@email.com",
+  "phone": "+55 (11) 98765-4321",
+  "location": "São Paulo, Brazil",
+  "linkedin": "linkedin.com/in/ricardoalmeidacosta-embedded",
+  "summary": "Highly accomplished Senior Embedded Systems Engineer with over 10 years of experience designing, developing, and deploying robust firmware and hardware solutions for industrial automation and IoT devices. Proven ability to lead complex projects from concept to production, optimize system performance, and mentor junior engineers.",
+  "skills": [
+    "C/C++",
+    "RTOS (FreeRTOS, Zephyr)",
+    "Microcontrollers (ARM Cortex-M, ESP32)",
+    "Communication Protocols (I2C, SPI, UART, CAN, Ethernet, Modbus)",
+    "Hardware Debugging (Oscilloscope, Logic Analyzer, JTAG/SWD)",
+    "Version Control (Git)",
+    "Embedded Linux",
+    "Schematic Capture & PCB Layout Review",
+    "Unit Testing & Test-Driven Development"
+  ],
+  "experience": [
+    {
+      "role": "Senior Embedded Systems Engineer",
+      "company": "InovaTech Soluções",
+      "period": "Jan 2021 - Present",
+      "bullets": [
+        "Led the firmware development for a new line of industrial IoT gateways, reducing time-to-market by 25% through agile methodologies.",
+        "Optimized RTOS-based embedded software for power consumption, extending battery life by 40% on low-power devices.",
+        "Implemented secure boot and firmware update mechanisms, achieving a 99.9% reliability rate in field deployments.",
+        "Mentored a team of 3 junior engineers, improving team productivity by 15% through code reviews and knowledge sharing."
+      ]
+    },
+    {
+      "role": "Embedded Systems Engineer",
+      "company": "Delta Eletrônica Industrial",
+      "period": "Aug 2017 - Dec 2020",
+      "bullets": [
+        "Developed embedded C firmware for real-time control systems in automotive applications, reducing latency by 30%.",
+        "Designed and implemented communication drivers for CAN bus and Ethernet, ensuring interoperability with various vehicle ECUs.",
+        "Contributed to hardware design reviews, identifying and resolving potential signal integrity issues before PCB fabrication, saving an estimated R$50,000 in redesign costs."
+      ]
+    },
+    {
+      "role": "Junior Embedded Software Developer",
+      "company": "TecnoHardware Labs",
+      "period": "Mar 2015 - Jul 2017",
+      "bullets": [
+        "Developed and debugged firmware for consumer electronics using STM32 microcontrollers, achieving a 95% bug resolution rate.",
+        "Assisted in hardware testing and validation, contributing to the successful launch of 2 new product lines.",
+        "Created automated test scripts in C, reducing manual testing effort by 20%."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Science in Electrical Engineering",
+      "institution": "Universidade de São Paulo (USP)",
+      "year": "2017"
+    },
+    {
+      "degree": "Bachelor of Science in Electrical Engineering",
+      "institution": "Universidade Estadual de Campinas (UNICAMP)",
+      "year": "2014"
+    }
+  ],
+  "languages": [
+    {
+      "language": "Portuguese",
+      "level": "Native"
+    },
+    {
+      "language": "English",
+      "level": "Fluent"
+    },
+    {
+      "language": "Spanish",
+      "level": "Conversational"
+    }
+  ],
+  "certifications": [
+    "Certified FreeRTOS Developer",
+    "ARM Mbed OS Certified Engineer"
+  ]
+}

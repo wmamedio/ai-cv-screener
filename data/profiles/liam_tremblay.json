@@ -1,0 +1,84 @@
+{
+  "name": "Liam Tremblay",
+  "title": "Junior Network Engineer",
+  "email": "liam.tremblay.neteng@email.com",
+  "phone": "+1 (778) 555-1234",
+  "location": "Vancouver, BC",
+  "linkedin": "linkedin.com/in/liam-tremblay-network",
+  "summary": "Highly motivated Junior Network Engineer with a strong foundation in network infrastructure, security, and troubleshooting. Adept at supporting and maintaining enterprise-level networks, ensuring optimal performance and reliability. Eager to contribute technical expertise and grow within a dynamic IT environment.",
+  "skills": [
+    "Cisco IOS",
+    "Juniper Junos",
+    "TCP/IP",
+    "VLANs",
+    "OSPF",
+    "BGP",
+    "Firewalls (Fortinet, Palo Alto)",
+    "VPN (IPsec, SSL)",
+    "Wi-Fi (Cisco Meraki)",
+    "Network Monitoring (SolarWinds, PRTG)",
+    "Ticketing Systems (ServiceNow, Jira)"
+  ],
+  "experience": [
+    {
+      "role": "Junior Network Engineer",
+      "company": "Pacific Coast Connectivity",
+      "period": "Jan 2023 - Present",
+      "bullets": [
+        "Managed and maintained network infrastructure for 200+ employees across 3 office locations, ensuring 99.8% network uptime.",
+        "Configured and deployed Cisco routers and switches, enhancing network segment efficiency by 15%.",
+        "Provided first and second-tier network support, resolving an average of 40 network incidents per week.",
+        "Assisted in the implementation of new Fortinet firewall policies, improving network security posture by reducing unauthorized access attempts by 20%."
+      ]
+    },
+    {
+      "role": "Network Support Specialist",
+      "company": "Northern Connections Inc.",
+      "period": "Aug 2021 - Dec 2022",
+      "bullets": [
+        "Monitored network performance and availability using SolarWinds, identifying and addressing potential issues proactively.",
+        "Performed routine network device backups and configuration management for over 100 devices, ensuring business continuity.",
+        "Collaborated with senior engineers on network upgrade projects, assisting with documentation and testing phases.",
+        "Diagnosed and resolved connectivity issues for internal users, improving user satisfaction scores by 10%."
+      ]
+    },
+    {
+      "role": "IT Support Technician",
+      "company": "Maple Leaf Tech Solutions",
+      "period": "May 2020 - Jul 2021",
+      "bullets": [
+        "Provided technical support for hardware, software, and basic network issues to over 300 clients.",
+        "Configured and maintained network printers, VoIP phones, and Wi-Fi access points.",
+        "Managed user accounts and access permissions on Active Directory and various network resources.",
+        "Assisted in basic network cabling and infrastructure setup for new office expansions."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Technology in Network Security",
+      "institution": "British Columbia Institute of Technology (BCIT)",
+      "year": "2020"
+    },
+    {
+      "degree": "Diploma in Computer Systems Technology",
+      "institution": "Douglas College",
+      "year": "2017"
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "level": "Native"
+    },
+    {
+      "language": "French",
+      "level": "Conversational"
+    }
+  ],
+  "certifications": [
+    "Cisco Certified Network Associate (CCNA)",
+    "CompTIA Network+",
+    "Fortinet Network Security Expert (NSE) 1, 2"
+  ]
+}

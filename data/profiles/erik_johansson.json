@@ -1,0 +1,85 @@
+{
+  "name": "Erik Johansson",
+  "title": "Lead Business Analyst",
+  "email": "erik.johansson.ba@email.com",
+  "phone": "+46 70 987 6543",
+  "location": "Stockholm, Sweden",
+  "linkedin": "linkedin.com/in/erikjohansson-leadba",
+  "summary": "Highly accomplished Lead Business Analyst with over 10 years of experience driving complex digital transformation projects and delivering innovative business solutions. Proven expertise in bridging the gap between business needs and technical capabilities, leading cross-functional teams, and optimizing processes for enhanced efficiency and stakeholder satisfaction.",
+  "skills": [
+    "Business Process Modeling (BPMN)",
+    "Requirements Elicitation & Management",
+    "Agile Methodologies (Scrum, Kanban)",
+    "SQL",
+    "JIRA & Confluence",
+    "Stakeholder Management",
+    "Data Analysis",
+    "Microsoft Power BI",
+    "UML"
+  ],
+  "experience": [
+    {
+      "role": "Lead Business Analyst",
+      "company": "TechSolutions AB",
+      "period": "Jan 2021 - Present",
+      "bullets": [
+        "Led a team of 4 business analysts, overseeing requirements gathering and solution design for a critical enterprise-wide CRM implementation, reducing project scope creep by 15%.",
+        "Facilitated workshops with over 50 stakeholders across multiple departments, resulting in a 20% improvement in cross-departmental collaboration and requirement clarity.",
+        "Designed and implemented new business processes, leading to a 25% reduction in manual data entry errors and a 10% increase in operational efficiency.",
+        "Developed and maintained key performance indicators (KPIs) and reporting dashboards using Power BI, enabling data-driven decision-making for executive leadership."
+      ]
+    },
+    {
+      "role": "Senior Business Analyst",
+      "company": "Innovate Digital Group",
+      "period": "Sep 2017 - Dec 2020",
+      "bullets": [
+        "Managed end-to-end requirements lifecycle for 3 major product development initiatives, achieving 95% stakeholder satisfaction with delivered features.",
+        "Collaborated with development teams to translate complex business requirements into technical specifications, accelerating project delivery by an average of 1 month per project.",
+        "Conducted market research and competitive analysis, providing insights that informed product strategy and contributed to a 15% growth in user engagement.",
+        "Trained and mentored junior business analysts on best practices for requirements management and stakeholder communication."
+      ]
+    },
+    {
+      "role": "Business Analyst",
+      "company": "FinServe Solutions",
+      "period": "Aug 2013 - Aug 2017",
+      "bullets": [
+        "Analyzed and documented business processes for a core banking system upgrade, identifying 10+ critical improvement areas.",
+        "Supported the project manager in planning and executing user acceptance testing (UAT), contributing to a seamless system launch with minimal post-release defects.",
+        "Developed detailed use cases, user stories, and functional specifications for new software features.",
+        "Provided ongoing support and training to end-users on new system functionalities, improving user adoption rates by 30%."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "M.Sc. in Information Systems Management",
+      "institution": "Stockholm School of Economics",
+      "year": "2013"
+    },
+    {
+      "degree": "B.Sc. in Business Administration",
+      "institution": "Lund University",
+      "year": "2010"
+    }
+  ],
+  "languages": [
+    {
+      "language": "Swedish",
+      "level": "Native"
+    },
+    {
+      "language": "English",
+      "level": "Fluent"
+    },
+    {
+      "language": "German",
+      "level": "Conversational"
+    }
+  ],
+  "certifications": [
+    "Certified Business Analysis Professional (CBAP)",
+    "Professional Scrum Master I (PSM I)"
+  ]
+}

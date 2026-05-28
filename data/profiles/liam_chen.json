@@ -1,0 +1,80 @@
+{
+  "name": "Liam Chen",
+  "title": "Senior Database Administrator",
+  "email": "liam.chen.dba@email.com",
+  "phone": "+1 (647) 555-1234",
+  "location": "Toronto, Ontario, Canada",
+  "linkedin": "linkedin.com/in/liamchen-dba",
+  "summary": "Highly accomplished Senior Database Administrator with over a decade of experience in designing, implementing, and maintaining robust database solutions. Proven expertise in optimizing performance, ensuring data integrity, and managing complex SQL Server and Azure SQL environments. Adept at leading database migrations and implementing high availability and disaster recovery strategies for critical business systems.",
+  "skills": [
+    "Microsoft SQL Server (2012-2022)",
+    "Azure SQL Database",
+    "T-SQL Scripting",
+    "Database Performance Tuning",
+    "High Availability & Disaster Recovery (AlwaysOn, Log Shipping)",
+    "Data Migration",
+    "ETL (SSIS)",
+    "PowerShell Scripting",
+    "Database Security"
+  ],
+  "experience": [
+    {
+      "role": "Senior Database Administrator",
+      "company": "Northwind Financial Group",
+      "period": "Jan 2020 - Present",
+      "bullets": [
+        "Led the migration of 100+ production databases from on-premise SQL Server to Azure SQL Database, reducing operational costs by 20% and improving scalability.",
+        "Optimized critical database queries and indexing strategies, resulting in a 35% reduction in report generation times for key business intelligence applications.",
+        "Implemented and managed AlwaysOn Availability Groups across 20+ mission-critical databases, achieving 99.99% uptime and zero data loss during failovers.",
+        "Developed and maintained comprehensive backup and recovery plans, ensuring 100% data restorability and compliance with RTO/RPO objectives."
+      ]
+    },
+    {
+      "role": "Database Administrator",
+      "company": "Maple Leaf Technologies",
+      "period": "Jul 2015 - Dec 2019",
+      "bullets": [
+        "Managed over 50 SQL Server instances (2012/2014) supporting various internal and customer-facing applications, ensuring optimal performance and availability.",
+        "Automated routine database maintenance tasks using T-SQL and PowerShell scripts, reducing manual effort by 25 hours per month.",
+        "Participated in the design and implementation of database schemas for new application development projects, ensuring data integrity and scalability from inception.",
+        "Provided 24/7 on-call support for production database issues, consistently resolving critical incidents within defined SLAs."
+      ]
+    },
+    {
+      "role": "Junior Database Administrator",
+      "company": "Great Lakes Data Solutions",
+      "period": "May 2013 - Jun 2015",
+      "bullets": [
+        "Assisted senior DBAs in daily monitoring, backup operations, and performance tuning activities for a large SQL Server farm.",
+        "Developed and executed SQL scripts for data extraction, transformation, and loading (ETL) tasks, supporting data analysis and reporting requirements.",
+        "Managed user permissions and roles, ensuring adherence to security policies and compliance standards."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Science in Computer Science",
+      "institution": "University of Toronto",
+      "year": "2013"
+    },
+    {
+      "degree": "Bachelor of Computer Science",
+      "institution": "University of Waterloo",
+      "year": "2011"
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "level": "Native"
+    },
+    {
+      "language": "Mandarin",
+      "level": "Fluent"
+    }
+  ],
+  "certifications": [
+    "Microsoft Certified: Azure Database Administrator Associate",
+    "Microsoft Certified: SQL Server 2016 Database Development"
+  ]
+}

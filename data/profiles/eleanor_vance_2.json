@@ -1,0 +1,80 @@
+{
+  "name": "Eleanor Vance",
+  "title": "Junior AI Research Engineer",
+  "email": "eleanor.vance.ai@email.com",
+  "phone": "+44 7911 123456",
+  "location": "London, UK",
+  "linkedin": "linkedin.com/in/eleanor-vance-ai",
+  "summary": "Highly motivated Junior AI Research Engineer with a strong foundation in machine learning, deep learning, and natural language processing. Eager to contribute to cutting-edge research and develop innovative AI solutions. Possesses proven skills in Python and various AI frameworks, demonstrated through academic projects and professional experience.",
+  "skills": [
+    "Python",
+    "PyTorch",
+    "TensorFlow",
+    "Scikit-learn",
+    "Pandas",
+    "NumPy",
+    "NLP",
+    "Computer Vision",
+    "Reinforcement Learning",
+    "AWS",
+    "Git",
+    "SQL"
+  ],
+  "experience": [
+    {
+      "role": "AI Research Intern",
+      "company": "InnovateAI Labs",
+      "period": "Jan 2023 - Present",
+      "bullets": [
+        "Developed and optimized a novel transformer-based model for sentiment analysis using Python and PyTorch, achieving a 15% improvement in F1-score over baseline models.",
+        "Assisted in the design and execution of experiments for a reinforcement learning project, leading to a 20% faster convergence rate.",
+        "Processed and preprocessed large-scale text datasets (over 1TB) for NLP tasks, significantly reducing data preparation time by 30%."
+      ]
+    },
+    {
+      "role": "Junior Machine Learning Engineer",
+      "company": "DataGenius Solutions",
+      "period": "Sep 2021 - Dec 2022",
+      "bullets": [
+        "Implemented and deployed machine learning models for predictive maintenance, resulting in a 10% reduction in equipment downtime for clients.",
+        "Utilized Python and Scikit-learn to develop a customer churn prediction model, increasing prediction accuracy by 12%.",
+        "Collaborated with data scientists to clean and integrate diverse datasets, improving data quality for subsequent analysis."
+      ]
+    },
+    {
+      "role": "Research Assistant (Part-time)",
+      "company": "University of Manchester (AI Department)",
+      "period": "Jan 2021 - Aug 2021",
+      "bullets": [
+        "Conducted literature reviews and experiments on neural network architectures for image recognition, contributing to a published conference paper.",
+        "Assisted in data collection and annotation for a computer vision project, handling over 5,000 images."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "MSc Artificial Intelligence",
+      "institution": "Imperial College London",
+      "year": "2022"
+    },
+    {
+      "degree": "BSc Computer Science (First-class Honours)",
+      "institution": "University of Bristol",
+      "year": "2021"
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "level": "Native"
+    },
+    {
+      "language": "German",
+      "level": "B2"
+    }
+  ],
+  "certifications": [
+    "AWS Certified Machine Learning – Specialty",
+    "Deep Learning Specialization (Coursera by Andrew Ng)"
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "name": "Ana García Pérez",
+  "title": "Junior Data Scientist",
+  "email": "ana.garcia.ds@email.com",
+  "phone": "+34 612 345 678",
+  "location": "Barcelona, Spain",
+  "linkedin": "linkedin.com/in/anagarciaperezds",
+  "summary": "Highly analytical Junior Data Scientist with a strong foundation in statistical modeling, machine learning, and data visualization. Eager to leverage data-driven insights to solve complex business problems and contribute to innovative projects. Proficient in Python for data analysis and predictive modeling.",
+  "skills": [
+    "Python",
+    "SQL",
+    "R",
+    "Machine Learning (Scikit-learn, TensorFlow)",
+    "Data Visualization (Matplotlib, Seaborn, Tableau)",
+    "A/B Testing",
+    "Cloud Platforms (AWS)",
+    "Statistical Analysis"
+  ],
+  "experience": [
+    {
+      "role": "Junior Data Scientist",
+      "company": "Innovatech Solutions",
+      "period": "Jan 2023 - Present",
+      "bullets": [
+        "Developed and deployed Python scripts for automated data extraction and transformation, reducing manual processing time by 20%.",
+        "Built predictive models using Scikit-learn to forecast customer churn, improving prediction accuracy by 15% for the marketing department.",
+        "Conducted A/B tests on new product features, providing insights that led to a 5% increase in user engagement.",
+        "Collaborated with engineering teams to integrate machine learning models into production systems, supporting over 100,000 daily users."
+      ]
+    },
+    {
+      "role": "Data Analyst Intern",
+      "company": "Data Insights S.L.",
+      "period": "Jul 2022 - Dec 2022",
+      "bullets": [
+        "Performed SQL queries to extract and analyze data from large databases, supporting monthly business intelligence reports.",
+        "Created interactive dashboards in Tableau to visualize key performance indicators, enhancing data accessibility for 5+ internal teams.",
+        "Assisted senior data scientists in data cleaning and preprocessing tasks using Python's Pandas library for various projects."
+      ]
+    },
+    {
+      "role": "Research Assistant",
+      "company": "Universitat Politecnica de Catalunya (UPC)",
+      "period": "Sep 2021 - Jun 2022",
+      "bullets": [
+        "Collected and meticulously organized large datasets for academic research projects, ensuring data quality for subsequent analysis.",
+        "Applied basic statistical methods in R to analyze experimental results, contributing to two published research papers.",
+        "Developed data collection protocols, improving efficiency by 10% for research surveys."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master's in Data Science",
+      "institution": "Universitat Politecnica de Catalunya (UPC)",
+      "year": "2023"
+    },
+    {
+      "degree": "Bachelor's in Computer Science",
+      "institution": "University of Barcelona",
+      "year": "2021"
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "level": "Native"
+    },
+    {
+      "language": "Catalan",
+      "level": "Fluent"
+    },
+    {
+      "language": "English",
+      "level": "Fluent"
+    }
+  ],
+  "certifications": [
+    "Google Data Analytics Professional Certificate"
+  ]
+}

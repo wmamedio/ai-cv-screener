@@ -1,0 +1,79 @@
+{
+  "name": "Marco Rossi",
+  "title": "Junior NLP Engineer",
+  "email": "marco.rossi.nlp@email.com",
+  "phone": "+39 333 123 4567",
+  "location": "Milan, Italy",
+  "linkedin": "linkedin.com/in/marcorossi-nlp",
+  "summary": "A highly motivated Junior NLP Engineer with a strong foundation in machine learning and natural language processing techniques. Possesses hands-on experience in developing and deploying NLP models for various applications, eager to contribute to innovative projects.",
+  "skills": [
+    "Python",
+    "Natural Language Processing",
+    "Machine Learning",
+    "Deep Learning",
+    "PyTorch",
+    "TensorFlow",
+    "Text Classification",
+    "Git"
+  ],
+  "experience": [
+    {
+      "role": "Junior NLP Engineer",
+      "company": "AI Labs Italia",
+      "period": "Jan 2023 - Present",
+      "bullets": [
+        "Developed and optimized text classification models for customer feedback, improving accuracy by 15% using Python and scikit-learn.",
+        "Implemented a sentiment analysis pipeline for social media data, processing over 10,000 posts daily with 90% precision.",
+        "Contributed to the development of a Named Entity Recognition (NER) system for legal documents, reducing manual annotation time by 20%."
+      ]
+    },
+    {
+      "role": "NLP Intern",
+      "company": "Data Insights s.r.l.",
+      "period": "Sep 2022 - Dec 2022",
+      "bullets": [
+        "Assisted in data preprocessing and feature engineering for various NLP tasks, handling datasets up to 500,000 entries.",
+        "Researched and experimented with different transformer models using PyTorch, achieving a 5% performance boost on a text summarization task.",
+        "Wrote Python scripts to automate data collection and cleaning, reducing preparation time by an estimated 30 hours per project."
+      ]
+    },
+    {
+      "role": "Research Assistant (Part-time)",
+      "company": "University of Bologna",
+      "period": "Mar 2022 - Aug 2022",
+      "bullets": [
+        "Supported a research project on conversational AI, contributing to the development of a chatbot prototype.",
+        "Analyzed linguistic patterns in large text corpora (over 1 million words) using NLTK to identify key themes."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "M.Sc. in Artificial Intelligence",
+      "institution": "Politecnico di Milano",
+      "year": "2023"
+    },
+    {
+      "degree": "B.Sc. in Computer Science",
+      "institution": "University of Bologna",
+      "year": "2021"
+    }
+  ],
+  "languages": [
+    {
+      "language": "Italian",
+      "level": "Native"
+    },
+    {
+      "language": "English",
+      "level": "Fluent"
+    },
+    {
+      "language": "Spanish",
+      "level": "B2"
+    }
+  ],
+  "certifications": [
+    "Deep Learning Specialization (Coursera)"
+  ]
+}

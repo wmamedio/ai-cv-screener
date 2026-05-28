@@ -1,0 +1,79 @@
+{
+  "name": "Aoife Murphy",
+  "title": "Lead Graphic Designer",
+  "email": "aoife.murphy@designpro.ie",
+  "phone": "+353 87 123 4567",
+  "location": "Dublin, Ireland",
+  "linkedin": "linkedin.com/in/aoifemurphydesign",
+  "summary": "A highly creative and results-driven Lead Graphic Designer with 8+ years of experience specializing in branding, digital media, and print production. Proven ability to lead design projects from concept to completion, managing cross-functional teams and delivering innovative visual solutions that enhance brand identity and market presence.",
+  "skills": [
+    "Adobe Creative Suite (Photoshop, Illustrator, InDesign, XD)",
+    "Figma",
+    "Brand Identity Development",
+    "UI/UX Design Principles",
+    "Typography & Layout",
+    "Print Production & Pre-press",
+    "Digital Illustration",
+    "Motion Graphics",
+    "Project Management"
+  ],
+  "experience": [
+    {
+      "role": "Lead Graphic Designer",
+      "company": "Zenith Creative Agency",
+      "period": "March 2020 - Present",
+      "bullets": [
+        "Led a team of 4 designers in developing brand identities and marketing campaigns for over 20 diverse clients, increasing client satisfaction by 15%.",
+        "Spearheaded the complete redesign of a major client's digital presence, resulting in a 25% increase in user engagement and a 10% rise in conversion rates.",
+        "Managed end-to-end design projects from initial concept through to final production, consistently delivering projects 10% under budget and ahead of schedule.",
+        "Mentored junior designers, improving team productivity by 20% through workshops on best practices in UI/UX and motion graphics."
+      ]
+    },
+    {
+      "role": "Senior Graphic Designer",
+      "company": "Iris Digital Solutions",
+      "period": "July 2017 - February 2020",
+      "bullets": [
+        "Designed and executed visual content for over 50 digital marketing campaigns, contributing to a 30% growth in client social media reach.",
+        "Collaborated with marketing and sales teams to create compelling collateral, which helped secure 15 new client contracts over two years.",
+        "Developed and maintained brand guidelines for multiple clients, ensuring consistency across all visual communications."
+      ]
+    },
+    {
+      "role": "Graphic Designer",
+      "company": "Greenlight Media Group",
+      "period": "September 2015 - June 2017",
+      "bullets": [
+        "Created marketing materials including brochures, flyers, and web banners that supported a 15% increase in regional brand awareness.",
+        "Assisted in the development of visual concepts for client presentations, contributing to a 5% increase in successful pitches.",
+        "Managed graphic assets and digital libraries, ensuring easy access and version control for the design team."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Arts in Visual Communications",
+      "institution": "National College of Art and Design (NCAD)",
+      "year": "2015"
+    },
+    {
+      "degree": "Foundation Diploma in Art and Design",
+      "institution": "Dublin Institute of Technology (now TU Dublin)",
+      "year": "2012"
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "level": "Native"
+    },
+    {
+      "language": "Irish (Gaeilge)",
+      "level": "Conversational"
+    }
+  ],
+  "certifications": [
+    "Adobe Certified Expert (ACE) in Graphic Design",
+    "UX Design Certificate, Google (online)"
+  ]
+}

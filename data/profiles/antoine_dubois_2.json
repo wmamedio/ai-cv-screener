@@ -1,0 +1,87 @@
+{
+  "name": "Antoine Dubois",
+  "title": "Principal Data Engineer",
+  "email": "antoine.dubois.pro@email.com",
+  "phone": "+33 6 12 34 56 78",
+  "location": "Paris, France",
+  "linkedin": "linkedin.com/in/antoine-dubois-data-engineer",
+  "summary": "Highly accomplished Principal Data Engineer with over a decade of experience designing, building, and optimizing scalable data platforms and pipelines. Proven expertise in big data technologies, cloud architecture, and driving data-driven initiatives to deliver robust analytics and business intelligence solutions. Adept at leading cross-functional teams and implementing best practices in data governance and security.",
+  "skills": [
+    "Python",
+    "Apache Spark",
+    "SQL",
+    "Kafka",
+    "AWS (S3, EMR, Redshift, Glue, Lambda)",
+    "Docker",
+    "Kubernetes",
+    "Data Modeling",
+    "ETL/ELT Frameworks",
+    "Data Lakes/Warehouses",
+    "Airflow"
+  ],
+  "experience": [
+    {
+      "role": "Principal Data Engineer",
+      "company": "DataSynth Analytics",
+      "period": "Jan 2021 - Present",
+      "bullets": [
+        "Led the design and implementation of a new real-time data streaming platform using Kafka and Spark, processing over 10TB of data daily and reducing data latency by 70%.",
+        "Orchestrated the migration of on-premise data warehouses to AWS Redshift, resulting in a 30% cost reduction and a 5x improvement in query performance.",
+        "Developed and maintained critical data pipelines in Python and Scala, improving data reliability to 99.9% and supporting advanced analytics initiatives.",
+        "Mentored a team of 5 data engineers, fostering best practices in coding, data governance, and scalable architecture."
+      ]
+    },
+    {
+      "role": "Senior Data Engineer",
+      "company": "StreamFlow Solutions",
+      "period": "Mar 2017 - Dec 2020",
+      "bullets": [
+        "Designed and built scalable ETL processes for marketing and sales data, integrating over 15 disparate data sources into a central data lake.",
+        "Optimized existing SQL queries and data processing jobs, decreasing average execution time by 45% and freeing up computational resources.",
+        "Implemented automated data quality checks and monitoring alerts, proactively identifying and resolving data integrity issues.",
+        "Contributed to the development of a company-wide data dictionary and governance framework."
+      ]
+    },
+    {
+      "role": "Data Engineer",
+      "company": "InsightCorp Technologies",
+      "period": "Sep 2013 - Feb 2017",
+      "bullets": [
+        "Developed and maintained data pipelines using Python scripts for data ingestion, transformation, and loading into PostgreSQL databases.",
+        "Collaborated with data scientists to prepare and clean large datasets for machine learning model training, accelerating model deployment cycles by 20%.",
+        "Managed database schema changes and performance tuning for OLAP applications.",
+        "Automated daily reporting tasks, reducing manual effort by 8 hours per week."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "M.Sc. in Data Science and Engineering",
+      "institution": "Sorbonne Université",
+      "year": "2013"
+    },
+    {
+      "degree": "B.Sc. in Computer Science",
+      "institution": "CentraleSupélec",
+      "year": "2011"
+    }
+  ],
+  "languages": [
+    {
+      "language": "French",
+      "level": "Native"
+    },
+    {
+      "language": "English",
+      "level": "Fluent"
+    },
+    {
+      "language": "Spanish",
+      "level": "Conversational"
+    }
+  ],
+  "certifications": [
+    "AWS Certified Solutions Architect - Professional",
+    "Databricks Certified Associate Developer for Apache Spark"
+  ]
+}

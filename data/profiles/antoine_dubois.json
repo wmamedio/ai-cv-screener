@@ -1,0 +1,80 @@
+{
+  "name": "Antoine Dubois",
+  "title": "Mid-level Full-Stack Engineer",
+  "email": "antoine.dubois@email.com",
+  "phone": "+33 6 12 34 56 78",
+  "location": "Lyon, France",
+  "linkedin": "linkedin.com/in/antoine-dubois-dev",
+  "summary": "Highly motivated Full-Stack Engineer with 4+ years of experience in developing and deploying scalable web applications. Proven ability to translate complex business requirements into robust software solutions using Python, JavaScript, and various cloud technologies. Adept at collaborative development, eager to contribute to innovative projects.",
+  "skills": [
+    "Python (Django, Flask)",
+    "JavaScript (React.js, Node.js)",
+    "RESTful APIs",
+    "PostgreSQL, MongoDB",
+    "AWS (EC2, S3, RDS)",
+    "Docker, Kubernetes",
+    "Git, GitLab CI/CD",
+    "Agile Methodologies"
+  ],
+  "experience": [
+    {
+      "role": "Full-Stack Engineer",
+      "company": "TechSolutions Group",
+      "period": "January 2022 - Present",
+      "bullets": [
+        "Developed and maintained critical back-end services using Python/Django, improving API response times by 20% for high-traffic features.",
+        "Led the migration of a legacy front-end application to React.js, resulting in a 30% increase in user engagement and better maintainability.",
+        "Implemented CI/CD pipelines with GitLab CI for automated testing and deployment, reducing release cycles by 15%.",
+        "Collaborated with product teams to design and integrate new features, impacting over 10,000 daily active users."
+      ]
+    },
+    {
+      "role": "Software Developer",
+      "company": "Innovatech Startups",
+      "period": "September 2019 - December 2021",
+      "bullets": [
+        "Built scalable microservices using Python/Flask, handling up to 500 concurrent requests, and integrated them with external APIs.",
+        "Designed and implemented database schemas in PostgreSQL, optimizing query performance for key reports by 25%.",
+        "Contributed to front-end development using React.js, improving user interface components and overall UX.",
+        "Participated in daily stand-ups and sprint planning, consistently delivering features ahead of schedule in an Agile environment."
+      ]
+    },
+    {
+      "role": "Junior Web Developer Intern",
+      "company": "Digital Innovators Agency",
+      "period": "March 2019 - August 2019",
+      "bullets": [
+        "Assisted in developing client websites using HTML, CSS, and JavaScript, ensuring cross-browser compatibility.",
+        "Implemented interactive features with jQuery and integrated content management systems.",
+        "Collaborated with senior developers on debugging and testing web applications."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Science in Computer Science",
+      "institution": "INSA Lyon",
+      "year": "2019"
+    },
+    {
+      "degree": "Bachelor of Technology (B.Tech) in Software Engineering",
+      "institution": "Université Claude Bernard Lyon 1",
+      "year": "2016"
+    }
+  ],
+  "languages": [
+    {
+      "language": "French",
+      "level": "Native"
+    },
+    {
+      "language": "English",
+      "level": "Fluent"
+    },
+    {
+      "language": "Spanish",
+      "level": "Conversational"
+    }
+  ],
+  "certifications": []
+}

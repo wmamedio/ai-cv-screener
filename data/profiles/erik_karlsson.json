@@ -1,0 +1,77 @@
+{
+  "name": "Erik Karlsson",
+  "title": "Lead Computer Vision Engineer",
+  "email": "erik.karlsson.cv@email.com",
+  "phone": "+46701234567",
+  "location": "Stockholm, Sweden",
+  "linkedin": "linkedin.com/in/erikkarlssoncv",
+  "summary": "Highly accomplished Lead Computer Vision Engineer with over 10 years of experience in developing and deploying advanced AI solutions for industrial automation and autonomous systems. Proven track record in leading cross-functional teams, driving innovation, and delivering robust, scalable computer vision algorithms. Expertise in deep learning frameworks and real-time vision systems.",
+  "skills": [
+    "Deep Learning (PyTorch, TensorFlow)",
+    "Computer Vision (OpenCV, scikit-image)",
+    "Python",
+    "C++",
+    "Machine Learning",
+    "Image Processing",
+    "Object Detection, Segmentation, Tracking",
+    "CUDA, GPU Programming",
+    "Cloud Platforms (AWS, Azure)"
+  ],
+  "experience": [
+    {
+      "role": "Lead Computer Vision Engineer",
+      "company": "Innovatech AB",
+      "period": "Jan 2021 - Present",
+      "bullets": [
+        "Led a team of 5 CV engineers in developing a real-time object detection system for automated quality control, reducing defect rates by 15%.",
+        "Designed and implemented advanced deep learning models in Python using PyTorch, achieving a 98.5% accuracy rate on complex industrial imagery.",
+        "Mentored junior engineers and established best practices for code reviews and model deployment, improving team productivity by 20%."
+      ]
+    },
+    {
+      "role": "Senior Computer Vision Engineer",
+      "company": "Robotics Solutions AB",
+      "period": "Mar 2017 - Dec 2020",
+      "bullets": [
+        "Developed and optimized computer vision algorithms for autonomous mobile robots, enhancing navigation precision by 25%.",
+        "Contributed to the full lifecycle development of a 3D reconstruction pipeline, processing large datasets of sensor data for environmental mapping.",
+        "Reduced inference latency by 30% through C++ optimizations and GPU acceleration using CUDA."
+      ]
+    },
+    {
+      "role": "Computer Vision Engineer",
+      "company": "Visionary Systems",
+      "period": "Sep 2013 - Feb 2017",
+      "bullets": [
+        "Implemented image processing techniques for medical imaging applications, improving diagnostic accuracy for anomaly detection.",
+        "Developed automated vision inspection systems for manufacturing lines, increasing throughput by 10%.",
+        "Participated in research and development of novel feature extraction methods."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "M.Sc. in Computer Science (Specialization in Computer Vision)",
+      "institution": "KTH Royal Institute of Technology",
+      "year": "2013"
+    },
+    {
+      "degree": "B.Sc. in Engineering Physics",
+      "institution": "Chalmers University of Technology",
+      "year": "2011"
+    }
+  ],
+  "languages": [
+    {
+      "language": "Swedish",
+      "level": "Native"
+    },
+    {
+      "language": "English",
+      "level": "Fluent"
+    }
+  ],
+  "certifications": [
+    "AWS Certified Machine Learning - Specialty"
+  ]
+}

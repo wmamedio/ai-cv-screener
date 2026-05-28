@@ -1,0 +1,73 @@
+{
+  "name": "Ethan Riley",
+  "title": "Junior Game Developer",
+  "email": "ethan.riley.dev@email.com",
+  "phone": "+1 (555) 123-4567",
+  "location": "Los Angeles, CA",
+  "linkedin": "linkedin.com/in/ethanrileydev",
+  "summary": "Motivated Junior Game Developer with a passion for creating immersive and engaging interactive experiences. Possessing a strong foundation in game engine development, object-oriented programming, and collaborative project execution. Eager to contribute to dynamic teams and push the boundaries of game design and technology.",
+  "skills": [
+    "C++",
+    "C#",
+    "Unity3D",
+    "Unreal Engine 5",
+    "Git",
+    "Blender",
+    "Shader Development"
+  ],
+  "experience": [
+    {
+      "role": "Junior Programmer",
+      "company": "Nexus Games",
+      "period": "Mar 2023 - Present",
+      "bullets": [
+        "Implemented core gameplay mechanics and UI features for an unannounced PC title using C# and Unity, contributing to a 15% improvement in player tutorial completion rates.",
+        "Optimized asset loading times and memory usage across several game levels, resulting in a 10% reduction in load screen duration.",
+        "Collaborated with a team of 5 designers and artists to integrate new features, ensuring seamless cross-departmental workflow."
+      ]
+    },
+    {
+      "role": "Game Development Intern",
+      "company": "Aurora Studios",
+      "period": "Jun 2022 - Sep 2022",
+      "bullets": [
+        "Developed and debugged C++ scripts for AI behavior and character movement in an Unreal Engine 5 project.",
+        "Assisted in the creation of visual effects and particle systems, enhancing environmental immersion.",
+        "Participated in daily stand-ups and sprint reviews, providing technical insights and progress updates."
+      ]
+    },
+    {
+      "role": "Independent Game Developer (Project-based)",
+      "company": "Self-Employed",
+      "period": "Jan 2021 - May 2022",
+      "bullets": [
+        "Designed and prototyped 3 unique game concepts from conception to playable demos using Unity, focusing on innovative mechanics.",
+        "Managed all aspects of development including programming, asset integration, and basic sound design for personal projects.",
+        "Utilized version control (Git) to track changes and collaborate on a small open-source game jam entry."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Computer Science, Game Development Track",
+      "institution": "University of Southern California",
+      "year": "2023"
+    },
+    {
+      "degree": "Associate of Arts in Game Design",
+      "institution": "Santa Monica College",
+      "year": "2021"
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "level": "Native"
+    },
+    {
+      "language": "Spanish",
+      "level": "Conversational"
+    }
+  ],
+  "certifications": []
+}

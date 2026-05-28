@@ -1,0 +1,78 @@
+{
+  "name": "Maaike Jansen",
+  "title": "Junior Site Reliability Engineer",
+  "email": "maaike.jansen.sre@example.nl",
+  "phone": "+31 6 12345678",
+  "location": "Utrecht, Netherlands",
+  "linkedin": "linkedin.com/in/maaijansen-sre",
+  "summary": "A highly motivated Junior Site Reliability Engineer with a solid foundation in cloud infrastructure, automation, and system monitoring. Possesses a strong analytical mindset and a commitment to optimizing system performance and reliability. Eager to contribute to dynamic teams focused on building resilient and scalable services.",
+  "skills": [
+    "Linux System Administration",
+    "Docker",
+    "Kubernetes",
+    "AWS (EC2, S3, RDS, VPC)",
+    "Terraform",
+    "Ansible",
+    "Prometheus",
+    "Grafana",
+    "Bash Scripting"
+  ],
+  "experience": [
+    {
+      "role": "Junior Site Reliability Engineer",
+      "company": "BrightEdge Solutions",
+      "period": "March 2023 - Present",
+      "bullets": [
+        "Automated routine server maintenance tasks using Ansible, reducing manual effort by 30% and improving system uptime.",
+        "Implemented and managed monitoring dashboards with Prometheus and Grafana, resulting in a 20% faster incident detection time.",
+        "Assisted in the deployment and scaling of containerized applications using Docker and Kubernetes, supporting over 5 major projects.",
+        "Managed AWS cloud resources, including EC2 instances, S3 buckets, and RDS databases, ensuring cost-efficiency and performance."
+      ]
+    },
+    {
+      "role": "DevOps Intern",
+      "company": "TechFlow Innovations",
+      "period": "September 2022 - February 2023",
+      "bullets": [
+        "Developed and maintained CI/CD pipelines using GitLab CI for 3 critical applications, accelerating deployment frequency by 25%.",
+        "Configured and managed virtual machines on AWS, reducing provisioning time for development environments by 15%.",
+        "Contributed to infrastructure-as-code efforts using Terraform to manage cloud resources, improving consistency across environments."
+      ]
+    },
+    {
+      "role": "IT Support Technician (Part-time)",
+      "company": "Utrecht University",
+      "period": "September 2021 - August 2022",
+      "bullets": [
+        "Provided technical support for over 200 university staff and students, resolving hardware and software issues promptly.",
+        "Maintained network infrastructure and managed user accounts, ensuring system security and accessibility.",
+        "Documented common issues and solutions, leading to a 10% reduction in recurring support requests."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Computer Science",
+      "institution": "Utrecht University",
+      "year": "2022"
+    }
+  ],
+  "languages": [
+    {
+      "language": "Dutch",
+      "level": "Native"
+    },
+    {
+      "language": "English",
+      "level": "Fluent"
+    },
+    {
+      "language": "German",
+      "level": "Conversational"
+    }
+  ],
+  "certifications": [
+    "AWS Certified Cloud Practitioner",
+    "Certified Kubernetes Administrator (CKA)"
+  ]
+}

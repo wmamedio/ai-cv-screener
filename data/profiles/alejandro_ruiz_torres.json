@@ -1,0 +1,76 @@
+{
+  "name": "Alejandro Ruiz Torres",
+  "title": "Junior Android Developer",
+  "email": "alejandro.ruiz.dev@email.com",
+  "phone": "+34 678 123 456",
+  "location": "Valencia, Spain",
+  "linkedin": "linkedin.com/in/alejandroruizt",
+  "summary": "A highly motivated Junior Android Developer with a strong foundation in Kotlin and Java, eager to contribute to innovative mobile applications. Possesses practical experience in developing and debugging Android features, committed to clean code practices and continuous learning.",
+  "skills": [
+    "Kotlin",
+    "Java",
+    "Android SDK",
+    "MVVM Architecture",
+    "RESTful APIs",
+    "Git",
+    "Firebase",
+    "Android Jetpack Compose",
+    "Agile Methodologies"
+  ],
+  "experience": [
+    {
+      "role": "Junior Android Developer",
+      "company": "TechSolutions S.L.",
+      "period": "Oct 2022 - Present",
+      "bullets": [
+        "Developed and maintained core features for a financial mobile application, increasing user engagement by 15%.",
+        "Implemented UI components using Jetpack Compose, reducing development time for new screens by 20%.",
+        "Collaborated with a cross-functional team of 5 developers to integrate new API endpoints, ensuring seamless data flow.",
+        "Performed rigorous unit and integration testing, reducing production bugs by 25%."
+      ]
+    },
+    {
+      "role": "Mobile App Development Intern",
+      "company": "InnovaMobile",
+      "period": "Mar 2022 - Sep 2022",
+      "bullets": [
+        "Assisted in the development of a customer loyalty application, contributing to a 10% improvement in app store ratings.",
+        "Participated in daily stand-ups and sprint planning, gaining exposure to Agile development practices.",
+        "Fixed critical bugs and optimized existing codebase, improving app performance by 18%."
+      ]
+    },
+    {
+      "role": "Freelance Android Project Contributor",
+      "company": "Self-Employed",
+      "period": "Jan 2021 - Feb 2022",
+      "bullets": [
+        "Developed a small utility app for personal use, managing the full development lifecycle from concept to deployment.",
+        "Experimented with various Android libraries and APIs, enhancing understanding of the Android ecosystem."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor's Degree in Computer Science",
+      "institution": "Universitat Politècnica de València",
+      "year": "2022"
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "level": "Native"
+    },
+    {
+      "language": "English",
+      "level": "Fluent"
+    },
+    {
+      "language": "Valencian",
+      "level": "B2"
+    }
+  ],
+  "certifications": [
+    "Associate Android Developer Certification (Google)"
+  ]
+}

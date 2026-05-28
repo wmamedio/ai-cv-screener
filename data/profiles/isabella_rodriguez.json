@@ -1,0 +1,72 @@
+{
+  "name": "Isabella Rodriguez",
+  "title": "Junior iOS Developer",
+  "email": "isabella.rodriguez.dev@email.com",
+  "phone": "+1-555-123-4567",
+  "location": "San Francisco, CA",
+  "linkedin": "linkedin.com/in/isabellarodrigueziosdev",
+  "summary": "Enthusiastic Junior iOS Developer with a strong foundation in Swift and Xcode, eager to contribute to dynamic mobile development teams. Proven ability to create user-centric applications, optimize performance, and collaborate effectively throughout the development lifecycle.",
+  "skills": [
+    "Swift",
+    "Objective-C",
+    "Xcode",
+    "UIKit",
+    "SwiftUI",
+    "Core Data",
+    "RESTful APIs",
+    "Git",
+    "Agile Methodologies"
+  ],
+  "experience": [
+    {
+      "role": "Junior iOS Developer",
+      "company": "Mobile Innovations Inc.",
+      "period": "Jan 2023 - Present",
+      "bullets": [
+        "Developed and maintained key features for a flagship e-commerce iOS application, reaching over 500,000 active users.",
+        "Optimized app performance by refactoring existing code, reducing launch time by 15% and memory usage by 10%.",
+        "Collaborated with a cross-functional team of 5 to implement new UI/UX designs, resulting in a 20% increase in user engagement.",
+        "Participated in code reviews and contributed to documentation, enhancing code quality and team efficiency."
+      ]
+    },
+    {
+      "role": "iOS Development Intern",
+      "company": "Tech Solutions Corp.",
+      "period": "Jun 2022 - Dec 2022",
+      "bullets": [
+        "Assisted senior developers in building and testing new modules for an internal productivity tool, used by 200+ employees.",
+        "Implemented push notification functionality using Firebase, leading to a 25% improvement in user retention for specific features.",
+        "Debugged and resolved 30+ reported bugs across various app versions, improving overall application stability."
+      ]
+    },
+    {
+      "role": "Freelance iOS Developer",
+      "company": "Self-Employed",
+      "period": "Jan 2022 - May 2022",
+      "bullets": [
+        "Designed and developed a simple habit-tracking application for personal portfolio, receiving 100+ downloads on TestFlight.",
+        "Integrated third-party APIs for weather data, enhancing application functionality and user experience."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Computer Science",
+      "institution": "University of California, Berkeley",
+      "year": "2022"
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "level": "Native"
+    },
+    {
+      "language": "Spanish",
+      "level": "Conversational"
+    }
+  ],
+  "certifications": [
+    "iOS App Development with Swift Specialization - Coursera (University of Toronto)"
+  ]
+}
