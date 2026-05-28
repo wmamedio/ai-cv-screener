@@ -1,7 +1,9 @@
 """Retrieval-augmented answering over the CV collection.
 
-embed query -> similarity search in Chroma -> grounded Gemini answer + sources.
+embed query -> similarity search in Chroma -> grounded Gemini answer (streamed) + sources.
 """
+from collections.abc import Iterator
+
 import chromadb
 from google.genai import types
 
@@ -30,31 +32,42 @@ def _collection():
     return _coll
 
 
-def answer(question: str, top_k: int = TOP_K) -> dict:
+def _prompt_and_sources(question: str, top_k: int) -> tuple[str, list[str]]:
     coll = _collection()
     res = coll.query(query_embeddings=[embed_query(question)], n_results=top_k)
     docs = res["documents"][0]
     sources = [m["source"] for m in res["metadatas"][0]]
-
     context = "\n\n".join(
         f"--- CV: {src} ---\n{doc}" for src, doc in zip(sources, docs))
     prompt = f"{SYSTEM_PROMPT}\n\nCONTEXT (retrieved CVs):\n{context}\n\nQUESTION: {question}"
+    return prompt, sources
 
-    resp = client.models.generate_content(
+
+def stream(question: str, top_k: int = TOP_K) -> Iterator[tuple[str, object]]:
+    """Yield ("token", delta) as the answer streams, then ("sources", [cited files])."""
+    prompt, sources = _prompt_and_sources(question, top_k)
+    parts: list[str] = []
+    for chunk in client.models.generate_content_stream(
         model=CHAT_MODEL,
         contents=prompt,
         config=types.GenerateContentConfig(temperature=0.2),
-    )
-    text = resp.text.strip()
-    # Report the CVs actually cited in the answer (not just everything retrieved).
-    cited = [s for s in sources if s in text]
-    return {"answer": text, "sources": cited}
+    ):
+        if chunk.text:
+            parts.append(chunk.text)
+            yield "token", chunk.text
+    # Sources can only be resolved once the full answer exists (cited filenames).
+    full = "".join(parts)
+    yield "sources", [s for s in sources if s in full]
 
 
 if __name__ == "__main__":
     import sys
     q = " ".join(sys.argv[1:]) or "Who has experience with Python?"
-    out = answer(q)
     print("Q:", q, "\n")
-    print(out["answer"])
-    print("\nSources consulted:", ", ".join(out["sources"]))
+    cited: list[str] = []
+    for kind, payload in stream(q):
+        if kind == "token":
+            print(payload, end="", flush=True)
+        else:
+            cited = payload  # type: ignore[assignment]
+    print("\n\nSources:", ", ".join(cited))
