@@ -1,6 +1,6 @@
 """Generate 25-30 realistic fake CVs as PDFs.
 
-Pipeline per CV:  Gemini (structured JSON) -> OpenAI gpt-image-2 (AI photo) -> Jinja HTML -> WeasyPrint PDF.
+Pipeline per CV:  OpenAI (structured JSON) -> OpenAI gpt-image-2 (AI photo) -> Jinja HTML -> WeasyPrint PDF.
 
 A few facts are seeded on purpose so the demo questions work:
   - one candidate named "Jane Doe"
@@ -20,9 +20,8 @@ from pathlib import Path
 
 import requests
 from dotenv import load_dotenv
-from google import genai
-from google.genai import types
 from jinja2 import Template
+from openai import OpenAI
 from pydantic import BaseModel
 from weasyprint import HTML
 
@@ -34,20 +33,12 @@ PHOTO_DIR = ROOT / "data" / "photos"
 PROFILE_DIR = ROOT / "data" / "profiles"
 TEMPLATE = Template((Path(__file__).parent / "cv_template.html").read_text())
 
-CHAT_MODEL = os.getenv("GEMINI_CHAT_MODEL", "gemini-2.5-flash")
-IMAGE_MODEL = os.getenv("GEMINI_IMAGE_MODEL", "gemini-3.1-flash-image-preview")
+CHAT_MODEL = os.getenv("OPENAI_CHAT_MODEL", "gpt-5.4-mini")
 OPENAI_IMAGE_MODEL = os.getenv("OPENAI_IMAGE_MODEL", "gpt-image-2")
 COUNT = int(sys.argv[1]) if len(sys.argv) > 1 and sys.argv[1].isdigit() else int(os.getenv("CV_COUNT", "28"))
 
-client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
+client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
 random.seed(42)
-
-# Optional photo fallback: OpenAI gpt-image-2 (used only if Gemini fails).
-try:
-    from openai import OpenAI
-    _openai = OpenAI(api_key=os.environ["OPENAI_API_KEY"]) if os.getenv("OPENAI_API_KEY") else None
-except ImportError:
-    _openai = None
 
 ACCENTS = ["#1e3a5f", "#0f766e", "#7c2d12", "#4338ca", "#9d174d",
            "#155e63", "#3f3f46", "#5b21b6", "#1d4ed8", "#065f46"]
@@ -170,16 +161,13 @@ Return ONLY the structured data."""
     last_err = None
     for attempt in range(4):
         try:
-            resp = client.models.generate_content(
+            resp = client.chat.completions.parse(
                 model=CHAT_MODEL,
-                contents=prompt,
-                config=types.GenerateContentConfig(
-                    temperature=1.0,
-                    response_mime_type="application/json",
-                    response_schema=CV,
-                ),
+                messages=[{"role": "user", "content": prompt}],
+                response_format=CV,
+                temperature=1.0,
             )
-            return resp.parsed
+            return resp.choices[0].message.parsed
         except Exception as e:  # transient (rate limit / 5xx) -> backoff
             last_err = e
             time.sleep(2 * (attempt + 1))
@@ -223,46 +211,20 @@ def _photo_prompt(cv: CV) -> str:
 
 
 def generate_photo(cv: CV) -> str:
-    """Unique professional headshot as a data URI.
-
-    OpenAI gpt-image-2 is primary; on failure it falls back to Gemini image gen
-    (if its key works), then to an initials avatar so a CV is never left photoless.
-    """
+    """Unique professional headshot as a data URI (gpt-image-2, avatar fallback)."""
     prompt = _photo_prompt(cv)
-    return (_openai_photo(prompt, cv.name)
-            or _gemini_photo(prompt, cv.name)
-            or _avatar_fallback(cv.name))
-
-
-def _gemini_photo(prompt: str, name: str) -> str:
-    cfg = types.GenerateContentConfig(image_config=types.ImageConfig(aspect_ratio="1:1"))
-    for attempt in range(4):
-        try:
-            resp = client.models.generate_content(model=IMAGE_MODEL, contents=prompt, config=cfg)
-            for part in resp.candidates[0].content.parts:
-                inline = getattr(part, "inline_data", None)
-                if inline and inline.data:
-                    mime = inline.mime_type or "image/jpeg"
-                    return f"data:{mime};base64," + base64.b64encode(inline.data).decode()
-            raise RuntimeError("no image part in response")
-        except Exception as e:
-            print(f"      gemini photo attempt {attempt + 1} failed for {name}: {e}")
-            if getattr(e, "code", None) in (400, 403, 404):
-                break  # auth / billing / bad-model -> retrying won't help, go to fallback
-            time.sleep(2 * (attempt + 1))  # transient (rate limit / 5xx) -> backoff
-    return ""
+    return _openai_photo(prompt, cv.name) or _avatar_fallback(cv.name)
 
 
 def _openai_photo(prompt: str, name: str) -> str:
-    if _openai is None:
-        return ""
-    print(f"      generating photo with OpenAI {OPENAI_IMAGE_MODEL} for {name}")
-    try:
-        r = _openai.images.generate(model=OPENAI_IMAGE_MODEL, prompt=prompt, size="1024x1024")
-        return "data:image/png;base64," + r.data[0].b64_json
-    except Exception as e:
-        print(f"      openai photo failed for {name}: {e}")
-        return ""
+    for attempt in range(3):
+        try:
+            r = client.images.generate(model=OPENAI_IMAGE_MODEL, prompt=prompt, size="1024x1024")
+            return "data:image/png;base64," + r.data[0].b64_json
+        except Exception as e:
+            print(f"      {OPENAI_IMAGE_MODEL} attempt {attempt + 1} failed for {name}: {str(e)[:100]}")
+            time.sleep(2 * (attempt + 1))  # transient (rate limit / 5xx) -> backoff
+    return ""
 
 
 def _avatar_fallback(name: str) -> str:

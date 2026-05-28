@@ -16,7 +16,7 @@ Built as a Retrieval-Augmented Generation (RAG) pipeline:
 ```mermaid
 flowchart LR
     subgraph gen["1 · CV Generation (offline)"]
-        G1[Gemini<br/>profile text] --> G3[HTML/Jinja<br/>template]
+        G1[OpenAI gpt-5.4-mini<br/>profile text] --> G3[HTML/Jinja<br/>template]
         G2[OpenAI gpt-image-2<br/>AI headshot] --> G3
         G3 --> PDF[(data/cvs/*.pdf)]
     end
@@ -41,8 +41,8 @@ flowchart LR
 | Vector store | Chroma (local, embedded)                | Zero external accounts, runs fully locally |
 | Backend      | Python + FastAPI                        | Clean RAG service, easy to read |
 | Frontend     | React + Vite + TypeScript + Tailwind    | Simple, fast chat UI |
-| CV photos    | OpenAI `gpt-image-2` (fallback: Gemini image) | Unique AI headshot per candidate, inferred from name/role/location; falls back if the primary errors |
-| CV profile text | Google AI Studio — `gemini-2.5-flash` (structured JSON) | Generates the fictional résumé content |
+| CV photos    | OpenAI `gpt-image-2` (fallback: initials avatar) | Unique AI headshot per candidate, inferred from name/role/location |
+| CV profile text | OpenAI — `gpt-5.4-mini` (structured JSON) | Generates the fictional résumé content |
 
 **Production swaps** (not built here to keep the prototype focused): the vector
 store can be swapped for **Pinecone/Weaviate**, the query path wrapped in a
@@ -62,10 +62,10 @@ Answers are grounded in the CVs and cite the source files actually used.
 
 ## Quick start
 
-> Requires Python 3.12+, Node 20+, and a free [Google AI Studio key](https://aistudio.google.com/apikey).
+> Requires Python 3.12+, Node 20+, and an [OpenAI API key](https://platform.openai.com/api-keys).
 
 ```bash
-cp .env.example .env        # add your GEMINI_API_KEY
+cp .env.example .env        # add your OPENAI_API_KEY
 ```
 
 **1. Generate CVs**
