@@ -131,10 +131,13 @@ def build_briefs(n: int) -> list[dict]:
     return briefs
 
 
-def generate_profile(brief: dict) -> CV:
-    name_rule = (f'The candidate MUST be named "{brief["name"]}".'
-                 if brief["name"] else
-                 f'Invent a realistic full name typical of {brief["region"]}.')
+def generate_profile(brief: dict, avoid: frozenset[str] = frozenset()) -> CV:
+    if brief["name"]:
+        name_rule = f'The candidate MUST be named "{brief["name"]}".'
+    else:
+        name_rule = f'Invent a realistic, UNIQUE full name typical of {brief["region"]}.'
+        if avoid:
+            name_rule += f' Do NOT reuse any of these already-taken names: {", ".join(sorted(avoid))}.'
     edu_rule = (f'At least one education entry MUST be from "{brief["institution"]}".'
                 if brief["institution"] else "Use realistic universities.")
     py_rule = ("Python MUST appear prominently in skills and in at least one job's bullets."
@@ -254,9 +257,17 @@ def main():
 
     briefs = build_briefs(COUNT)
     print(f"Generating {COUNT} CVs with {CHAT_MODEL}...\n")
-    seen = set()
+    seen, used_names = set(), set()
     for i, brief in enumerate(briefs, 1):
-        cv = generate_profile(brief)
+        cv = generate_profile(brief, frozenset(used_names))
+        # Safety net: regenerate if the model still reused a name already taken.
+        tries = 0
+        while (not brief["name"] and tries < 3
+               and cv.name.casefold() in {n.casefold() for n in used_names}):
+            cv = generate_profile(brief, frozenset(used_names | {cv.name}))
+            tries += 1
+        used_names.add(cv.name)
+
         slug = slugify(cv.name)
         while slug in seen:
             slug += "_2"
