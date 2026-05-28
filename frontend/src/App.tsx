@@ -56,7 +56,8 @@ export default function App() {
   async function ask(raw: string) {
     const question = raw.trim();
     if (!question || loading) return;
-    setMessages((m) => [...m, { role: "user", text: question }]);
+    // Each question is independent — clear the previous Q&A rather than append.
+    setMessages([{ role: "user", text: question }]);
     setInput("");
     setLoading(true);
 
