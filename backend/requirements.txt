@@ -1,0 +1,16 @@
+# LLM + embeddings
+google-genai>=1.0.0
+python-dotenv>=1.0.0
+
+# CV generation (text -> HTML -> PDF, with photo)
+jinja2>=3.1.0
+weasyprint>=63.0
+requests>=2.31.0
+
+# RAG pipeline
+pypdf>=5.0.0
+chromadb>=0.5.0
+
+# API
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0

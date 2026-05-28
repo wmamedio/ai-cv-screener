@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<style>
+  @page { size: A4; margin: 0; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "DejaVu Sans", "Helvetica", "Arial", sans-serif;
+    color: #1f2937;
+    font-size: 10.5px;
+    line-height: 1.45;
+  }
+  .page { display: flex; min-height: 297mm; }
+
+  /* Sidebar */
+  .sidebar {
+    width: 34%;
+    background: {{ accent }};
+    color: #f8fafc;
+    padding: 26px 20px;
+  }
+  .photo-wrap { text-align: center; margin-bottom: 18px; }
+  .photo {
+    width: 118px; height: 118px; border-radius: 50%;
+    object-fit: cover; border: 4px solid rgba(255,255,255,0.45);
+  }
+  .sidebar h2 {
+    font-size: 11px; text-transform: uppercase; letter-spacing: 1.2px;
+    margin: 18px 0 8px; padding-bottom: 5px;
+    border-bottom: 1px solid rgba(255,255,255,0.35);
+  }
+  .contact-item { margin-bottom: 6px; word-break: break-word; }
+  .contact-item .lbl { display: block; font-size: 8.5px; text-transform: uppercase; opacity: 0.7; letter-spacing: 0.5px; }
+  .skill-tag {
+    display: inline-block; background: rgba(255,255,255,0.16);
+    border-radius: 4px; padding: 3px 8px; margin: 0 4px 5px 0; font-size: 9.5px;
+  }
+  .lang-row { display: flex; justify-content: space-between; margin-bottom: 4px; }
+  .lang-row .lvl { opacity: 0.8; font-size: 9px; }
+
+  /* Main */
+  .main { width: 66%; padding: 28px 30px; }
+  .name { font-size: 26px; font-weight: 700; color: #111827; line-height: 1.1; }
+  .role { font-size: 13px; color: {{ accent }}; font-weight: 600; margin: 3px 0 14px; }
+  .section { margin-bottom: 16px; }
+  .section h3 {
+    font-size: 12px; text-transform: uppercase; letter-spacing: 1px;
+    color: {{ accent }}; border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 4px; margin-bottom: 9px;
+  }
+  .summary { text-align: justify; }
+  .job { margin-bottom: 11px; }
+  .job-head { display: flex; justify-content: space-between; }
+  .job-role { font-weight: 700; color: #111827; }
+  .job-company { color: #374151; font-weight: 600; }
+  .job-period { color: #6b7280; font-size: 9.5px; white-space: nowrap; }
+  .job ul { margin: 4px 0 0 16px; }
+  .job li { margin-bottom: 2px; }
+  .edu { margin-bottom: 8px; }
+  .edu-degree { font-weight: 700; }
+  .edu-meta { color: #6b7280; font-size: 9.5px; }
+</style>
+</head>
+<body>
+  <div class="page">
+    <aside class="sidebar">
+      {% if photo_data_uri %}
+      <div class="photo-wrap"><img class="photo" src="{{ photo_data_uri }}" alt="photo" /></div>
+      {% endif %}
+
+      <h2>Contact</h2>
+      <div class="contact-item"><span class="lbl">Email</span>{{ email }}</div>
+      <div class="contact-item"><span class="lbl">Phone</span>{{ phone }}</div>
+      <div class="contact-item"><span class="lbl">Location</span>{{ location }}</div>
+      {% if linkedin %}<div class="contact-item"><span class="lbl">LinkedIn</span>{{ linkedin }}</div>{% endif %}
+
+      <h2>Skills</h2>
+      <div>{% for s in skills %}<span class="skill-tag">{{ s }}</span>{% endfor %}</div>
+
+      <h2>Languages</h2>
+      {% for l in languages %}
+      <div class="lang-row"><span>{{ l.language }}</span><span class="lvl">{{ l.level }}</span></div>
+      {% endfor %}
+
+      {% if certifications %}
+      <h2>Certifications</h2>
+      {% for c in certifications %}<div class="contact-item">{{ c }}</div>{% endfor %}
+      {% endif %}
+    </aside>
+
+    <main class="main">
+      <div class="name">{{ name }}</div>
+      <div class="role">{{ title }}</div>
+
+      <div class="section">
+        <h3>Profile</h3>
+        <div class="summary">{{ summary }}</div>
+      </div>
+
+      <div class="section">
+        <h3>Experience</h3>
+        {% for job in experience %}
+        <div class="job">
+          <div class="job-head">
+            <div><span class="job-role">{{ job.role }}</span> &middot; <span class="job-company">{{ job.company }}</span></div>
+            <div class="job-period">{{ job.period }}</div>
+          </div>
+          <ul>{% for b in job.bullets %}<li>{{ b }}</li>{% endfor %}</ul>
+        </div>
+        {% endfor %}
+      </div>
+
+      <div class="section">
+        <h3>Education</h3>
+        {% for ed in education %}
+        <div class="edu">
+          <div class="edu-degree">{{ ed.degree }}</div>
+          <div class="edu-meta">{{ ed.institution }} &middot; {{ ed.year }}</div>
+        </div>
+        {% endfor %}
+      </div>
+    </main>
+  </div>
+</body>
+</html>

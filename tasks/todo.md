@@ -2,13 +2,13 @@
 
 Scope: the 3 core requirements only. Lean, no over-engineering.
 
-## 1. CV Generation
-- [ ] `scripts/generate_cvs.py`: Gemini generates 25–30 varied profiles (JSON)
-- [ ] Diverse roles/names/locations/languages; seed known facts for demo
-      (a candidate from UPC, several Python users, a "Jane Doe")
-- [ ] AI photo per CV via thispersondoesnotexist.com
-- [ ] HTML/Jinja template → PDF (photo, contact, experience, skills, education)
-- [ ] Output 25–30 files to `data/cvs/*.pdf`
+## 1. CV Generation  ✅
+- [x] `scripts/generate_cvs.py`: Gemini generates 25–30 varied profiles (JSON)
+- [x] Diverse roles/names/locations/languages; seed known facts for demo
+      (2 UPC grads, 11 Python users, a "Jane Doe")
+- [x] AI photo per CV via thispersondoesnotexist.com (avatar fallback)
+- [x] HTML/Jinja template → PDF (photo, contact, experience, skills, education)
+- [x] Output 28 files to `data/cvs/*.pdf`
 
 ## 2. RAG Workflow
 - [ ] `backend/ingest.py`: extract PDF text (pypdf) → chunk → embed → Chroma
