@@ -17,7 +17,7 @@ Built as a Retrieval-Augmented Generation (RAG) pipeline:
 flowchart LR
     subgraph gen["1 · CV Generation (offline)"]
         G1[Gemini<br/>profile text] --> G3[HTML/Jinja<br/>template]
-        G2[thispersondoesnotexist<br/>AI photo] --> G3
+        G2[Gemini image<br/>AI headshot] --> G3
         G3 --> PDF[(data/cvs/*.pdf)]
     end
 
@@ -41,7 +41,7 @@ flowchart LR
 | Vector store | Chroma (local, embedded)                | Zero external accounts, runs fully locally |
 | Backend      | Python + FastAPI                        | Clean RAG service, easy to read |
 | Frontend     | React + Vite + TypeScript + Tailwind    | Simple, fast chat UI |
-| CV photos    | thispersondoesnotexist.com              | Genuinely AI-generated faces, no API key |
+| CV photos    | Google AI Studio — `gemini-3.1-flash-image-preview` (fallback: OpenAI `gpt-image-2`) | Unique AI headshot per candidate, inferred from name/role/location; auto-fails over if Gemini errors |
 
 **Production swaps** (not built here to keep the prototype focused): the vector
 store can be swapped for **Pinecone/Weaviate**, the query path wrapped in a
@@ -104,7 +104,8 @@ cd ../frontend && npm install && npm run dev   # http://localhost:5173
 ## Project layout
 
 ```
-scripts/generate_cvs.py   # CV generation (text + photo + PDF)
+scripts/generate_cvs.py       # CV generation (text + AI photo + PDF)
+scripts/regenerate_photos.py  # re-shoot photos for existing profiles (no text re-gen)
 backend/
   app.py                  # FastAPI /chat endpoint
   ingest.py               # PDF -> chunks -> embeddings -> Chroma

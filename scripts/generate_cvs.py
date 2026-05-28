@@ -1,6 +1,6 @@
 """Generate 25-30 realistic fake CVs as PDFs.
 
-Pipeline per CV:  Gemini (structured JSON) -> AI photo -> Jinja HTML -> WeasyPrint PDF.
+Pipeline per CV:  Gemini (structured JSON) -> Gemini (AI photo) -> Jinja HTML -> WeasyPrint PDF.
 
 A few facts are seeded on purpose so the demo questions work:
   - one candidate named "Jane Doe"
@@ -35,10 +35,19 @@ PROFILE_DIR = ROOT / "data" / "profiles"
 TEMPLATE = Template((Path(__file__).parent / "cv_template.html").read_text())
 
 CHAT_MODEL = os.getenv("GEMINI_CHAT_MODEL", "gemini-2.5-flash")
-COUNT = int(sys.argv[1]) if len(sys.argv) > 1 else int(os.getenv("CV_COUNT", "28"))
+IMAGE_MODEL = os.getenv("GEMINI_IMAGE_MODEL", "gemini-3.1-flash-image-preview")
+OPENAI_IMAGE_MODEL = os.getenv("OPENAI_IMAGE_MODEL", "gpt-image-2")
+COUNT = int(sys.argv[1]) if len(sys.argv) > 1 and sys.argv[1].isdigit() else int(os.getenv("CV_COUNT", "28"))
 
 client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
 random.seed(42)
+
+# Optional photo fallback: OpenAI gpt-image-2 (used only if Gemini fails).
+try:
+    from openai import OpenAI
+    _openai = OpenAI(api_key=os.environ["OPENAI_API_KEY"]) if os.getenv("OPENAI_API_KEY") else None
+except ImportError:
+    _openai = None
 
 ACCENTS = ["#1e3a5f", "#0f766e", "#7c2d12", "#4338ca", "#9d174d",
            "#155e63", "#3f3f46", "#5b21b6", "#1d4ed8", "#065f46"]
@@ -177,16 +186,87 @@ Return ONLY the structured data."""
     raise RuntimeError(f"generation failed for {brief['role']}: {last_err}")
 
 
-def fetch_photo(name: str) -> str:
-    """Return a data URI for an AI-generated face, with an avatar fallback."""
-    headers = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36"}
+ATTIRE = ["a tailored navy blazer over a white shirt", "a charcoal blazer",
+          "a smart knit sweater", "a crisp light-blue button-down shirt",
+          "business-casual attire", "a dark suit jacket and open collar"]
+BACKDROP = ["a softly blurred modern open-plan office", "a clean neutral grey studio backdrop",
+            "a bright workspace with blurred greenery", "a softly lit office, background blurred"]
+EXPRESSION = ["a warm confident smile", "a friendly approachable expression",
+              "a calm professional look", "a relaxed genuine smile"]
+
+
+def _age_band(title: str) -> str:
+    t = title.lower()
+    if "junior" in t or "intern" in t:
+        return "in their mid-20s"
+    if any(w in t for w in ("principal", "lead", "manager", "director", "head", "architect")):
+        return "in their 40s"
+    if "senior" in t:
+        return "in their late 30s"
+    return "in their early-to-mid 30s"
+
+
+def _photo_prompt(cv: CV) -> str:
+    """Shared headshot prompt. Styling is seeded off the name so re-runs are stable
+    and every candidate looks distinct; gender/ethnicity are left for the image
+    model to infer from the candidate's name and location."""
+    rng = random.Random(cv.name)
+    return (
+        f"Professional corporate LinkedIn-style headshot photo of {cv.name}, "
+        f"a {cv.title} based in {cv.location}, {_age_band(cv.title)}. "
+        f"Tight head-and-shoulders framing, face centered, looking directly at the camera, "
+        f"wearing {rng.choice(ATTIRE)}, with {rng.choice(EXPRESSION)}. "
+        f"Background is {rng.choice(BACKDROP)}. Soft natural studio lighting, photorealistic, "
+        f"sharp focus on the face, shot on an 85mm portrait lens. "
+        f"No text, no watermark, no logo, single person only."
+    )
+
+
+def generate_photo(cv: CV) -> str:
+    """Unique professional headshot as a data URI.
+
+    Gemini is primary; on failure it falls back to OpenAI gpt-image-2 (if a key
+    is configured), then to an initials avatar so a CV is never left photoless.
+    """
+    prompt = _photo_prompt(cv)
+    return (_gemini_photo(prompt, cv.name)
+            or _openai_photo(prompt, cv.name)
+            or _avatar_fallback(cv.name))
+
+
+def _gemini_photo(prompt: str, name: str) -> str:
+    cfg = types.GenerateContentConfig(image_config=types.ImageConfig(aspect_ratio="1:1"))
+    for attempt in range(4):
+        try:
+            resp = client.models.generate_content(model=IMAGE_MODEL, contents=prompt, config=cfg)
+            for part in resp.candidates[0].content.parts:
+                inline = getattr(part, "inline_data", None)
+                if inline and inline.data:
+                    mime = inline.mime_type or "image/jpeg"
+                    return f"data:{mime};base64," + base64.b64encode(inline.data).decode()
+            raise RuntimeError("no image part in response")
+        except Exception as e:
+            print(f"      gemini photo attempt {attempt + 1} failed for {name}: {e}")
+            if getattr(e, "code", None) in (400, 403, 404):
+                break  # auth / billing / bad-model -> retrying won't help, go to fallback
+            time.sleep(2 * (attempt + 1))  # transient (rate limit / 5xx) -> backoff
+    return ""
+
+
+def _openai_photo(prompt: str, name: str) -> str:
+    if _openai is None:
+        return ""
+    print(f"      falling back to OpenAI {OPENAI_IMAGE_MODEL} for {name}")
     try:
-        r = requests.get("https://thispersondoesnotexist.com", headers=headers, timeout=20)
-        if r.status_code == 200 and r.content and r.headers.get("content-type", "").startswith("image"):
-            return "data:image/jpeg;base64," + base64.b64encode(r.content).decode()
-    except Exception:
-        pass
-    # Fallback: initials avatar (no API key required).
+        r = _openai.images.generate(model=OPENAI_IMAGE_MODEL, prompt=prompt, size="1024x1024")
+        return "data:image/png;base64," + r.data[0].b64_json
+    except Exception as e:
+        print(f"      openai photo failed for {name}: {e}")
+        return ""
+
+
+def _avatar_fallback(name: str) -> str:
+    """Initials avatar so a single image failure never blocks the CV."""
     try:
         r = requests.get("https://ui-avatars.com/api/",
                          params={"name": name, "size": "256", "background": "random",
@@ -217,7 +297,7 @@ def main():
             slug += "_2"
         seen.add(slug)
 
-        photo = fetch_photo(cv.name)
+        photo = generate_photo(cv)
         if photo:
             ext = "jpg" if "jpeg" in photo[:30] else "png"
             (PHOTO_DIR / f"{slug}.{ext}").write_bytes(base64.b64decode(photo.split(",", 1)[1]))
