@@ -45,7 +45,10 @@ def answer(question: str, top_k: int = TOP_K) -> dict:
         contents=prompt,
         config=types.GenerateContentConfig(temperature=0.2),
     )
-    return {"answer": resp.text.strip(), "sources": sources}
+    text = resp.text.strip()
+    # Report the CVs actually cited in the answer (not just everything retrieved).
+    cited = [s for s in sources if s in text]
+    return {"answer": text, "sources": cited}
 
 
 if __name__ == "__main__":

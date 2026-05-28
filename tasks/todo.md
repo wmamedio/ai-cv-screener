@@ -17,15 +17,23 @@ Scope: the 3 core requirements only. Lean, no over-engineering.
 - [x] Return source CV filenames with each answer
 - [x] `backend/app.py`: FastAPI `/chat` endpoint
 
-## 3. Chat Interface
-- [ ] React + Vite + TS + Tailwind chat page
-- [ ] Text input + answer display + source CVs shown
-- [ ] Wire to `/chat`
+## 3. Chat Interface  ✅
+- [x] React + Vite + TS + Tailwind chat page
+- [x] Text input + answer display + source CVs shown (markdown rendering)
+- [x] Wire to `/chat` (Vite dev proxy → :8000)
+- [x] Sources reflect CVs actually cited in the answer
 
 ## Deliverable wrap-up
-- [ ] README quick start verified end-to-end
-- [ ] Architecture diagram (in README, Mermaid) — for the overview-diagram deliverable
-- [ ] Sample questions work (Python / UPC / Jane Doe)
+- [x] Full stack verified end-to-end in a real browser (Playwright screenshots)
+- [x] Architecture diagram (README, Mermaid) — overview-diagram deliverable
+- [x] Sample questions work (Python → 11 candidates / UPC → 2 / Jane Doe summary)
+- [x] Grounding negative test (out-of-scope question → "not in CVs")
+- [x] Screenshots added to README
+- [ ] (User) Record 3–10 min Loom demo + code walkthrough
 
 ## Review
-(filled in when done)
+- Stack: Gemini (2.5-flash + embedding-001) · Chroma · FastAPI · React/Vite/Tailwind.
+- 28 CVs generated as PDFs with AI photos; seeded facts make the demo questions land.
+- RAG grounds strictly on retrieved CVs and cites sources; verified in browser.
+- Kept lean per scope: no LangGraph/Pinecone/Langfuse build (noted as production swaps).
+- Remaining: user records the demo video.

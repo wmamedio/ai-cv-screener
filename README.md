@@ -22,7 +22,7 @@ flowchart LR
     end
 
     subgraph ingest["2 · Ingestion (offline)"]
-        PDF --> EX[Extract text<br/>pypdf] --> CH[Chunk] --> EM[Embed<br/>text-embedding-004] --> VDB[(Chroma<br/>vector store)]
+        PDF --> EX[Extract text<br/>pypdf] --> EM[Embed<br/>gemini-embedding-001] --> VDB[(Chroma<br/>vector store)]
     end
 
     subgraph serve["3 · Query (runtime)"]
@@ -37,7 +37,7 @@ flowchart LR
 
 | Layer        | Choice                                  | Why |
 |--------------|-----------------------------------------|-----|
-| LLM + embeddings | Google AI Studio — Gemini + `text-embedding-004` | Free tier, one key covers chat + embeddings, GCP-aligned |
+| LLM + embeddings | Google AI Studio — `gemini-2.5-flash` + `gemini-embedding-001` | Free tier, one key covers chat + embeddings, GCP-aligned |
 | Vector store | Chroma (local, embedded)                | Zero external accounts, runs fully locally |
 | Backend      | Python + FastAPI                        | Clean RAG service, easy to read |
 | Frontend     | React + Vite + TypeScript + Tailwind    | Simple, fast chat UI |
@@ -45,7 +45,17 @@ flowchart LR
 
 **Production swaps** (not built here to keep the prototype focused): the vector
 store can be swapped for **Pinecone/Weaviate**, the query path wrapped in a
-**LangGraph** agent, and traced with **Langfuse** — see notes inline in the code.
+**LangGraph** agent, and traced with **Langfuse**.
+
+---
+
+## Screenshots
+
+| Chat interface | A generated CV |
+|---|---|
+| ![Chat UI](docs/ui.png) | ![Sample CV](docs/sample_cv.png) |
+
+Answers are grounded in the CVs and cite the source files actually used.
 
 ---
 
