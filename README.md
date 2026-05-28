@@ -56,7 +56,13 @@ store can be swapped for **Pinecone/Weaviate**, the query path wrapped in a
 |---|---|
 | ![Chat UI](docs/ui.png) | ![Sample CV](docs/sample_cv.png) |
 
-Answers are grounded in the CVs and cite the source files actually used.
+Answers are grounded in the CVs and cite the source files actually used — each `.pdf`
+mention and source chip links to the candidate's PDF.
+
+**AI-generated headshots** — a unique `gpt-image-2` portrait per candidate, inferred
+from their name, role, and location:
+
+![AI-generated headshots](docs/sample_photos.png)
 
 ---
 
