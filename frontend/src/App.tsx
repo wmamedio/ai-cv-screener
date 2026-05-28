@@ -1,5 +1,17 @@
-import { useEffect, useRef, useState } from "react";
-import ReactMarkdown from "react-markdown";
+import { useEffect, useRef, useState, type ComponentPropsWithoutRef } from "react";
+import ReactMarkdown, { type Components } from "react-markdown";
+
+// Turn "(jane_doe.pdf)" mentions in an answer into links to the served PDF.
+function linkifyPdfs(text: string): string {
+  return text.replace(/[A-Za-z0-9._-]+\.pdf/g, (file) => `[${file}](/cv/${file})`);
+}
+
+// Open every link (cited PDFs included) in a new tab.
+const MD_COMPONENTS: Components = {
+  a: (props: ComponentPropsWithoutRef<"a">) => (
+    <a {...props} target="_blank" rel="noopener noreferrer" />
+  ),
+};
 
 type Message = {
   role: "user" | "assistant";
@@ -198,15 +210,23 @@ export default function App() {
                     <div className="qa-mark qa-mark--a">A.</div>
                     <div>
                       <div className={`a-body${m.error ? " is-error" : ""}`}>
-                        <ReactMarkdown>{m.text}</ReactMarkdown>
+                        <ReactMarkdown components={MD_COMPONENTS}>
+                          {m.error ? m.text : linkifyPdfs(m.text)}
+                        </ReactMarkdown>
                       </div>
                       {m.sources && m.sources.length > 0 && (
                         <div className="sources">
                           <span className="sources-label">Sources cited</span>
                           {m.sources.map((s) => (
-                            <span key={s} className="source-chip">
+                            <a
+                              key={s}
+                              className="source-chip"
+                              href={`/cv/${encodeURIComponent(s)}`}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
                               {s}
-                            </span>
+                            </a>
                           ))}
                         </div>
                       )}

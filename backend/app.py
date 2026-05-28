@@ -4,9 +4,11 @@ import json
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
 import rag
+from config import CVS_DIR
 
 app = FastAPI(title="AI CV Screener")
 
@@ -25,6 +27,11 @@ class ChatRequest(BaseModel):
 @app.get("/health")
 def health():
     return {"status": "ok"}
+
+
+# Serve the source CVs so the frontend can link cited filenames to the PDF.
+# StaticFiles confines access to CVS_DIR and rejects path traversal.
+app.mount("/cv", StaticFiles(directory=CVS_DIR), name="cv")
 
 
 @app.post("/chat")

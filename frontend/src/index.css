@@ -42,6 +42,29 @@ body {
   color: var(--paper);
 }
 
+/* Minimalist scrollbars — no track background, a thin subtle thumb. */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--rule-strong) transparent;
+}
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--rule-strong);
+  border-radius: 999px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--ink-faint);
+}
+
 /* Paper canvas + printed-grain overlay ------------------------------ */
 .paper {
   position: relative;
@@ -337,6 +360,13 @@ body {
   color: var(--ink-soft);
   border-bottom: 1px solid var(--rule-strong);
   padding-bottom: 1px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+a.source-chip:hover {
+  color: var(--accent);
+  border-color: var(--accent);
 }
 
 /* Loading: "consulting the files" ---------------------------------- */
