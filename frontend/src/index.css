@@ -1,17 +1,451 @@
 @import "tailwindcss";
 
-html, body, #root { height: 100%; }
-body {
-  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+/* ───────────────────────────────────────────────────────────────
+   THE CV SCREENER — Editorial design system
+   A Q&A interview set in newsprint: Fraunces display, Newsreader
+   body, Archivo small-caps labels. Warm paper, vermilion ink.
+   ─────────────────────────────────────────────────────────────── */
+
+:root {
+  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --font-body: "Newsreader", Georgia, serif;
+  --font-label: "Archivo", ui-sans-serif, system-ui, sans-serif;
+
+  --paper: #f1ece1;
+  --paper-panel: #e9e2d3;
+  --ink: #211d18;
+  --ink-soft: #5b5349;
+  --ink-faint: #938a7c;
+  --rule: #d3c9b6;
+  --rule-strong: #b9ad97;
+  --accent: #b23218;
+  --accent-deep: #8a2410;
+  --danger: #9a2b1e;
 }
 
-/* Markdown answer styling (Tailwind resets these by default). */
-.md > * + * { margin-top: 0.5rem; }
-.md ul { list-style: disc; padding-left: 1.25rem; }
-.md ol { list-style: decimal; padding-left: 1.25rem; }
-.md li { margin-top: 0.15rem; }
-.md strong { font-weight: 600; }
-.md h1, .md h2, .md h3 { font-weight: 600; }
-.md code {
-  background: #f1f5f9; padding: 0.1rem 0.3rem; border-radius: 0.25rem; font-size: 0.85em;
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--ink);
+  background-color: var(--paper);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--paper);
+}
+
+/* Paper canvas + printed-grain overlay ------------------------------ */
+.paper {
+  position: relative;
+  background-color: var(--paper);
+  background-image:
+    radial-gradient(circle at 18% -10%, #f7f3ea 0%, transparent 45%),
+    radial-gradient(circle at 100% 0%, #ece5d6 0%, transparent 40%);
+}
+.paper::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 50;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Shared small-caps editorial label -------------------------------- */
+.kicker {
+  font-family: var(--font-label);
+  font-weight: 600;
+  font-size: 0.66rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+.kicker--accent {
+  color: var(--accent);
+}
+
+/* ── Masthead ──────────────────────────────────────────────────── */
+.masthead {
+  border-top: 3px solid var(--ink);
+  background:
+    linear-gradient(var(--paper), var(--paper)) padding-box;
+}
+.masthead-title {
+  font-family: var(--font-display);
+  font-optical-sizing: auto;
+  font-weight: 600;
+  line-height: 0.92;
+  letter-spacing: -0.018em;
+  color: var(--ink);
+  font-size: clamp(1.9rem, 4.4vw, 2.9rem);
+}
+.masthead-title em {
+  font-style: italic;
+  font-weight: 500;
+}
+.dateline {
+  font-family: var(--font-label);
+  font-size: 0.6rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  text-align: right;
+  line-height: 1.5;
+}
+/* Newspaper double rule under the masthead */
+.rule-double {
+  border: none;
+  border-top: 2.5px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+  height: 3px;
+  margin: 0;
+}
+
+/* New Inquiry button ----------------------------------------------- */
+.btn-new {
+  font-family: var(--font-label);
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink);
+  background: transparent;
+  border: 1px solid var(--rule-strong);
+  padding: 0.5rem 0.85rem;
+  border-radius: 1px;
+  cursor: pointer;
+  transition: color 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+  white-space: nowrap;
+}
+.btn-new:hover:not(:disabled) {
+  color: var(--paper);
+  background: var(--accent);
+  border-color: var(--accent);
+}
+.btn-new:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+.btn-new span {
+  color: var(--accent);
+  margin-right: 0.4em;
+}
+.btn-new:hover:not(:disabled) span {
+  color: var(--paper);
+}
+
+/* ── Empty state: the lede + suggested inquiries ───────────────── */
+.lede {
+  font-family: var(--font-body);
+  font-size: clamp(1.15rem, 2vw, 1.4rem);
+  line-height: 1.5;
+  color: var(--ink);
+  max-width: 34ch;
+}
+.lede::first-letter {
+  font-family: var(--font-display);
+  font-weight: 600;
+  float: left;
+  font-size: 3.6em;
+  line-height: 0.74;
+  padding: 0.05em 0.12em 0 0;
+  color: var(--accent);
+}
+
+.inquiry-row {
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  width: 100%;
+  text-align: left;
+  padding: 0.85rem 0.25rem;
+  border-top: 1px solid var(--rule);
+  background: transparent;
+  cursor: pointer;
+  transition: padding-left 0.2s ease, color 0.2s ease;
+}
+.inquiry-row:last-of-type {
+  border-bottom: 1px solid var(--rule);
+}
+.inquiry-row:hover {
+  padding-left: 0.85rem;
+}
+.inquiry-num {
+  font-family: var(--font-label);
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--ink-faint);
+  transition: color 0.2s ease;
+}
+.inquiry-row:hover .inquiry-num {
+  color: var(--accent);
+}
+.inquiry-text {
+  font-family: var(--font-display);
+  font-size: 1.12rem;
+  font-weight: 400;
+  line-height: 1.3;
+  color: var(--ink);
+}
+.inquiry-arrow {
+  margin-left: auto;
+  color: var(--accent);
+  opacity: 0;
+  transform: translateX(-6px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  font-family: var(--font-body);
+}
+.inquiry-row:hover .inquiry-arrow {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ── Q&A interview ─────────────────────────────────────────────── */
+.qa {
+  display: grid;
+  grid-template-columns: 2.4rem 1fr;
+  column-gap: 0.9rem;
+  padding: 1.4rem 0;
+  border-top: 1px solid var(--rule);
+}
+.qa:first-child {
+  border-top: none;
+}
+.qa-mark {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.55rem;
+  line-height: 1;
+  padding-top: 0.05em;
+}
+.qa-mark--q {
+  color: var(--ink);
+}
+.qa-mark--a {
+  color: var(--accent);
+}
+.q-text {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(1.25rem, 2.3vw, 1.55rem);
+  line-height: 1.32;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+
+/* Answer body (markdown) ------------------------------------------- */
+.a-body {
+  font-family: var(--font-body);
+  font-size: 1.075rem;
+  line-height: 1.62;
+  color: var(--ink);
+}
+.a-body.is-error {
+  font-family: var(--font-body);
+  font-style: italic;
+  color: var(--danger);
+}
+.a-body > * + * {
+  margin-top: 0.7rem;
+}
+.a-body ul {
+  list-style: none;
+  padding-left: 1.3rem;
+}
+.a-body ul li {
+  position: relative;
+}
+.a-body ul li::before {
+  content: "—";
+  position: absolute;
+  left: -1.3rem;
+  color: var(--accent);
+}
+.a-body ol {
+  list-style: decimal;
+  padding-left: 1.4rem;
+}
+.a-body li {
+  margin-top: 0.28rem;
+}
+.a-body li::marker {
+  color: var(--ink-faint);
+  font-family: var(--font-label);
+  font-size: 0.85em;
+}
+.a-body strong {
+  font-weight: 600;
+}
+.a-body em {
+  font-style: italic;
+}
+.a-body h1,
+.a-body h2,
+.a-body h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.2;
+}
+.a-body a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.a-body code {
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  background: var(--paper-panel);
+  border: 1px solid var(--rule);
+  padding: 0.05rem 0.32rem;
+  border-radius: 2px;
+  font-size: 0.82em;
+}
+
+/* Cited sources footnote ------------------------------------------- */
+.sources {
+  margin-top: 1rem;
+  padding-top: 0.7rem;
+  border-top: 1px solid var(--rule);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.55rem 0.85rem;
+}
+.sources-label {
+  font-family: var(--font-label);
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+.source-chip {
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 0.74rem;
+  letter-spacing: 0.01em;
+  color: var(--ink-soft);
+  border-bottom: 1px solid var(--rule-strong);
+  padding-bottom: 1px;
+}
+
+/* Loading: "consulting the files" ---------------------------------- */
+.consulting {
+  font-family: var(--font-body);
+  font-style: italic;
+  font-size: 1.075rem;
+  color: var(--ink-faint);
+}
+.dots span {
+  animation: blink 1.3s infinite both;
+}
+.dots span:nth-child(2) {
+  animation-delay: 0.22s;
+}
+.dots span:nth-child(3) {
+  animation-delay: 0.44s;
+}
+@keyframes blink {
+  0%,
+  60%,
+  100% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 1;
+  }
+}
+
+/* ── Composer ──────────────────────────────────────────────────── */
+.composer {
+  border-top: 2.5px solid var(--ink);
+  background: var(--paper);
+}
+.composer-field {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  border-bottom: 2px solid var(--rule-strong);
+  transition: border-color 0.2s ease;
+}
+.composer-field:focus-within {
+  border-color: var(--accent);
+}
+.composer-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-style: italic;
+  color: var(--ink);
+  padding: 0.55rem 0;
+}
+.composer-input::placeholder {
+  color: var(--ink-faint);
+  font-style: italic;
+}
+.btn-ask {
+  font-family: var(--font-label);
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--paper);
+  background: var(--ink);
+  border: none;
+  padding: 0.7rem 1.25rem;
+  border-radius: 1px;
+  cursor: pointer;
+  transition: background 0.18s ease;
+  white-space: nowrap;
+}
+.btn-ask:hover:not(:disabled) {
+  background: var(--accent);
+}
+.btn-ask:disabled {
+  background: var(--ink-faint);
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ── Entrance motion ───────────────────────────────────────────── */
+@keyframes riseIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.rise {
+  opacity: 0;
+  animation: riseIn 0.6s cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
+}
+.rise-1 { animation-delay: 0.05s; }
+.rise-2 { animation-delay: 0.14s; }
+.rise-3 { animation-delay: 0.23s; }
+.rise-4 { animation-delay: 0.32s; }
+.rise-5 { animation-delay: 0.41s; }
+.rise-6 { animation-delay: 0.5s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .rise,
+  .dots span {
+    animation: none;
+    opacity: 1;
+  }
 }
