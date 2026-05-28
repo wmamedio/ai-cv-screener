@@ -219,7 +219,10 @@ def generate_photo(cv: CV) -> str:
 def _openai_photo(prompt: str, name: str) -> str:
     for attempt in range(3):
         try:
-            r = client.images.generate(model=OPENAI_IMAGE_MODEL, prompt=prompt, size="1024x1024")
+            # Lowest size + medium quality keeps generation fast (drop to "low" for more speed).
+            r = client.images.generate(
+                model=OPENAI_IMAGE_MODEL, prompt=prompt,
+                size="1024x1024", quality="medium")
             return "data:image/png;base64," + r.data[0].b64_json
         except Exception as e:
             print(f"      {OPENAI_IMAGE_MODEL} attempt {attempt + 1} failed for {name}: {str(e)[:100]}")
