@@ -1,6 +1,6 @@
 """Generate 25-30 realistic fake CVs as PDFs.
 
-Pipeline per CV:  Gemini (structured JSON) -> Gemini (AI photo) -> Jinja HTML -> WeasyPrint PDF.
+Pipeline per CV:  Gemini (structured JSON) -> OpenAI gpt-image-2 (AI photo) -> Jinja HTML -> WeasyPrint PDF.
 
 A few facts are seeded on purpose so the demo questions work:
   - one candidate named "Jane Doe"
@@ -225,12 +225,12 @@ def _photo_prompt(cv: CV) -> str:
 def generate_photo(cv: CV) -> str:
     """Unique professional headshot as a data URI.
 
-    Gemini is primary; on failure it falls back to OpenAI gpt-image-2 (if a key
-    is configured), then to an initials avatar so a CV is never left photoless.
+    OpenAI gpt-image-2 is primary; on failure it falls back to Gemini image gen
+    (if its key works), then to an initials avatar so a CV is never left photoless.
     """
     prompt = _photo_prompt(cv)
-    return (_gemini_photo(prompt, cv.name)
-            or _openai_photo(prompt, cv.name)
+    return (_openai_photo(prompt, cv.name)
+            or _gemini_photo(prompt, cv.name)
             or _avatar_fallback(cv.name))
 
 
@@ -256,7 +256,7 @@ def _gemini_photo(prompt: str, name: str) -> str:
 def _openai_photo(prompt: str, name: str) -> str:
     if _openai is None:
         return ""
-    print(f"      falling back to OpenAI {OPENAI_IMAGE_MODEL} for {name}")
+    print(f"      generating photo with OpenAI {OPENAI_IMAGE_MODEL} for {name}")
     try:
         r = _openai.images.generate(model=OPENAI_IMAGE_MODEL, prompt=prompt, size="1024x1024")
         return "data:image/png;base64," + r.data[0].b64_json

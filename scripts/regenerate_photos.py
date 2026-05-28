@@ -16,7 +16,7 @@ from weasyprint import HTML
 
 from generate_cvs import (
     ACCENTS, CV, CVS_DIR, PHOTO_DIR, PROFILE_DIR, TEMPLATE,
-    IMAGE_MODEL, generate_photo,
+    OPENAI_IMAGE_MODEL, generate_photo,
 )
 
 
@@ -34,7 +34,7 @@ def main():
     if only and not selected:
         raise SystemExit(f"No matching profiles for: {', '.join(sorted(only))}")
 
-    print(f"Regenerating {len(selected)} photo(s) with {IMAGE_MODEL} (+ OpenAI fallback)...\n")
+    print(f"Regenerating {len(selected)} photo(s) with {OPENAI_IMAGE_MODEL} (+ Gemini fallback)...\n")
     for n, path in enumerate(selected, 1):
         slug = path.stem
         cv = CV.model_validate_json(path.read_text())

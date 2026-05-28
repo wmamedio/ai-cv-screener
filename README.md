@@ -17,18 +17,18 @@ Built as a Retrieval-Augmented Generation (RAG) pipeline:
 flowchart LR
     subgraph gen["1 · CV Generation (offline)"]
         G1[Gemini<br/>profile text] --> G3[HTML/Jinja<br/>template]
-        G2[Gemini image<br/>AI headshot] --> G3
+        G2[OpenAI gpt-image-2<br/>AI headshot] --> G3
         G3 --> PDF[(data/cvs/*.pdf)]
     end
 
     subgraph ingest["2 · Ingestion (offline)"]
-        PDF --> EX[Extract text<br/>pypdf] --> EM[Embed<br/>gemini-embedding-001] --> VDB[(Chroma<br/>vector store)]
+        PDF --> EX[Extract text<br/>pypdf] --> EM[Embed<br/>text-embedding-3-small] --> VDB[(Chroma<br/>vector store)]
     end
 
     subgraph serve["3 · Query (runtime)"]
         UI[React chat UI] -->|question| API[FastAPI /chat]
         API --> QE[Embed question] --> RET[Similarity search] --> VDB
-        VDB --> CTX[Top-k CV chunks] --> LLM[Gemini<br/>grounded answer]
+        VDB --> CTX[Top-k CV chunks] --> LLM[OpenAI gpt-5.4-mini<br/>grounded answer]
         LLM -->|answer + source CVs| UI
     end
 ```
@@ -37,11 +37,12 @@ flowchart LR
 
 | Layer        | Choice                                  | Why |
 |--------------|-----------------------------------------|-----|
-| LLM + embeddings | Google AI Studio — `gemini-2.5-flash` + `gemini-embedding-001` | Free tier, one key covers chat + embeddings, GCP-aligned |
+| LLM + embeddings | OpenAI — `gpt-5.4-mini` + `text-embedding-3-small` | Latest cost-effective chat + embeddings; streams token-by-token |
 | Vector store | Chroma (local, embedded)                | Zero external accounts, runs fully locally |
 | Backend      | Python + FastAPI                        | Clean RAG service, easy to read |
 | Frontend     | React + Vite + TypeScript + Tailwind    | Simple, fast chat UI |
-| CV photos    | Google AI Studio — `gemini-3.1-flash-image-preview` (fallback: OpenAI `gpt-image-2`) | Unique AI headshot per candidate, inferred from name/role/location; auto-fails over if Gemini errors |
+| CV photos    | OpenAI `gpt-image-2` (fallback: Gemini image) | Unique AI headshot per candidate, inferred from name/role/location; falls back if the primary errors |
+| CV profile text | Google AI Studio — `gemini-2.5-flash` (structured JSON) | Generates the fictional résumé content |
 
 **Production swaps** (not built here to keep the prototype focused): the vector
 store can be swapped for **Pinecone/Weaviate**, the query path wrapped in a

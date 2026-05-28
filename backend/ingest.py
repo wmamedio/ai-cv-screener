@@ -29,7 +29,7 @@ def main():
     docs = [extract_text(p) for p in pdfs]
 
     print(f"Embedding {len(docs)} CVs...")
-    vectors = embed_texts(docs, task_type="RETRIEVAL_DOCUMENT")
+    vectors = embed_texts(docs)
 
     # Rebuild the collection from scratch for a clean, idempotent ingest.
     if CHROMA_DIR.exists():

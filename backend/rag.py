@@ -1,11 +1,10 @@
 """Retrieval-augmented answering over the CV collection.
 
-embed query -> similarity search in Chroma -> grounded Gemini answer (streamed) + sources.
+embed query -> similarity search in Chroma -> grounded OpenAI answer (streamed) + sources.
 """
 from collections.abc import Iterator
 
 import chromadb
-from google.genai import types
 
 from config import CHAT_MODEL, CHROMA_DIR, COLLECTION, client, embed_query
 
@@ -32,29 +31,34 @@ def _collection():
     return _coll
 
 
-def _prompt_and_sources(question: str, top_k: int) -> tuple[str, list[str]]:
+def _context_and_sources(question: str, top_k: int) -> tuple[str, list[str]]:
     coll = _collection()
     res = coll.query(query_embeddings=[embed_query(question)], n_results=top_k)
     docs = res["documents"][0]
     sources = [m["source"] for m in res["metadatas"][0]]
     context = "\n\n".join(
         f"--- CV: {src} ---\n{doc}" for src, doc in zip(sources, docs))
-    prompt = f"{SYSTEM_PROMPT}\n\nCONTEXT (retrieved CVs):\n{context}\n\nQUESTION: {question}"
-    return prompt, sources
+    return f"CONTEXT (retrieved CVs):\n{context}\n\nQUESTION: {question}", sources
 
 
 def stream(question: str, top_k: int = TOP_K) -> Iterator[tuple[str, object]]:
     """Yield ("token", delta) as the answer streams, then ("sources", [cited files])."""
-    prompt, sources = _prompt_and_sources(question, top_k)
+    user, sources = _context_and_sources(question, top_k)
     parts: list[str] = []
-    for chunk in client.models.generate_content_stream(
+    resp = client.chat.completions.create(
         model=CHAT_MODEL,
-        contents=prompt,
-        config=types.GenerateContentConfig(temperature=0.2),
-    ):
-        if chunk.text:
-            parts.append(chunk.text)
-            yield "token", chunk.text
+        messages=[
+            {"role": "system", "content": SYSTEM_PROMPT},
+            {"role": "user", "content": user},
+        ],
+        temperature=0.2,
+        stream=True,
+    )
+    for chunk in resp:
+        delta = chunk.choices[0].delta.content
+        if delta:
+            parts.append(delta)
+            yield "token", delta
     # Sources can only be resolved once the full answer exists (cited filenames).
     full = "".join(parts)
     yield "sources", [s for s in sources if s in full]
