@@ -1,0 +1,95 @@
+{
+  "name": "Alejandro Navarro García",
+  "title": "Senior Frontend Engineer",
+  "email": "alejandro.navarro@example.com",
+  "phone": "+34 611 482 937",
+  "location": "Valencia, Spain",
+  "linkedin": "https://www.linkedin.com/in/alejandro-navarro-garcia/",
+  "summary": "Senior Frontend Engineer with 10+ years of experience building scalable, high-performance web applications for product-led teams. Strong background in React, TypeScript, and design systems, with a track record of improving conversion, performance, and developer experience across cross-functional environments.",
+  "skills": [
+    "JavaScript (ES6+)",
+    "TypeScript",
+    "React",
+    "Next.js",
+    "Redux Toolkit",
+    "HTML5 & CSS3",
+    "Tailwind CSS",
+    "Jest & React Testing Library",
+    "GraphQL"
+  ],
+  "experience": [
+    {
+      "role": "Senior Frontend Engineer",
+      "company": "Bnext",
+      "period": "Feb 2022 - Present",
+      "bullets": [
+        "Led the frontend architecture for a customer-facing banking portal used by 500k+ registered users, improving Core Web Vitals scores by 28%.",
+        "Built and maintained a shared design system adopted by 6 product squads, reducing UI implementation time by 35%.",
+        "Implemented feature flags, analytics tracking, and A/B testing workflows that helped increase onboarding completion by 14%.",
+        "Mentored 4 engineers and introduced code review and testing standards that reduced frontend regressions by 22%."
+      ]
+    },
+    {
+      "role": "Frontend Engineer",
+      "company": "Cabify",
+      "period": "Jun 2018 - Jan 2022",
+      "bullets": [
+        "Developed reusable React components and page flows for ride management and account features across web platforms.",
+        "Collaborated with product and UX teams to deliver 20+ releases per quarter with consistent accessibility and responsive behavior.",
+        "Improved bundle size by 31% through code splitting, dependency audits, and optimized asset loading.",
+        "Expanded automated test coverage for critical journeys, lowering production bugs related to frontend logic by 18%."
+      ]
+    },
+    {
+      "role": "Web Developer",
+      "company": "Idealista",
+      "period": "Apr 2015 - May 2018",
+      "bullets": [
+        "Built responsive property search and listing experiences with modern JavaScript, HTML, and CSS.",
+        "Worked with backend teams to integrate APIs and improve client-side performance for high-traffic pages.",
+        "Refactored legacy UI modules into maintainable components, decreasing maintenance effort and speeding up delivery.",
+        "Supported SEO-friendly rendering strategies that contributed to improved organic landing page performance."
+      ]
+    },
+    {
+      "role": "Junior Frontend Developer",
+      "company": "Softonic",
+      "period": "Sep 2012 - Mar 2015",
+      "bullets": [
+        "Implemented marketing pages and product UI features for desktop and mobile web experiences.",
+        "Translated design mockups into cross-browser interfaces with attention to accessibility and visual consistency.",
+        "Assisted with bug fixing and front-end refactoring efforts during a major site redesign.",
+        "Gained hands-on experience with version control, agile ceremonies, and release coordination."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "MSc in Software Engineering",
+      "institution": "Universitat Politècnica de València",
+      "year": "2012"
+    },
+    {
+      "degree": "BSc in Computer Science",
+      "institution": "Universidad de Valencia",
+      "year": "2010"
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "level": "Native"
+    },
+    {
+      "language": "English",
+      "level": "Fluent"
+    },
+    {
+      "language": "Catalan",
+      "level": "Conversational"
+    }
+  ],
+  "certifications": [
+    "AWS Certified Cloud Practitioner"
+  ]
+}

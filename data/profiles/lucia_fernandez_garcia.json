@@ -1,0 +1,91 @@
+{
+  "name": "Lucía Fernández García",
+  "title": "Junior Android Developer",
+  "email": "lucia.fernandez.garcia@example.com",
+  "phone": "+34 612 345 678",
+  "location": "Valencia, Spain",
+  "linkedin": "https://www.linkedin.com/in/lucia-fernandez-garcia",
+  "summary": "Junior Android Developer with hands-on experience building and maintaining mobile features for consumer-facing apps. Strong foundation in Kotlin, Jetpack components, and clean code practices, with a focus on delivering stable user experiences and collaborating effectively in Agile teams.",
+  "skills": [
+    "Kotlin",
+    "Android SDK",
+    "Jetpack Compose",
+    "MVVM",
+    "Retrofit",
+    "Room",
+    "Coroutines",
+    "Git",
+    "Firebase"
+  ],
+  "experience": [
+    {
+      "role": "Junior Android Developer",
+      "company": "MobiWave Solutions",
+      "period": "Apr 2024 - Present",
+      "bullets": [
+        "Developed 6+ UI screens in Jetpack Compose, improving feature delivery speed by 25% for a customer-facing app.",
+        "Implemented API integrations with Retrofit and Coroutines, reducing loading errors by 18% in key user flows.",
+        "Fixed 40+ bugs and supported release stabilization, contributing to a 4.6-star app rating on Google Play."
+      ]
+    },
+    {
+      "role": "Android Developer Intern",
+      "company": "Nexo Digital",
+      "period": "Jul 2023 - Mar 2024",
+      "bullets": [
+        "Assisted in building reusable UI components with XML and ViewBinding, cutting duplicate code across 3 modules.",
+        "Added local persistence features with Room for offline access, supporting over 10,000 monthly active users.",
+        "Participated in code reviews and sprint planning, consistently meeting delivery goals across 2-week Agile iterations."
+      ]
+    },
+    {
+      "role": "Mobile Development Intern",
+      "company": "Telefónica Tech",
+      "period": "Feb 2023 - Jun 2023",
+      "bullets": [
+        "Supported development of an internal Android tool used by 200+ employees for incident tracking and reporting.",
+        "Created and tested minor feature updates under senior supervision, improving task completion time by 15%.",
+        "Documented setup and troubleshooting steps, helping reduce onboarding time for new interns by 30%."
+      ]
+    },
+    {
+      "role": "Junior QA Support",
+      "company": "SoftServe Iberia",
+      "period": "Sep 2022 - Jan 2023",
+      "bullets": [
+        "Executed Android test cases on 15+ app builds, identifying and reporting UI and functional regressions early.",
+        "Collaborated with developers to reproduce defects and verify fixes, lowering re-opened tickets by 12%.",
+        "Maintained test evidence and release notes, improving traceability during pre-release validation."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BSc in Computer Engineering",
+      "institution": "Universitat Politècnica de València",
+      "year": "2023"
+    },
+    {
+      "degree": "Higher Technician Diploma in Multi-platform Application Development",
+      "institution": "IES Abastos",
+      "year": "2021"
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "level": "Native"
+    },
+    {
+      "language": "English",
+      "level": "B2"
+    },
+    {
+      "language": "Valencian",
+      "level": "Conversational"
+    }
+  ],
+  "certifications": [
+    "Google Associate Android Developer (mocked)"
+  ]
+}

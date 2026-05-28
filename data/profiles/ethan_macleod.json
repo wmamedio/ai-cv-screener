@@ -1,0 +1,95 @@
+{
+  "name": "Ethan MacLeod",
+  "title": "Junior Network Engineer",
+  "email": "ethan.macleod.career@gmail.com",
+  "phone": "+1-416-555-0187",
+  "location": "Toronto, ON, Canada",
+  "linkedin": "https://www.linkedin.com/in/ethan-macleod",
+  "summary": "Junior Network Engineer with hands-on experience supporting LAN/WAN environments, troubleshooting connectivity issues, and assisting with network monitoring and documentation. Brings a strong foundation in Cisco networking, VLANs, VPNs, and switching/routing concepts, with a detail-oriented approach to maintaining reliable and secure infrastructure.",
+  "skills": [
+    "Cisco IOS",
+    "VLANs",
+    "Routing and Switching",
+    "TCP/IP",
+    "VPNs",
+    "Wireshark",
+    "Fortinet firewalls",
+    "Network monitoring (SolarWinds)",
+    "Active Directory"
+  ],
+  "experience": [
+    {
+      "role": "Junior Network Engineer",
+      "company": "Northbridge Financial Services",
+      "period": "May 2023 - Present",
+      "bullets": [
+        "Supported a 600+ user corporate network across two office locations and a hybrid remote environment.",
+        "Resolved an average of 25-30 Tier 2 network incidents per month, reducing repeat tickets by 18% through improved documentation.",
+        "Assisted with switch configuration, VLAN changes, and access port troubleshooting during planned maintenance windows.",
+        "Monitored alerts in SolarWinds and escalated critical issues, helping maintain 99.8% network uptime."
+      ]
+    },
+    {
+      "role": "Network Support Analyst",
+      "company": "MapleTech Solutions",
+      "period": "Jun 2021 - Apr 2023",
+      "bullets": [
+        "Provided daily support for LAN, Wi-Fi, and VPN connectivity across 12 client sites in the Greater Toronto Area.",
+        "Performed basic firewall rule validation and port testing, contributing to faster resolution of connectivity incidents.",
+        "Maintained network diagrams, asset records, and change logs for over 450 devices.",
+        "Supported office moves and equipment refreshes, including deployment of switches, wireless access points, and patch panels."
+      ]
+    },
+    {
+      "role": "IT Support Technician",
+      "company": "Westshore College",
+      "period": "Sep 2019 - May 2021",
+      "bullets": [
+        "Delivered frontline technical support for students and staff in a 3,000-user campus environment.",
+        "Assisted with network jack testing, printer connectivity, and account access issues, closing 40+ tickets weekly during peak periods.",
+        "Helped deploy and label network equipment in labs and classrooms, improving asset tracking accuracy by 22%.",
+        "Escalated complex routing, DNS, and authentication issues to senior engineers with clear troubleshooting notes."
+      ]
+    },
+    {
+      "role": "Technical Support Intern",
+      "company": "Atlantic Telecom Partners",
+      "period": "Jan 2019 - Aug 2019",
+      "bullets": [
+        "Shadowed network operations staff and assisted with cable testing, rack organization, and equipment inventory.",
+        "Documented maintenance activities and helped update IP address spreadsheets for internal teams.",
+        "Supported after-hours change windows by verifying device status and confirming service restoration.",
+        "Gained exposure to MPLS, VoIP, and basic firewall operations in a service-provider environment."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Information Technology, Network Systems",
+      "institution": "University of Ontario Institute of Technology",
+      "year": "2021"
+    },
+    {
+      "degree": "Diploma, Computer Systems Technology - Networking",
+      "institution": "Seneca Polytechnic",
+      "year": "2019"
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "level": "Native"
+    },
+    {
+      "language": "French",
+      "level": "Conversational"
+    },
+    {
+      "language": "Punjabi",
+      "level": "B2"
+    }
+  ],
+  "certifications": [
+    "Cisco Certified Network Associate (CCNA)"
+  ]
+}

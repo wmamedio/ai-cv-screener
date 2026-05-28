@@ -1,0 +1,95 @@
+{
+  "name": "Laura Schneider",
+  "title": "Technical Writer",
+  "email": "laura.schneider@example.com",
+  "phone": "+49 151 48273916",
+  "location": "Munich, Germany",
+  "linkedin": "https://www.linkedin.com/in/laura-schneider-technicalwriter",
+  "summary": "Technical writer with 6+ years of experience creating clear, user-centered documentation for SaaS, cloud, and developer-focused products. Strong background in documentation systems, content governance, and cross-functional collaboration with engineering, product, and support teams. Comfortable turning complex technical concepts into concise release notes, API guides, and help center content that improve adoption and reduce support load.",
+  "skills": [
+    "Python",
+    "Markdown",
+    "DITA",
+    "Confluence",
+    "Git",
+    "GitLab",
+    "MadCap Flare",
+    "API documentation",
+    "Information architecture"
+  ],
+  "experience": [
+    {
+      "role": "Senior Technical Writer",
+      "company": "CloudForge GmbH",
+      "period": "Mar 2022 - Present",
+      "bullets": [
+        "Owns documentation for a cloud security platform used by 12,000+ active users, reducing documentation-related support tickets by 28% within 12 months.",
+        "Built a Python-based content validation script to check broken links, outdated snippets, and terminology consistency across 900+ pages.",
+        "Partnered with 8 engineering squads to ship release notes, onboarding guides, and API references for biweekly releases.",
+        "Introduced a reusable template system in Confluence and Markdown that cut authoring time for standard articles by 35%."
+      ]
+    },
+    {
+      "role": "Technical Writer",
+      "company": "FinEdge Solutions AG",
+      "period": "Jun 2019 - Feb 2022",
+      "bullets": [
+        "Produced and maintained product manuals, knowledge base articles, and in-app help for a fintech platform serving SMEs across DACH markets.",
+        "Collaborated with QA and product owners to document 40+ workflow changes per quarter and keep content aligned with sprint deliveries.",
+        "Created structured API documentation and example payloads that improved developer self-service and reduced integration questions by 21%.",
+        "Managed versioned content in Git and GitLab, enabling faster reviews and a more reliable publishing workflow."
+      ]
+    },
+    {
+      "role": "Documentation Specialist",
+      "company": "ByteCore Systems GmbH",
+      "period": "Jul 2017 - May 2019",
+      "bullets": [
+        "Wrote end-user guides, troubleshooting articles, and internal process documentation for enterprise software products.",
+        "Standardized style and terminology across 250+ articles, improving consistency and reducing editing cycles by 30%.",
+        "Supported product launches by coordinating documentation updates with release schedules and localization requirements.",
+        "Maintained documentation analytics dashboards to track page performance and identify content gaps."
+      ]
+    },
+    {
+      "role": "Junior Technical Writer",
+      "company": "NordicApps GmbH",
+      "period": "Oct 2015 - Jun 2017",
+      "bullets": [
+        "Drafted user help articles and quick-start guides for mobile and web applications under the guidance of senior writers.",
+        "Assisted with screenshots, content audits, and terminology management for German and English documentation.",
+        "Helped migrate legacy content into a new help center structure, improving navigation and searchability.",
+        "Contributed to a small Python utility used to batch-process image assets and rename documentation files consistently."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "M.A. in Technical Communication",
+      "institution": "Hochschule Karlsruhe – University of Applied Sciences",
+      "year": "2015"
+    },
+    {
+      "degree": "B.A. in Media and Communication Studies",
+      "institution": "Ludwig Maximilian University of Munich",
+      "year": "2012"
+    }
+  ],
+  "languages": [
+    {
+      "language": "German",
+      "level": "Native"
+    },
+    {
+      "language": "English",
+      "level": "Fluent"
+    },
+    {
+      "language": "French",
+      "level": "B2"
+    }
+  ],
+  "certifications": [
+    "Certified Technical Communicator (CTC)"
+  ]
+}

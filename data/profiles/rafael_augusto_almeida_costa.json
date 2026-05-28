@@ -1,0 +1,94 @@
+{
+  "name": "Rafael Augusto Almeida Costa",
+  "title": "Senior Embedded Systems Engineer",
+  "email": "rafael.costa.engineer@proton.me",
+  "phone": "+55 11 98765-4321",
+  "location": "Campinas, SP, Brazil",
+  "linkedin": "linkedin.com/in/rafael-augusto-almeida-costa",
+  "summary": "Senior Embedded Systems Engineer with 12+ years of experience designing, integrating, and validating firmware and hardware for industrial, automotive, and IoT products. Strong background in real-time systems, low-power embedded design, communication protocols, and cross-functional delivery from prototype to production.",
+  "skills": [
+    "C/C++",
+    "ARM Cortex-M",
+    "FreeRTOS",
+    "Embedded Linux",
+    "CAN/CANopen",
+    "SPI/I2C/UART",
+    "JTAG/SWD Debugging",
+    "Oscilloscope & Logic Analyzer",
+    "RTOS-based Firmware Architecture"
+  ],
+  "experience": [
+    {
+      "role": "Senior Embedded Systems Engineer",
+      "company": "Bosch Brasil",
+      "period": "Jan 2021 - Present",
+      "bullets": [
+        "Led embedded firmware development for connected sensor modules, reducing release defects by 38% over three product cycles.",
+        "Defined board bring-up and validation procedures for 6+ hardware revisions, cutting prototype debug time by 30%.",
+        "Coordinated with hardware, test, and manufacturing teams to launch 4 production programs on schedule.",
+        "Improved boot and communication stack performance by 22% through task optimization and protocol tuning."
+      ]
+    },
+    {
+      "role": "Embedded Software Architect",
+      "company": "WEG Automação",
+      "period": "Aug 2017 - Dec 2020",
+      "bullets": [
+        "Architected firmware for industrial control devices using FreeRTOS and C++, supporting over 50,000 deployed units.",
+        "Standardized driver and middleware layers across product lines, reducing code duplication by 45%.",
+        "Implemented CAN and Modbus integration features that expanded interoperability with legacy equipment.",
+        "Mentored a team of 5 engineers and established code review and regression testing practices."
+      ]
+    },
+    {
+      "role": "Embedded Systems Engineer",
+      "company": "Embraer",
+      "period": "Mar 2013 - Jul 2017",
+      "bullets": [
+        "Developed and validated embedded control software for avionics support equipment, meeting strict traceability requirements.",
+        "Built automated hardware-in-the-loop test setups that increased test coverage by 28%.",
+        "Worked on real-time communication and fault-handling logic, improving system resilience during stress testing.",
+        "Supported certification documentation and design reviews across engineering and quality teams."
+      ]
+    },
+    {
+      "role": "Firmware Engineer",
+      "company": "Positivo Tecnologia",
+      "period": "Feb 2010 - Feb 2013",
+      "bullets": [
+        "Created low-level firmware for consumer electronics products, including peripheral drivers and startup code.",
+        "Reduced firmware memory footprint by 18% through stack optimization and module refactoring.",
+        "Supported PCB bring-up, signal debugging, and production testing for multiple high-volume releases."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "M.S. in Electrical Engineering",
+      "institution": "Universidade Estadual de Campinas (UNICAMP)",
+      "year": "2012"
+    },
+    {
+      "degree": "B.S. in Computer Engineering",
+      "institution": "Universidade de São Paulo (USP)",
+      "year": "2009"
+    }
+  ],
+  "languages": [
+    {
+      "language": "Portuguese",
+      "level": "Native"
+    },
+    {
+      "language": "English",
+      "level": "Fluent"
+    },
+    {
+      "language": "Spanish",
+      "level": "Conversational"
+    }
+  ],
+  "certifications": [
+    "ISTQB Certified Tester - Foundation Level"
+  ]
+}

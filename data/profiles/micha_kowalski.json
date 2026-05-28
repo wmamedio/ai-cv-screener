@@ -1,0 +1,93 @@
+{
+  "name": "Michał Kowalski",
+  "title": "Senior Solutions Consultant",
+  "email": "michal.kowalski@consultpro.pl",
+  "phone": "+48 603 214 789",
+  "location": "Warsaw, Poland",
+  "linkedin": "linkedin.com/in/michal-kowalski-solutions",
+  "summary": "Senior Solutions Consultant with 10+ years of experience helping enterprise clients design, validate, and adopt complex software solutions across SaaS, cloud, and digital transformation programs. Strong background in discovery, solution architecture, stakeholder management, and pre-sales support, with a consistent record of improving win rates and reducing implementation risk.",
+  "skills": [
+    "Solution Consulting",
+    "Pre-sales Discovery",
+    "Solution Design",
+    "Stakeholder Management",
+    "Requirements Gathering",
+    "Demo and PoC Delivery",
+    "Salesforce",
+    "Microsoft Dynamics 365",
+    "Jira",
+    "Agile Delivery"
+  ],
+  "experience": [
+    {
+      "role": "Senior Solutions Consultant",
+      "company": "CloudBridge Systems Sp. z o.o.",
+      "period": "Jan 2021 - Present",
+      "bullets": [
+        "Supported 40+ enterprise sales pursuits across finance, retail, and manufacturing, contributing to a 28% increase in annual win rate.",
+        "Led solution workshops and tailored product demonstrations for C-level stakeholders, shortening the sales cycle by an average of 17 days.",
+        "Coordinated technical validation and proof-of-concept delivery with delivery teams, reducing late-stage scope changes by 35%."
+      ]
+    },
+    {
+      "role": "Solutions Consultant",
+      "company": "NexaTech Polska",
+      "period": "May 2017 - Dec 2020",
+      "bullets": [
+        "Partnered with account executives on 60+ discovery engagements and created business cases aligned to client ROI targets.",
+        "Designed CRM and workflow solutions for mid-market and enterprise customers, improving proposal acceptance rates by 22%.",
+        "Built standard demo environments and reusable presentation assets that cut preparation time for new opportunities by 40%."
+      ]
+    },
+    {
+      "role": "Technical Account Manager",
+      "company": "Softline Eastern Europe",
+      "period": "Mar 2014 - Apr 2017",
+      "bullets": [
+        "Managed post-sale technical relationships for 25 key accounts, maintaining a 95% customer retention rate.",
+        "Translated client requirements into implementation plans and supported issue resolution, reducing escalations by 30%.",
+        "Delivered quarterly business reviews and adoption plans that increased product utilization across customer teams."
+      ]
+    },
+    {
+      "role": "Implementation Specialist",
+      "company": "Comarch",
+      "period": "Jul 2010 - Feb 2014",
+      "bullets": [
+        "Implemented enterprise software projects for clients in telecom and services, completing 18 successful go-lives.",
+        "Conducted process mapping and configuration workshops to align solutions with operational requirements.",
+        "Worked closely with support and development teams to resolve critical issues and meet project milestones on time."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Science in Management and Information Systems",
+      "institution": "Warsaw University of Technology",
+      "year": "2010"
+    },
+    {
+      "degree": "Bachelor of Science in Computer Science",
+      "institution": "University of Warsaw",
+      "year": "2008"
+    }
+  ],
+  "languages": [
+    {
+      "language": "Polish",
+      "level": "Native"
+    },
+    {
+      "language": "English",
+      "level": "Fluent"
+    },
+    {
+      "language": "German",
+      "level": "B2"
+    }
+  ],
+  "certifications": [
+    "Salesforce Certified Administrator",
+    "ITIL Foundation"
+  ]
+}

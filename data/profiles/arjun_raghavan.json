@@ -1,0 +1,94 @@
+{
+  "name": "Arjun Raghavan",
+  "title": "Principal Security Engineer",
+  "email": "arjun.raghavan@securemail.in",
+  "phone": "+91-9876543210",
+  "location": "Bengaluru, India",
+  "linkedin": "linkedin.com/in/arjun-raghavan",
+  "summary": "Principal Security Engineer with 12+ years of experience designing secure cloud, application, and enterprise environments across financial services and SaaS organizations. Strong track record of reducing risk through security architecture, detection engineering, incident response, and large-scale security automation aligned to compliance and business growth.",
+  "skills": [
+    "Cloud Security Architecture",
+    "Zero Trust",
+    "SIEM/SOAR",
+    "IAM and PAM",
+    "Threat Modeling",
+    "Application Security",
+    "Network Security",
+    "Kubernetes Security",
+    "Incident Response"
+  ],
+  "experience": [
+    {
+      "role": "Principal Security Engineer",
+      "company": "ZetaGrid Technologies",
+      "period": "Jan 2021 - Present",
+      "bullets": [
+        "Led security architecture for AWS and Kubernetes platforms supporting 4M+ monthly active users, reducing critical cloud misconfigurations by 68% within 12 months.",
+        "Built detection and response playbooks in SIEM/SOAR that cut mean time to triage from 45 minutes to 12 minutes.",
+        "Partnered with engineering teams to embed threat modeling and secure SDLC controls across 40+ services, decreasing high-risk findings by 52%.",
+        "Drove third-party security reviews and access governance improvements, closing 100% of overdue privileged access exceptions in two quarters."
+      ]
+    },
+    {
+      "role": "Senior Security Engineer",
+      "company": "PayNova Payments",
+      "period": "Aug 2017 - Dec 2020",
+      "bullets": [
+        "Implemented IAM hardening, MFA rollout, and privileged access workflows for 2,500+ employees, reducing account takeover risk by 41%.",
+        "Created a container security baseline and admission controls for production workloads, lowering vulnerable image deployments by 73%.",
+        "Coordinated incident response for 18 severity-1 events, improving containment time by 35% through updated runbooks and tabletop exercises.",
+        "Performed architecture reviews for PCI-DSS scoped systems and helped achieve zero major audit findings over two consecutive audits."
+      ]
+    },
+    {
+      "role": "Security Engineer",
+      "company": "MavenSoft Solutions",
+      "period": "Jun 2014 - Jul 2017",
+      "bullets": [
+        "Managed vulnerability management for 120+ servers and 30+ web applications, achieving a 90% remediation rate within SLA.",
+        "Designed network segmentation and log monitoring improvements that reduced alert noise by 48% and improved signal quality for analysts.",
+        "Supported secure code review and WAF tuning for customer-facing applications, preventing multiple high-severity exposure issues before release."
+      ]
+    },
+    {
+      "role": "Information Security Analyst",
+      "company": "Horizon Infotech",
+      "period": "Jul 2011 - May 2014",
+      "bullets": [
+        "Monitored SIEM alerts across endpoints, servers, and network devices, escalating and documenting 200+ security incidents annually.",
+        "Assisted in hardening Windows and Linux systems, improving compliance scores from 71% to 93% across core assets.",
+        "Prepared security awareness content and phishing simulations that increased training completion to 98% across the organization."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.Tech. in Information Technology",
+      "institution": "National Institute of Technology, Karnataka",
+      "year": "2011"
+    },
+    {
+      "degree": "M.S. in Cyber Security",
+      "institution": "Anna University",
+      "year": "2014"
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "level": "Fluent"
+    },
+    {
+      "language": "Hindi",
+      "level": "Fluent"
+    },
+    {
+      "language": "Kannada",
+      "level": "Conversational"
+    }
+  ],
+  "certifications": [
+    "AWS Certified Security - Specialty",
+    "Certified Information Systems Security Professional (CISSP)"
+  ]
+}

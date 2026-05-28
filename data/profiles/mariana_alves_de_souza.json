@@ -1,0 +1,95 @@
+{
+  "name": "Mariana Alves de Souza",
+  "title": "Senior Digital Marketing Manager",
+  "email": "mariana.souza.marketing@gmail.com",
+  "phone": "+55 11 98876-5432",
+  "location": "São Paulo, Brazil",
+  "linkedin": "linkedin.com/in/marianaalvesdesouza",
+  "summary": "Senior digital marketing leader with 10+ years of experience driving demand generation, performance media, CRM, and brand growth across B2B and B2C markets. Known for building data-driven campaigns, improving ROI, and leading cross-functional teams to deliver measurable revenue impact.",
+  "skills": [
+    "Google Ads",
+    "Meta Ads Manager",
+    "Google Analytics 4",
+    "Looker Studio",
+    "HubSpot",
+    "SEO",
+    "Marketing Automation",
+    "A/B Testing"
+  ],
+  "experience": [
+    {
+      "role": "Senior Digital Marketing Manager",
+      "company": "Nexa Saúde",
+      "period": "Jan 2021 - Present",
+      "bullets": [
+        "Led a 12-person growth team and increased qualified leads by 68% within 18 months through paid media, landing page optimization, and CRM nurturing.",
+        "Reduced cost per acquisition by 31% while scaling monthly media spend from R$180K to R$420K across Google, Meta, and LinkedIn.",
+        "Implemented GA4 and Looker Studio dashboards, improving executive reporting cadence and enabling weekly budget reallocation decisions.",
+        "Partnered with sales to align funnel SLAs, contributing to a 22% improvement in lead-to-opportunity conversion rate."
+      ]
+    },
+    {
+      "role": "Digital Marketing Manager",
+      "company": "Grupo Varejo+",
+      "period": "Mar 2018 - Dec 2020",
+      "bullets": [
+        "Managed omnichannel acquisition campaigns for e-commerce and retail initiatives, driving a 54% increase in online revenue year over year.",
+        "Improved ROAS by 27% by restructuring account architecture, refining audience segmentation, and testing new creative formats.",
+        "Launched lifecycle email and SMS journeys that lifted repeat purchase rate by 19% and reduced churn in loyalty programs.",
+        "Supervised agency partners and internal stakeholders to deliver integrated campaigns across media, content, and promotions."
+      ]
+    },
+    {
+      "role": "Performance Marketing Lead",
+      "company": "Lumina Educação",
+      "period": "Jul 2015 - Feb 2018",
+      "bullets": [
+        "Built paid search and social acquisition programs that increased student enrollments by 41% across undergraduate and postgraduate products.",
+        "Lowered lead acquisition costs by 24% through keyword optimization, cohort analysis, and conversion rate testing.",
+        "Created reporting standards for campaign performance and funnel attribution, improving budget efficiency during peak enrollment periods.",
+        "Mentored junior analysts and coordinated with admissions teams to improve speed-to-lead and contact rates."
+      ]
+    },
+    {
+      "role": "Digital Marketing Analyst",
+      "company": "Agência Pixel Estratégico",
+      "period": "Feb 2012 - Jun 2015",
+      "bullets": [
+        "Executed PPC, SEO, and content support for clients in education, healthcare, and consumer goods, managing up to 18 accounts simultaneously.",
+        "Produced monthly performance reports and insights that helped retain 90% of key clients year over year.",
+        "Supported website optimization projects that increased organic traffic by an average of 33% for top-tier accounts.",
+        "Collaborated with designers and copywriters to improve ad relevance and landing page conversion performance."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "MBA in Marketing Management",
+      "institution": "Fundação Getulio Vargas (FGV)",
+      "year": "2016"
+    },
+    {
+      "degree": "Bachelor of Business Administration",
+      "institution": "Universidade de São Paulo (USP)",
+      "year": "2011"
+    }
+  ],
+  "languages": [
+    {
+      "language": "Portuguese",
+      "level": "Native"
+    },
+    {
+      "language": "English",
+      "level": "Fluent"
+    },
+    {
+      "language": "Spanish",
+      "level": "Conversational"
+    }
+  ],
+  "certifications": [
+    "Google Ads Certification",
+    "Google Analytics Certification"
+  ]
+}

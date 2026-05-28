@@ -1,0 +1,82 @@
+{
+  "name": "Camille Laurent",
+  "title": "Mid-level Full-Stack Engineer",
+  "email": "camille.laurent.dev@example.com",
+  "phone": "+33 6 12 34 56 78",
+  "location": "Lyon, France",
+  "linkedin": "linkedin.com/in/camillelaurent",
+  "summary": "Full-stack engineer with 6+ years of experience building scalable web applications and internal tools for product-led teams. Strong focus on Python and modern JavaScript ecosystems, with a track record of improving performance, reliability, and delivery speed across frontend and backend systems.",
+  "skills": [
+    "Python",
+    "TypeScript",
+    "React",
+    "Django",
+    "FastAPI",
+    "PostgreSQL",
+    "Docker",
+    "AWS",
+    "REST APIs"
+  ],
+  "experience": [
+    {
+      "role": "Full-Stack Engineer",
+      "company": "PayNova",
+      "period": "Feb 2023 - Present",
+      "bullets": [
+        "Built and maintained payment and subscription workflows used by 80,000+ monthly active users, reducing checkout drop-off by 14%.",
+        "Developed backend services in Python and FastAPI and improved API response times by 32% through query optimization and caching.",
+        "Shipped 12+ production features with React and TypeScript, collaborating with design and product to shorten release cycles by 20%.",
+        "Introduced automated test coverage and CI checks, lowering production regressions by 25% over 6 months."
+      ]
+    },
+    {
+      "role": "Software Engineer",
+      "company": "VividOps",
+      "period": "Jun 2020 - Jan 2023",
+      "bullets": [
+        "Designed internal admin tools and customer-facing dashboards with React, Django, and PostgreSQL for a B2B SaaS platform.",
+        "Implemented Python batch jobs for data synchronization, processing over 2 million records per week with 99.8% success rate.",
+        "Improved deployment pipelines with Docker and AWS, cutting average release time from 45 minutes to 18 minutes.",
+        "Partnered with support and sales teams to deliver features that increased account retention by 9%."
+      ]
+    },
+    {
+      "role": "Full-Stack Developer",
+      "company": "Telescope Studio",
+      "period": "Sep 2018 - May 2020",
+      "bullets": [
+        "Delivered responsive web applications for clients in retail and logistics using JavaScript, Python, and REST APIs.",
+        "Built reusable frontend components that reduced development time for new pages by 30%.",
+        "Created reporting dashboards and export tools that handled datasets of up to 500,000 rows.",
+        "Worked closely with QA to stabilize releases and reduce critical bugs by 40% after launch."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master's Degree in Computer Science",
+      "institution": "Université Claude Bernard Lyon 1",
+      "year": "2018"
+    },
+    {
+      "degree": "Bachelor's Degree in Software Engineering",
+      "institution": "Université Grenoble Alpes",
+      "year": "2016"
+    }
+  ],
+  "languages": [
+    {
+      "language": "French",
+      "level": "Native"
+    },
+    {
+      "language": "English",
+      "level": "Fluent"
+    },
+    {
+      "language": "Spanish",
+      "level": "Conversational"
+    }
+  ],
+  "certifications": []
+}

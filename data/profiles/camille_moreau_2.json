@@ -1,0 +1,92 @@
+{
+  "name": "Camille Moreau",
+  "title": "Principal Data Engineer",
+  "email": "camille.moreau@example.com",
+  "phone": "+33 6 42 18 73 59",
+  "location": "Lyon, France",
+  "linkedin": "linkedin.com/in/camille-moreau-data",
+  "summary": "Principal Data Engineer with 12+ years of experience designing and operating large-scale data platforms across cloud and hybrid environments. Strong track record in building reliable analytics foundations, improving data quality, and leading Python-driven engineering teams delivering measurable business impact.",
+  "skills": [
+    "Python",
+    "Apache Spark",
+    "Databricks",
+    "Snowflake",
+    "Airflow",
+    "Kafka",
+    "AWS",
+    "dbt",
+    "Terraform"
+  ],
+  "experience": [
+    {
+      "role": "Principal Data Engineer",
+      "company": "AXA France",
+      "period": "Jan 2021 - Present",
+      "bullets": [
+        "Led the modernization of a 120+ TB enterprise data platform on AWS and Snowflake, reducing batch processing time by 48%.",
+        "Designed Python-based orchestration and data quality frameworks that lowered critical pipeline incidents by 35% year over year.",
+        "Mentored a team of 8 data engineers and standardized engineering practices across 4 product squads."
+      ]
+    },
+    {
+      "role": "Senior Data Engineer",
+      "company": "Capgemini",
+      "period": "May 2017 - Dec 2020",
+      "bullets": [
+        "Built and maintained a cloud data lake for a major retail client, ingesting 2.5 billion events per month with Apache Spark and Kafka.",
+        "Implemented CI/CD and infrastructure-as-code patterns with Terraform, cutting deployment lead time from days to under 1 hour.",
+        "Delivered reusable Python ETL components adopted by 6 project teams, improving development speed by 30%."
+      ]
+    },
+    {
+      "role": "Data Engineer",
+      "company": "BlaBlaCar",
+      "period": "Sep 2013 - Apr 2017",
+      "bullets": [
+        "Developed analytics pipelines for product and growth teams, enabling self-service dashboards used by 200+ stakeholders.",
+        "Optimized SQL and Spark workloads to reduce daily pipeline runtimes by 40% while improving data freshness to under 15 minutes.",
+        "Collaborated with data scientists to productionize experimentation datasets and feature pipelines."
+      ]
+    },
+    {
+      "role": "BI Developer",
+      "company": "Sopra Steria",
+      "period": "Feb 2010 - Aug 2013",
+      "bullets": [
+        "Created reporting and integration solutions for public-sector clients using SQL Server and ETL tooling.",
+        "Supported migration of legacy reporting assets to a more scalable data warehouse architecture.",
+        "Improved data reconciliation processes, reducing manual correction effort by 25%."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master's Degree in Computer Science, Data Systems",
+      "institution": "Université Grenoble Alpes",
+      "year": "2009"
+    },
+    {
+      "degree": "Engineering Diploma, Computer Engineering",
+      "institution": "INSA Lyon",
+      "year": "2008"
+    }
+  ],
+  "languages": [
+    {
+      "language": "French",
+      "level": "Native"
+    },
+    {
+      "language": "English",
+      "level": "Fluent"
+    },
+    {
+      "language": "Spanish",
+      "level": "B2"
+    }
+  ],
+  "certifications": [
+    "AWS Certified Data Analytics - Specialty",
+    "Databricks Certified Data Engineer Professional"
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "name": "Laia Martínez Soler",
+  "title": "Junior Data Scientist",
+  "email": "laia.martinez.soler@example.com",
+  "phone": "+34 612 345 789",
+  "location": "Barcelona, Spain",
+  "linkedin": "linkedin.com/in/laiamartinezsoler",
+  "summary": "Junior Data Scientist with a strong foundation in Python, statistics, and machine learning, focused on turning data into practical business insights. Experience spans customer analytics, reporting automation, and model development in fast-paced environments, with a clear interest in building reproducible, data-driven solutions.",
+  "skills": [
+    "Python",
+    "SQL",
+    "Pandas",
+    "scikit-learn",
+    "Power BI",
+    "Tableau",
+    "Data visualization",
+    "A/B testing",
+    "Machine learning"
+  ],
+  "experience": [
+    {
+      "role": "Junior Data Scientist",
+      "company": "Senda Analytics",
+      "period": "Apr 2024 - Present",
+      "bullets": [
+        "Built Python-based data pipelines to clean and transform customer datasets, reducing manual preprocessing time by 35%.",
+        "Developed churn prediction models in scikit-learn that improved campaign targeting by 18%.",
+        "Created Power BI dashboards for sales and retention metrics used weekly by 4 business teams.",
+        "Worked with SQL to extract and validate data from PostgreSQL and CRM systems."
+      ]
+    },
+    {
+      "role": "Data Analyst",
+      "company": "Nexa Retail",
+      "period": "Jul 2022 - Mar 2024",
+      "bullets": [
+        "Automated recurring reporting in Python and SQL, saving approximately 8 hours per week.",
+        "Analyzed store and e-commerce performance across 25+ KPIs, supporting pricing and inventory decisions.",
+        "Designed A/B tests for email campaigns, contributing to a 12% lift in click-through rate.",
+        "Prepared executive dashboards in Tableau for monthly business reviews."
+      ]
+    },
+    {
+      "role": "Data Science Intern",
+      "company": "VitaTech Solutions",
+      "period": "Feb 2022 - Jun 2022",
+      "bullets": [
+        "Assisted in feature engineering and model evaluation for a customer segmentation project using Python.",
+        "Cleaned and standardized 100k+ rows of product and usage data for analysis.",
+        "Produced exploratory analyses that identified three high-value customer segments for marketing.",
+        "Documented experiments and results to support reproducible workflows."
+      ]
+    },
+    {
+      "role": "Business Intelligence Intern",
+      "company": "BlueCore Consulting",
+      "period": "Sep 2021 - Jan 2022",
+      "bullets": [
+        "Built SQL queries and Excel-based reports for client performance tracking.",
+        "Supported dashboard maintenance and data validation across multiple reporting sources.",
+        "Improved data consistency checks, reducing recurring reporting errors by 20%."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "MSc in Data Science",
+      "institution": "Universitat Politecnica de Catalunya (UPC)",
+      "year": "2023"
+    },
+    {
+      "degree": "BSc in Statistics",
+      "institution": "Universitat de Barcelona",
+      "year": "2021"
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "level": "Native"
+    },
+    {
+      "language": "English",
+      "level": "Fluent"
+    },
+    {
+      "language": "Catalan",
+      "level": "B2"
+    }
+  ],
+  "certifications": [
+    "Google Data Analytics Professional Certificate"
+  ]
+}

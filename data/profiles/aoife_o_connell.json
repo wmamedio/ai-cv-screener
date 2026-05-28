@@ -1,0 +1,93 @@
+{
+  "name": "Aoife O'Connell",
+  "title": "Lead Graphic Designer",
+  "email": "aoife.oconnell@example.ie",
+  "phone": "+353 87 456 2198",
+  "location": "Dublin, Ireland",
+  "linkedin": "https://www.linkedin.com/in/aoife-oconnell-design",
+  "summary": "Lead Graphic Designer with 10+ years of experience creating brand systems, digital campaigns, and marketing assets across agency and in-house environments. Known for translating business goals into polished visual storytelling, mentoring designers, and delivering consistent design quality across print, digital, and social channels.",
+  "skills": [
+    "Adobe Creative Cloud",
+    "Figma",
+    "InDesign",
+    "Illustrator",
+    "Photoshop",
+    "Brand identity design",
+    "Art direction",
+    "Motion graphics",
+    "Design systems"
+  ],
+  "experience": [
+    {
+      "role": "Lead Graphic Designer",
+      "company": "BrightMile Creative",
+      "period": "Jan 2021 - Present",
+      "bullets": [
+        "Led a 6-person design team delivering brand and campaign work for 20+ clients across retail, tech, and hospitality.",
+        "Reduced average campaign turnaround time by 22% by improving briefing, review, and asset handoff workflows.",
+        "Directed the rebrand of a national consumer client, resulting in a 31% increase in digital engagement over 6 months.",
+        "Established layout and accessibility standards that improved consistency across print and social outputs."
+      ]
+    },
+    {
+      "role": "Senior Graphic Designer",
+      "company": "Hawkstone Media",
+      "period": "Jun 2017 - Dec 2020",
+      "bullets": [
+        "Designed multi-channel marketing materials for events, product launches, and B2B campaigns with budgets up to €250k.",
+        "Collaborated with copywriters, marketers, and developers to deliver 40+ landing pages and campaign suites annually.",
+        "Created motion-led social assets that increased average click-through rates by 18% across paid campaigns.",
+        "Mentored junior designers and introduced a shared asset library that cut duplicate production work by 15%."
+      ]
+    },
+    {
+      "role": "Graphic Designer",
+      "company": "Northshore Studio",
+      "period": "Mar 2014 - May 2017",
+      "bullets": [
+        "Produced brand collateral, pitch decks, brochures, and presentation materials for agency clients across Ireland and the UK.",
+        "Managed end-to-end print production for high-volume jobs, maintaining a 98% on-time delivery rate.",
+        "Helped refresh 12 client brand guides, improving visual consistency across internal and external communications.",
+        "Worked closely with account teams to refine concepts based on stakeholder feedback and performance data."
+      ]
+    },
+    {
+      "role": "Junior Designer",
+      "company": "Liffey Branding",
+      "period": "Aug 2011 - Feb 2014",
+      "bullets": [
+        "Supported senior creatives with layout, image editing, and artwork preparation for print and digital campaigns.",
+        "Prepared final artwork files for production and maintained accurate version control across active projects.",
+        "Built strong working knowledge of typography, colour management, and prepress standards.",
+        "Contributed to pitch presentations that helped secure three new retained clients."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BA (Hons) in Graphic Design",
+      "institution": "Dún Laoghaire Institute of Art, Design and Technology",
+      "year": "2011"
+    },
+    {
+      "degree": "Diploma in Digital Media Design",
+      "institution": "Technological University Dublin",
+      "year": "2009"
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "level": "Native"
+    },
+    {
+      "language": "Irish",
+      "level": "Conversational"
+    },
+    {
+      "language": "French",
+      "level": "B2"
+    }
+  ],
+  "certifications": []
+}

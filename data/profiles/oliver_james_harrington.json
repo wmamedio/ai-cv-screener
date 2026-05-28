@@ -1,0 +1,95 @@
+{
+  "name": "Oliver James Harrington",
+  "title": "Principal DevOps Engineer",
+  "email": "oliver.harrington.dev@example.com",
+  "phone": "+44 7700 900123",
+  "location": "Manchester, United Kingdom",
+  "linkedin": "linkedin.com/in/oliver-harrington-devops",
+  "summary": "Principal DevOps Engineer with 12+ years of experience designing resilient cloud platforms, automating delivery pipelines, and improving operational maturity across regulated environments. Known for leading cross-functional teams, reducing release friction, and driving measurable gains in reliability, security, and engineering productivity.",
+  "skills": [
+    "Python",
+    "Kubernetes",
+    "AWS",
+    "Terraform",
+    "GitHub Actions",
+    "CI/CD",
+    "Docker",
+    "Linux",
+    "Observability (Prometheus/Grafana)",
+    "Infrastructure as Code"
+  ],
+  "experience": [
+    {
+      "role": "Principal DevOps Engineer",
+      "company": "Northbridge Digital",
+      "period": "Mar 2021 - Present",
+      "bullets": [
+        "Led a platform modernisation programme across 18 product teams, reducing deployment lead time from 2 days to under 30 minutes.",
+        "Built Python automation services for environment provisioning and operational tasks, cutting manual support tickets by 41%.",
+        "Implemented Terraform-based infrastructure standards and reusable modules, improving consistency across 120+ cloud resources and lowering configuration drift.",
+        "Introduced SLOs and observability dashboards that reduced MTTR by 34% and improved on-call response times."
+      ]
+    },
+    {
+      "role": "Senior DevOps Engineer",
+      "company": "Alder & Finch Financial Services",
+      "period": "Jun 2017 - Feb 2021",
+      "bullets": [
+        "Designed and maintained AWS landing zones and secure CI/CD pipelines for regulated workloads, supporting PCI and ISO-aligned delivery practices.",
+        "Migrated 60+ services to Kubernetes, increasing release frequency from monthly to weekly while improving service uptime to 99.95%.",
+        "Used Python and Bash to automate release validation and compliance checks, saving an estimated 20 hours per week for engineering teams.",
+        "Partnered with security and platform teams to implement secrets management and policy-as-code controls, reducing audit findings by 50%."
+      ]
+    },
+    {
+      "role": "DevOps Engineer",
+      "company": "MerseyTech Solutions",
+      "period": "Sep 2013 - May 2017",
+      "bullets": [
+        "Established the first automated build and deployment pipelines for a portfolio of internal applications, reducing deployment failures by 63%.",
+        "Provisioned environments using Infrastructure as Code and standardised Linux server builds, shortening new environment setup from 3 days to 2 hours.",
+        "Created Python scripts for log analysis and deployment reporting, improving incident investigation speed and visibility for stakeholders."
+      ]
+    },
+    {
+      "role": "Systems Engineer",
+      "company": "Horizon Retail Group",
+      "period": "Jul 2010 - Aug 2013",
+      "bullets": [
+        "Supported Windows and Linux server estates across 40+ retail sites, maintaining availability for business-critical services.",
+        "Helped implement early monitoring and patching automation, reducing recurring incidents by 27% over 12 months.",
+        "Collaborated with developers to improve release procedures and basic scripting automation, laying the foundation for later DevOps adoption."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "MSc Computer Science",
+      "institution": "University of Manchester",
+      "year": "2010"
+    },
+    {
+      "degree": "BSc (Hons) Information Technology",
+      "institution": "University of Leeds",
+      "year": "2008"
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "level": "Native"
+    },
+    {
+      "language": "French",
+      "level": "Conversational"
+    },
+    {
+      "language": "German",
+      "level": "B2"
+    }
+  ],
+  "certifications": [
+    "AWS Certified DevOps Engineer – Professional",
+    "CKA: Certified Kubernetes Administrator"
+  ]
+}

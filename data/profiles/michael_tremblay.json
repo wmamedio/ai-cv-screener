@@ -1,0 +1,95 @@
+{
+  "name": "Michael Tremblay",
+  "title": "Senior Database Administrator",
+  "email": "michael.tremblay@example.ca",
+  "phone": "+1-416-555-0187",
+  "location": "Toronto, ON, Canada",
+  "linkedin": "linkedin.com/in/michael-tremblay-dba",
+  "summary": "Senior Database Administrator with 12+ years of experience designing, securing, and optimizing enterprise database environments across high-availability production systems. Known for improving performance, strengthening backup and recovery strategies, and leading reliable database operations in regulated environments.",
+  "skills": [
+    "Microsoft SQL Server",
+    "Oracle Database",
+    "PostgreSQL",
+    "Always On Availability Groups",
+    "SQL Server Integration Services (SSIS)",
+    "Backup and Disaster Recovery",
+    "Performance Tuning",
+    "Replication and High Availability",
+    "Windows Server"
+  ],
+  "experience": [
+    {
+      "role": "Senior Database Administrator",
+      "company": "NorthBridge Financial",
+      "period": "Feb 2020 - Present",
+      "bullets": [
+        "Administered a mixed SQL Server and Oracle estate supporting 180+ production and non-production databases with 99.98% availability.",
+        "Reduced average report query times by 42% through indexing, execution plan analysis, and schema tuning.",
+        "Led quarterly disaster recovery tests and cut critical recovery time objectives from 4 hours to 75 minutes.",
+        "Standardized backup, patching, and access-control procedures across 6 business units, improving audit readiness."
+      ]
+    },
+    {
+      "role": "Database Administrator",
+      "company": "Maple Leaf Logistics",
+      "period": "Jun 2016 - Jan 2020",
+      "bullets": [
+        "Managed day-to-day operations for 90+ SQL Server instances across primary data centers and DR sites.",
+        "Implemented Always On Availability Groups for core systems, eliminating single points of failure and improving service continuity.",
+        "Automated routine maintenance jobs and capacity monitoring, reducing after-hours incidents by 30%.",
+        "Partnered with developers to resolve blocking, locking, and indexing issues on high-volume transactional systems."
+      ]
+    },
+    {
+      "role": "Database Administrator",
+      "company": "Crestview Health Systems",
+      "period": "May 2012 - May 2016",
+      "bullets": [
+        "Supported patient-facing and internal applications in a HIPAA- and PHIPA-sensitive environment with strict access controls.",
+        "Improved backup success rates to 99.9% by redesigning maintenance plans and validating restore procedures monthly.",
+        "Assisted with version upgrades and migrations for 25+ databases, completing projects with no unplanned downtime.",
+        "Created documentation and runbooks for incident response, change management, and patch validation."
+      ]
+    },
+    {
+      "role": "Junior Database Administrator",
+      "company": "PrairieTech Solutions",
+      "period": "Aug 2009 - Apr 2012",
+      "bullets": [
+        "Provided first-line support for SQL Server databases and helped maintain uptime for client-facing applications.",
+        "Performed routine restores, user provisioning, and index maintenance under senior DBA supervision.",
+        "Tracked performance trends and identified recurring bottlenecks, contributing to measurable improvements in application responsiveness."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Computer Science",
+      "institution": "University of Waterloo",
+      "year": "2009"
+    },
+    {
+      "degree": "Diploma, Information Systems Technology",
+      "institution": "George Brown College",
+      "year": "2006"
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "level": "Native"
+    },
+    {
+      "language": "French",
+      "level": "Fluent"
+    },
+    {
+      "language": "Punjabi",
+      "level": "Conversational"
+    }
+  ],
+  "certifications": [
+    "Microsoft Certified: Azure Database Administrator Associate",
+    "Oracle Database 12c Administrator Certified Associate"
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "name": "Sanne van Dijk",
+  "title": "Junior Site Reliability Engineer",
+  "email": "sanne.vandijk@sre-mail.com",
+  "phone": "+31 6 4821 7395",
+  "location": "Utrecht, Netherlands",
+  "linkedin": "linkedin.com/in/sannevandijk",
+  "summary": "Junior Site Reliability Engineer with hands-on experience supporting cloud-native platforms, improving monitoring coverage, and automating repetitive operational tasks. Comfortable working with Kubernetes, Linux, CI/CD pipelines, and incident response in fast-paced environments, with a strong focus on reliability, observability, and collaboration.",
+  "skills": [
+    "Kubernetes",
+    "Linux administration",
+    "Prometheus",
+    "Grafana",
+    "Docker",
+    "Terraform",
+    "CI/CD pipelines",
+    "Bash scripting",
+    "GitLab CI"
+  ],
+  "experience": [
+    {
+      "role": "Junior Site Reliability Engineer",
+      "company": "iQube Cloud Services",
+      "period": "Mar 2024 - Present",
+      "bullets": [
+        "Supported a 24/7 Kubernetes platform serving 40+ internal applications, helping maintain 99.93% monthly availability.",
+        "Created Grafana dashboards and Prometheus alerts that reduced mean time to detect incidents by 28%.",
+        "Automated routine cluster maintenance tasks with Bash and GitLab CI, saving roughly 6 hours per week for the operations team."
+      ]
+    },
+    {
+      "role": "DevOps Engineer Intern",
+      "company": "ABN AMRO",
+      "period": "Sep 2023 - Feb 2024",
+      "bullets": [
+        "Assisted with CI/CD pipeline improvements for 12 application teams, reducing average deployment time by 35%.",
+        "Helped standardize logging and alerting patterns across services, improving incident triage consistency.",
+        "Documented runbooks and operational checklists that shortened onboarding time for new team members by 2 weeks."
+      ]
+    },
+    {
+      "role": "Systems Support Assistant",
+      "company": "ING Nederland",
+      "period": "Jan 2022 - Aug 2023",
+      "bullets": [
+        "Monitored server and application health across Linux-based environments, resolving 200+ service tickets with an average 95% SLA compliance.",
+        "Supported patching and access management workflows for approximately 150 endpoints and service accounts.",
+        "Participated in weekly incident reviews and contributed actionable follow-up tasks that lowered repeat incidents by 18%."
+      ]
+    },
+    {
+      "role": "IT Operations Trainee",
+      "company": "TNO",
+      "period": "Jul 2021 - Dec 2021",
+      "bullets": [
+        "Assisted in maintaining internal lab systems and virtual machines used by research teams across 3 departments.",
+        "Performed basic troubleshooting for network, storage, and authentication issues, closing 60+ requests during the traineeship.",
+        "Helped improve asset documentation accuracy by updating configuration records for over 120 systems."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BSc Information Technology",
+      "institution": "Hogeschool Utrecht",
+      "year": "2023"
+    },
+    {
+      "degree": "Minor in Cloud & Infrastructure",
+      "institution": "Hogeschool Rotterdam",
+      "year": "2022"
+    }
+  ],
+  "languages": [
+    {
+      "language": "Dutch",
+      "level": "Native"
+    },
+    {
+      "language": "English",
+      "level": "Fluent"
+    },
+    {
+      "language": "German",
+      "level": "Conversational"
+    }
+  ],
+  "certifications": [
+    "AWS Certified Cloud Practitioner"
+  ]
+}

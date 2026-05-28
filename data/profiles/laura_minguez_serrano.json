@@ -1,0 +1,92 @@
+{
+  "name": "Laura Mínguez Serrano",
+  "title": "Principal UX/UI Designer",
+  "email": "laura.minguez@designmail.es",
+  "phone": "+34 612 487 935",
+  "location": "Barcelona, Spain",
+  "linkedin": "https://www.linkedin.com/in/laura-minguez-serrano/",
+  "summary": "Principal UX/UI Designer with 12+ years of experience leading product design strategy for SaaS, fintech, and consumer platforms. Known for turning complex user journeys into elegant, accessible interfaces and for building scalable design systems that improve consistency, speed up delivery, and support measurable business growth.",
+  "skills": [
+    "Figma",
+    "Design Systems",
+    "User Research",
+    "Interaction Design",
+    "Information Architecture",
+    "Prototyping",
+    "Usability Testing",
+    "Accessibility (WCAG)"
+  ],
+  "experience": [
+    {
+      "role": "Principal UX/UI Designer",
+      "company": "Nexora Digital Products",
+      "period": "Jan 2021 - Present",
+      "bullets": [
+        "Led end-to-end product design across 4 cross-functional squads, improving task completion rates by 18% in 12 months.",
+        "Built and governed a design system used by 30+ product teams, reducing UI delivery time by 35%.",
+        "Directed quarterly research and usability testing programs with 120+ participants, informing roadmap decisions and prioritization.",
+        "Mentored 6 designers and established critique rituals that increased design consistency across platforms."
+      ]
+    },
+    {
+      "role": "Lead Product Designer",
+      "company": "FinWave",
+      "period": "Mar 2018 - Dec 2020",
+      "bullets": [
+        "Redesigned the onboarding and payment flows for a mobile-first fintech app, increasing activation by 22%.",
+        "Partnered with product and engineering to ship 3 major releases with a 97% on-time delivery rate.",
+        "Created accessible responsive interfaces aligned with WCAG 2.1 AA, reducing support tickets related to usability by 28%.",
+        "Standardized interaction patterns and component libraries, cutting review cycles by 40%."
+      ]
+    },
+    {
+      "role": "Senior UX Designer",
+      "company": "SoftMar Solutions",
+      "period": "Sep 2014 - Feb 2018",
+      "bullets": [
+        "Led discovery and journey mapping for B2B workflow software used by enterprise clients in 8 countries.",
+        "Introduced prototyping and iterative testing early in the cycle, helping reduce rework after development by 30%.",
+        "Collaborated with research and analytics to identify friction points that improved retention by 15%."
+      ]
+    },
+    {
+      "role": "UX Designer",
+      "company": "Atenea Labs",
+      "period": "Jul 2011 - Aug 2014",
+      "bullets": [
+        "Designed web and mobile interfaces for digital services in retail and travel sectors.",
+        "Produced wireframes, interactive prototypes, and high-fidelity mockups for features delivered to 500K+ users.",
+        "Supported stakeholder workshops and translated business goals into user-centered requirements."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "MSc in Human-Computer Interaction",
+      "institution": "Universitat Politecnica de Catalunya (UPC)",
+      "year": "2011"
+    },
+    {
+      "degree": "Bachelor’s Degree in Graphic Design",
+      "institution": "Universitat de Barcelona",
+      "year": "2009"
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "level": "Native"
+    },
+    {
+      "language": "English",
+      "level": "Fluent"
+    },
+    {
+      "language": "Catalan",
+      "level": "Native"
+    }
+  ],
+  "certifications": [
+    "NN/g UX Certification"
+  ]
+}

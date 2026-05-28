@@ -1,0 +1,91 @@
+{
+  "name": "Anna Lindström",
+  "title": "Lead Computer Vision Engineer",
+  "email": "anna.lindstrom.cv@example.com",
+  "phone": "+46 70 482 19 36",
+  "location": "Stockholm, Sweden",
+  "linkedin": "https://www.linkedin.com/in/anna-lindstrom-cv",
+  "summary": "Lead Computer Vision Engineer with 10+ years of experience building production-grade perception systems for robotics, industrial inspection, and edge AI. Strong track record of translating research into reliable products, leading cross-functional teams, and improving model accuracy, latency, and deployment efficiency at scale.",
+  "skills": [
+    "Python",
+    "PyTorch",
+    "OpenCV",
+    "TensorRT",
+    "CUDA",
+    "MLOps",
+    "3D computer vision",
+    "Model deployment on edge devices"
+  ],
+  "experience": [
+    {
+      "role": "Lead Computer Vision Engineer",
+      "company": "Nordic Vision Systems AB",
+      "period": "Mar 2021 - Present",
+      "bullets": [
+        "Lead a team of 6 engineers delivering computer vision pipelines for industrial quality inspection across 14 production lines.",
+        "Reduced false reject rates by 28% by redesigning defect detection models in Python using PyTorch and OpenCV.",
+        "Built an edge deployment stack with TensorRT that cut inference latency from 120 ms to 38 ms on embedded GPU hardware.",
+        "Established data labeling, evaluation, and monitoring workflows that improved model release velocity by 40%."
+      ]
+    },
+    {
+      "role": "Senior Computer Vision Engineer",
+      "company": "Autonomiq Robotics",
+      "period": "Aug 2018 - Feb 2021",
+      "bullets": [
+        "Developed perception modules for mobile robots, combining stereo depth, object detection, and tracking to achieve 96% navigation success in pilot deployments.",
+        "Optimized training and inference pipelines, reducing GPU training time by 35% and enabling weekly model iterations.",
+        "Partnered with hardware and systems teams to integrate camera calibration and sensor fusion into production robots deployed at 20+ customer sites."
+      ]
+    },
+    {
+      "role": "Computer Vision Engineer",
+      "company": "HexaTech Imaging",
+      "period": "Jun 2015 - Jul 2018",
+      "bullets": [
+        "Implemented image segmentation and defect classification systems for manufacturing clients, increasing automated inspection coverage from 55% to 87%.",
+        "Created reusable Python tooling for dataset preparation, experiment tracking, and evaluation, lowering manual analysis time by 60%.",
+        "Collaborated with product managers and field engineers to validate prototypes and convert them into customer-facing solutions."
+      ]
+    },
+    {
+      "role": "Machine Learning Engineer",
+      "company": "Scandia Analytics",
+      "period": "Sep 2012 - May 2015",
+      "bullets": [
+        "Built early machine learning prototypes for video analytics and anomaly detection, improving event detection precision by 22%.",
+        "Supported deployment and testing of computer vision services in Linux-based environments, including scripting in Python for data ingestion and model validation.",
+        "Contributed to cross-functional proof-of-concept work that informed two commercial product launches."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "MSc in Computer Science, Specialization in Machine Learning",
+      "institution": "KTH Royal Institute of Technology",
+      "year": "2012"
+    },
+    {
+      "degree": "BSc in Engineering Physics",
+      "institution": "Lund University",
+      "year": "2010"
+    }
+  ],
+  "languages": [
+    {
+      "language": "Swedish",
+      "level": "Native"
+    },
+    {
+      "language": "English",
+      "level": "Fluent"
+    },
+    {
+      "language": "German",
+      "level": "Conversational"
+    }
+  ],
+  "certifications": [
+    "AWS Certified Machine Learning - Specialty"
+  ]
+}

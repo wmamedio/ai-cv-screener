@@ -1,0 +1,91 @@
+{
+  "name": "Inês Matias Ribeiro",
+  "title": "Principal Machine Learning Engineer",
+  "email": "ines.ribeiro@outlook.pt",
+  "phone": "+351 912 345 678",
+  "location": "Porto, Portugal",
+  "linkedin": "https://www.linkedin.com/in/ines-matias-ribeiro/",
+  "summary": "Principal Machine Learning Engineer with 10+ years of experience building production-grade ML systems across fintech, e-commerce, and SaaS. Known for leading cross-functional teams, improving model performance at scale, and translating complex business problems into reliable data and ML solutions.",
+  "skills": [
+    "Python",
+    "Machine Learning",
+    "MLOps",
+    "TensorFlow",
+    "PyTorch",
+    "AWS",
+    "Docker",
+    "Kubernetes"
+  ],
+  "experience": [
+    {
+      "role": "Principal Machine Learning Engineer",
+      "company": "PayNexus",
+      "period": "Mar 2021 - Present",
+      "bullets": [
+        "Led the design and rollout of Python-based fraud detection pipelines, reducing chargeback losses by 28% in 12 months.",
+        "Built and standardized MLOps workflows on AWS and Kubernetes, cutting model deployment time from 3 weeks to 4 days.",
+        "Mentored a team of 6 data scientists and engineers, improving experiment throughput by 35% and production stability by 40%."
+      ]
+    },
+    {
+      "role": "Senior Machine Learning Engineer",
+      "company": "Farfetch",
+      "period": "Jun 2018 - Feb 2021",
+      "bullets": [
+        "Developed recommendation and ranking models in Python and PyTorch, increasing click-through rate by 14% and conversion by 9%.",
+        "Partnered with product and data engineering to productionize feature pipelines serving 50M+ daily events.",
+        "Implemented automated monitoring for model drift and data quality, reducing incident resolution time by 60%."
+      ]
+    },
+    {
+      "role": "Machine Learning Engineer",
+      "company": "Talkdesk",
+      "period": "Jan 2016 - May 2018",
+      "bullets": [
+        "Built NLP classification services for customer support automation, improving intent routing accuracy to 92%.",
+        "Created reproducible training workflows in Python, TensorFlow, and Airflow, decreasing experiment setup time by 50%.",
+        "Supported A/B testing for ML features across multiple customer deployments, contributing to a 20% reduction in manual triage."
+      ]
+    },
+    {
+      "role": "Data Scientist",
+      "company": "Sonae MC",
+      "period": "Jul 2013 - Dec 2015",
+      "bullets": [
+        "Delivered demand forecasting models that improved inventory planning accuracy by 11% across key product lines.",
+        "Analyzed large-scale retail datasets using Python and SQL to identify pricing and assortment opportunities.",
+        "Collaborated with business teams to define KPIs and dashboards, enabling faster weekly decision-making."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "MSc in Computer Science and Engineering",
+      "institution": "Instituto Superior Técnico",
+      "year": "2013"
+    },
+    {
+      "degree": "BSc in Computer Science",
+      "institution": "University of Porto",
+      "year": "2011"
+    }
+  ],
+  "languages": [
+    {
+      "language": "Portuguese",
+      "level": "Native"
+    },
+    {
+      "language": "English",
+      "level": "Fluent"
+    },
+    {
+      "language": "Spanish",
+      "level": "B2"
+    }
+  ],
+  "certifications": [
+    "AWS Certified Machine Learning - Specialty",
+    "Certified Kubernetes Application Developer (CKAD)"
+  ]
+}

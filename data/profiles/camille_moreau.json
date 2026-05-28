@@ -1,0 +1,95 @@
+{
+  "name": "Camille Moreau",
+  "title": "QA Automation Engineer",
+  "email": "camille.moreau.qa@example.com",
+  "phone": "+33 6 24 58 91 37",
+  "location": "Lyon, France",
+  "linkedin": "linkedin.com/in/camille-moreau-qa",
+  "summary": "Mid-level QA Automation Engineer with 6+ years of experience improving test coverage and release confidence across web and API platforms. Strong background in automation strategy, CI/CD integration, and collaborative quality practices within Agile teams, with a focus on maintainable frameworks and fast feedback loops.",
+  "skills": [
+    "Cypress",
+    "Playwright",
+    "Selenium WebDriver",
+    "JavaScript",
+    "Postman",
+    "Jenkins",
+    "GitLab CI",
+    "TestRail",
+    "JIRA"
+  ],
+  "experience": [
+    {
+      "role": "QA Automation Engineer",
+      "company": "Sopra Steria",
+      "period": "Feb 2022 - Present",
+      "bullets": [
+        "Expanded automated regression coverage from 38% to 72% for a customer-facing web platform, reducing smoke test execution time by 65%.",
+        "Built and maintained end-to-end test suites in Cypress and Playwright, cutting escaped defects in production by 30% over 12 months.",
+        "Integrated automated checks into GitLab CI pipelines for 8 microservices, enabling quality feedback within 15 minutes of each merge request.",
+        "Partnered with developers and product owners in Agile ceremonies to define acceptance criteria and improve testability of new features."
+      ]
+    },
+    {
+      "role": "QA Analyst / Test Automation Engineer",
+      "company": "Capgemini",
+      "period": "Jun 2019 - Jan 2022",
+      "bullets": [
+        "Designed and implemented API and UI automation for a banking application, increasing repeatable test execution from 120 to 520 scenarios per release.",
+        "Created and maintained reusable test data sets and environment checks, which reduced false failures by 40%.",
+        "Executed risk-based testing for quarterly releases and coordinated defect triage across 4 cross-functional squads.",
+        "Reported quality metrics and test progress to stakeholders, helping improve release predictability by 20%."
+      ]
+    },
+    {
+      "role": "Junior QA Engineer",
+      "company": "Cegedim",
+      "period": "Sep 2017 - May 2019",
+      "bullets": [
+        "Supported manual and automated testing for a healthcare SaaS product used by over 300 client sites.",
+        "Authored over 150 test cases and 60 automated regression checks for critical workflows.",
+        "Validated bug fixes and performed cross-browser testing across Chrome, Firefox, and Edge, improving defect detection before UAT by 25%.",
+        "Collaborated with support and development teams to reproduce customer issues and accelerate resolution times."
+      ]
+    },
+    {
+      "role": "Software Testing Intern",
+      "company": "Orange",
+      "period": "Feb 2017 - Aug 2017",
+      "bullets": [
+        "Assisted with functional testing of an internal web portal and documented defects in JIRA.",
+        "Prepared test execution evidence and helped standardize QA documentation for the team.",
+        "Participated in exploratory testing sessions that identified 18 usability and workflow issues before release."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master’s Degree in Software Engineering",
+      "institution": "Université Claude Bernard Lyon 1",
+      "year": "2017"
+    },
+    {
+      "degree": "Bachelor’s Degree in Computer Science",
+      "institution": "Université de Nantes",
+      "year": "2015"
+    }
+  ],
+  "languages": [
+    {
+      "language": "French",
+      "level": "Native"
+    },
+    {
+      "language": "English",
+      "level": "Fluent"
+    },
+    {
+      "language": "Spanish",
+      "level": "Conversational"
+    }
+  ],
+  "certifications": [
+    "ISTQB Certified Tester Foundation Level",
+    "Certified Scrum Master (CSM)"
+  ]
+}

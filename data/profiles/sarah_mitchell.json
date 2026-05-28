@@ -1,0 +1,91 @@
+{
+  "name": "Sarah Mitchell",
+  "title": "Engineering Manager",
+  "email": "sarah.mitchell@example.com",
+  "phone": "+1-416-555-0138",
+  "location": "Toronto, ON, Canada",
+  "linkedin": "linkedin.com/in/sarah-mitchell-toronto",
+  "summary": "Engineering leader with 9+ years of experience building and scaling software teams in fast-paced product environments. Strong track record of improving delivery predictability, coaching engineers, and partnering with product and design to ship reliable customer-facing platforms.",
+  "skills": [
+    "Agile delivery",
+    "Cross-functional leadership",
+    "People management",
+    "Technical roadmap planning",
+    "CI/CD",
+    "AWS",
+    "Kubernetes",
+    "Jira",
+    "Architecture review"
+  ],
+  "experience": [
+    {
+      "role": "Engineering Manager",
+      "company": "Shopify",
+      "period": "Mar 2022 - Present",
+      "bullets": [
+        "Lead a team of 8 engineers across checkout infrastructure, improving deployment frequency by 35% while reducing production incidents by 28%.",
+        "Partner with product and design to deliver 4 major roadmap initiatives per quarter, consistently meeting 90%+ of committed milestones.",
+        "Implemented a performance and coaching framework that increased internal promotion readiness for 3 engineers within 12 months."
+      ]
+    },
+    {
+      "role": "Senior Software Engineering Manager",
+      "company": "RBC",
+      "period": "Jun 2019 - Feb 2022",
+      "bullets": [
+        "Managed 2 squads totalling 12 engineers delivering digital banking features used by more than 1.5M monthly active users.",
+        "Drove modernization of legacy release processes, cutting release cycle time from 3 weeks to 5 days.",
+        "Led hiring and onboarding efforts that improved team capacity by 25% and reduced new-hire ramp-up time by 30%."
+      ]
+    },
+    {
+      "role": "Software Development Manager",
+      "company": "Thumbtack",
+      "period": "Jan 2017 - May 2019",
+      "bullets": [
+        "Built and scaled a Toronto engineering pod from 4 to 10 engineers, supporting a 2x increase in product throughput.",
+        "Established measurable sprint planning and engineering health metrics, improving on-time delivery from 68% to 88%.",
+        "Collaborated with platform teams to introduce service ownership practices that lowered mean time to recovery by 40%."
+      ]
+    },
+    {
+      "role": "Technical Lead",
+      "company": "Intact Financial",
+      "period": "Sep 2014 - Dec 2016",
+      "bullets": [
+        "Led a team modernization initiative for claims workflow systems, reducing manual processing steps by 20% and improving customer turnaround time.",
+        "Coordinated architecture decisions across development, QA, and operations to support a cloud migration program affecting 6 applications.",
+        "Mentored 5 developers through code reviews and technical pairing, contributing to higher code quality and fewer escaped defects."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Applied Science in Computer Engineering",
+      "institution": "University of Waterloo",
+      "year": "2012"
+    },
+    {
+      "degree": "Master of Business Administration",
+      "institution": "Queen's University",
+      "year": "2018"
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "level": "Native"
+    },
+    {
+      "language": "French",
+      "level": "B2"
+    },
+    {
+      "language": "Punjabi",
+      "level": "Conversational"
+    }
+  ],
+  "certifications": [
+    "AWS Certified Solutions Architect – Associate"
+  ]
+}

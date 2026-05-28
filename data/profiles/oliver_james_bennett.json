@@ -1,0 +1,94 @@
+{
+  "name": "Oliver James Bennett",
+  "title": "Junior AI Research Engineer",
+  "email": "oliver.bennett.research@example.com",
+  "phone": "+44 7700 900123",
+  "location": "Cambridge, United Kingdom",
+  "linkedin": "https://www.linkedin.com/in/oliver-james-bennett",
+  "summary": "Junior AI Research Engineer with experience building and evaluating machine learning prototypes, supporting research experiments, and translating findings into reproducible code. Strong foundation in Python, model experimentation, and data analysis, with a focus on practical AI systems and clear technical communication.",
+  "skills": [
+    "Python",
+    "PyTorch",
+    "TensorFlow",
+    "scikit-learn",
+    "NumPy",
+    "Pandas",
+    "Natural Language Processing (NLP)",
+    "Git",
+    "Jupyter Notebooks"
+  ],
+  "experience": [
+    {
+      "role": "Junior AI Research Engineer",
+      "company": "DeepVector Labs",
+      "period": "Aug 2023 - Present",
+      "bullets": [
+        "Built Python-based experiment pipelines for model training and evaluation, reducing manual setup time by 35%.",
+        "Supported research on transformer fine-tuning for text classification, improving F1 score from 0.81 to 0.87 on internal benchmarks.",
+        "Prepared reproducible notebooks and reports for 12+ experiments per sprint, enabling faster review by senior researchers.",
+        "Automated dataset validation checks in Python, cutting data-related failures in training runs by 28%."
+      ]
+    },
+    {
+      "role": "Machine Learning Research Intern",
+      "company": "Cambridge AI Systems",
+      "period": "Jun 2022 - Jul 2023",
+      "bullets": [
+        "Assisted with prototyping neural network experiments in PyTorch and documented results for weekly research reviews.",
+        "Implemented data preprocessing scripts in Python for a 120k-record dataset, improving processing speed by 42%.",
+        "Compared baseline and candidate models across 6 metrics, helping the team select a more stable architecture for deployment testing.",
+        "Co-authored technical notes on model ablations and error analysis for internal research circulation."
+      ]
+    },
+    {
+      "role": "Data Science Analyst",
+      "company": "Northstar Analytics",
+      "period": "Sep 2021 - May 2022",
+      "bullets": [
+        "Developed Python workflows for data cleaning, feature engineering, and model evaluation across customer analytics projects.",
+        "Created predictive models for churn analysis that improved recall by 14% over the existing rules-based approach.",
+        "Produced dashboards and summary reports for non-technical stakeholders, supporting decisions across 3 business units.",
+        "Maintained version-controlled experiment logs and helped standardise reproducible analysis practices across the team."
+      ]
+    },
+    {
+      "role": "Research Assistant",
+      "company": "University of Bristol",
+      "period": "Oct 2020 - Aug 2021",
+      "bullets": [
+        "Supported an applied AI project on text mining by collecting, cleaning, and labelling research data.",
+        "Ran baseline experiments in Python and scikit-learn, documenting results for publication-ready figures and tables.",
+        "Helped prepare a conference poster and literature review covering recent advances in machine learning for information retrieval."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "MSc Artificial Intelligence",
+      "institution": "University of Edinburgh",
+      "year": "2023"
+    },
+    {
+      "degree": "BSc Computer Science",
+      "institution": "University of Bristol",
+      "year": "2021"
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "level": "Native"
+    },
+    {
+      "language": "Spanish",
+      "level": "Conversational"
+    },
+    {
+      "language": "German",
+      "level": "B2"
+    }
+  ],
+  "certifications": [
+    "Google Cloud Digital Leader"
+  ]
+}

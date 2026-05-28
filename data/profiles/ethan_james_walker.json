@@ -1,0 +1,89 @@
+{
+  "name": "Ethan James Walker",
+  "title": "Junior Game Developer",
+  "email": "ethan.walker.dev@example.com",
+  "phone": "+1 (312) 555-0184",
+  "location": "Chicago, IL, United States",
+  "linkedin": "linkedin.com/in/ethanjameswalker",
+  "summary": "Junior game developer with hands-on experience building gameplay systems, UI features, and bug fixes in Unity and Unreal Engine. Known for collaborating with artists and designers to deliver polished prototypes, optimize performance, and support reliable release cycles.",
+  "skills": [
+    "Unity",
+    "C#",
+    "Unreal Engine",
+    "Blueprints",
+    "C++",
+    "Git",
+    "Visual Studio",
+    "Perforce",
+    "Jira"
+  ],
+  "experience": [
+    {
+      "role": "Junior Game Developer",
+      "company": "Northstar Interactive",
+      "period": "Aug 2023 - Present",
+      "bullets": [
+        "Implemented 12+ gameplay and UI features for a mobile action title, improving level completion rate by 8%.",
+        "Resolved 40+ high-priority bugs across gameplay, animation, and HUD systems during live update cycles.",
+        "Worked with designers to tune enemy behavior and player progression, reducing early-session drop-off by 11%."
+      ]
+    },
+    {
+      "role": "Associate Gameplay Programmer",
+      "company": "Pixel Forge Studios",
+      "period": "Jun 2022 - Jul 2023",
+      "bullets": [
+        "Built prototype mechanics for 4 internal concepts in Unity, cutting iteration time by 20% through reusable systems.",
+        "Added save/load, input remapping, and pause menu functionality for a PC puzzle game shipped to closed beta.",
+        "Participated in daily reviews and sprint planning, helping close 95% of assigned tasks on schedule across 6 sprints."
+      ]
+    },
+    {
+      "role": "Game Development Intern",
+      "company": "Blue Harbor Games",
+      "period": "Jan 2022 - May 2022",
+      "bullets": [
+        "Supported a 6-person team by implementing minor gameplay scripts, UI interactions, and debug tools in Unreal Engine.",
+        "Tracked and reproduced 30+ defects in Jira, improving turnaround time for QA-verified fixes.",
+        "Assisted with build validation and playtest prep, contributing to 2 milestone releases without missed deadlines."
+      ]
+    },
+    {
+      "role": "Student Game Developer",
+      "company": "Midwestern State University Game Lab",
+      "period": "Sep 2020 - Dec 2021",
+      "bullets": [
+        "Developed 3 portfolio projects for coursework and showcase events using Unity and C#, including a 2D platformer and top-down arena game.",
+        "Collaborated with 4 classmates on version control, feature integration, and playtesting feedback loops.",
+        "Optimized scene loading and object pooling in a capstone project, reducing frame drops by 15% on mid-range laptops."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.S. in Computer Science",
+      "institution": "University of Illinois Chicago",
+      "year": "2022"
+    },
+    {
+      "degree": "Minor in Game Design",
+      "institution": "DePaul University",
+      "year": "2022"
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "level": "Native"
+    },
+    {
+      "language": "Spanish",
+      "level": "Conversational"
+    },
+    {
+      "language": "French",
+      "level": "B2"
+    }
+  ],
+  "certifications": []
+}

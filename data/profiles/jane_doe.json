@@ -1,21 +1,21 @@
 {
   "name": "Jane Doe",
   "title": "Junior Backend Engineer",
-  "email": "jane.doe.dev@gmail.com",
-  "phone": "+1-312-555-0184",
-  "location": "Chicago, IL, United States",
-  "linkedin": "linkedin.com/in/jane-doe-dev",
-  "summary": "Junior Backend Engineer with hands-on experience building and supporting RESTful APIs, improving database performance, and automating backend workflows in Agile environments. Comfortable working with Python, SQL, and cloud-based services to deliver reliable, maintainable software for internal and customer-facing applications.",
+  "email": "jane.doe.dev@example.com",
+  "phone": "+1-415-555-0148",
+  "location": "San Francisco, United States",
+  "linkedin": "linkedin.com/in/janedoe",
+  "summary": "Junior Backend Engineer with experience building and supporting RESTful APIs, backend services, and database-driven applications in agile environments. Strong foundation in Python, SQL, and cloud-based development with a focus on reliable, maintainable code and clear collaboration across product and engineering teams.",
   "skills": [
     "Python",
     "Django",
     "FastAPI",
     "PostgreSQL",
     "REST APIs",
-    "AWS",
     "Docker",
     "Git",
-    "SQL"
+    "AWS",
+    "Unit Testing"
   ],
   "experience": [
     {
@@ -23,54 +23,52 @@
       "company": "Northstar Health Tech",
       "period": "Jun 2023 - Present",
       "bullets": [
-        "Built and maintained Python-based REST APIs used by 12 internal tools, reducing manual data-processing time by 35%.",
-        "Optimized PostgreSQL queries and added indexes to improve average endpoint response time by 28%.",
-        "Implemented automated tests with Pytest, increasing backend coverage from 54% to 81%.",
-        "Collaborated with product and frontend teams to deliver 6 production releases with minimal post-release defects."
+        "Developed Python-based backend endpoints for patient intake and scheduling workflows, reducing average request handling time by 28%.",
+        "Collaborated with senior engineers to refactor 12 legacy services into modular Django components with improved test coverage from 54% to 81%.",
+        "Built and maintained PostgreSQL queries and indexes that improved dashboard response times by 35% for internal operations users."
       ]
     },
     {
-      "role": "Backend Developer Intern",
-      "company": "BrightBridge Software",
-      "period": "May 2022 - May 2023",
+      "role": "Backend Engineer Intern",
+      "company": "BluePeak Software",
+      "period": "Jan 2023 - May 2023",
       "bullets": [
-        "Developed 8 API endpoints in Python and Django for a customer portal serving 5,000+ monthly users.",
-        "Wrote SQL scripts to clean and migrate legacy records, improving data consistency across 3 databases.",
-        "Assisted with Docker-based local environments, cutting onboarding setup time for new developers by 40%.",
-        "Participated in code reviews and bug fixes, closing 30+ Jira tickets during the internship."
+        "Implemented 8 REST API endpoints in Python and FastAPI for a subscription billing platform used by over 2,000 active accounts.",
+        "Wrote unit and integration tests that helped catch 17 defects before release and increased CI pipeline reliability.",
+        "Assisted with Docker-based local development setup, cutting onboarding time for new developers by 40%."
       ]
     },
     {
       "role": "Software Engineering Intern",
-      "company": "Midway Analytics",
-      "period": "Jan 2021 - Aug 2021",
+      "company": "Vertex Retail Systems",
+      "period": "Jun 2022 - Aug 2022",
       "bullets": [
-        "Supported backend data ingestion pipelines in Python, processing up to 1.2M rows per day.",
-        "Created automated validation checks that reduced malformed data incidents by 22%.",
-        "Documented API usage and internal runbooks, helping reduce support escalations from the operations team."
+        "Supported a Python service that processed order events, helping reduce failed job retries by 22% through improved error handling.",
+        "Created SQL scripts and reports to validate inventory sync data across three warehouse systems.",
+        "Partnered with QA to reproduce and fix backend bugs, closing 15 tickets during the internship."
       ]
     },
     {
-      "role": "IT Support Associate",
-      "company": "Lakeview College of Technology",
-      "period": "Sep 2019 - Dec 2020",
+      "role": "Technical Support Analyst",
+      "company": "ClearPath Digital",
+      "period": "Jul 2021 - May 2022",
       "bullets": [
-        "Provided technical support for faculty and staff, resolving an average of 18 tickets per week.",
-        "Maintained user accounts and access permissions across campus systems.",
-        "Assisted with software deployments and basic scripting tasks, building a foundation in backend operations and automation."
+        "Investigated application and database issues for a SaaS product, resolving an average of 18 support cases per week.",
+        "Documented repeatable troubleshooting steps for backend incidents, improving team response consistency.",
+        "Escalated and tracked defects in Git-based workflows, contributing to faster turnaround on production fixes."
       ]
     }
   ],
   "education": [
     {
       "degree": "B.S. in Computer Science",
-      "institution": "University of Illinois Chicago",
-      "year": "2023"
+      "institution": "University of Washington",
+      "year": "2021"
     },
     {
-      "degree": "Associate of Science, Computer Science",
-      "institution": "William Rainey Harper College",
-      "year": "2021"
+      "degree": "Associate of Science in Computer Science",
+      "institution": "City College of San Francisco",
+      "year": "2019"
     }
   ],
   "languages": [
@@ -83,11 +81,9 @@
       "level": "Conversational"
     },
     {
-      "language": "Hindi",
+      "language": "Mandarin",
       "level": "B2"
     }
   ],
-  "certifications": [
-    "AWS Certified Cloud Practitioner"
-  ]
+  "certifications": []
 }

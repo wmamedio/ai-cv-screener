@@ -1,0 +1,95 @@
+{
+  "name": "Alessandro Ricci",
+  "title": "Junior NLP Engineer",
+  "email": "alessandro.ricci.npl@gmail.com",
+  "phone": "+39 345 672 1849",
+  "location": "Milano, Italy",
+  "linkedin": "https://www.linkedin.com/in/alessandro-ricci-nlp",
+  "summary": "Junior NLP Engineer with hands-on experience building text classification, information extraction, and retrieval solutions using Python and modern NLP frameworks. Comfortable working across data preparation, model evaluation, and API integration, with a strong focus on reproducible experiments and measurable improvements.",
+  "skills": [
+    "Python",
+    "spaCy",
+    "Hugging Face Transformers",
+    "PyTorch",
+    "scikit-learn",
+    "NLTK",
+    "FastAPI",
+    "SQL",
+    "Git"
+  ],
+  "experience": [
+    {
+      "role": "Junior NLP Engineer",
+      "company": "LinguoTech S.r.l.",
+      "period": "Feb 2024 - Present",
+      "bullets": [
+        "Built Python-based text classification pipelines for customer support tickets, improving routing accuracy by 18% on a held-out validation set.",
+        "Fine-tuned transformer models with Hugging Face and PyTorch for intent detection and entity extraction across 6 Italian-language domains.",
+        "Developed FastAPI endpoints to serve inference results, reducing average response time from 1.8s to 620ms.",
+        "Automated experiment tracking and dataset versioning, cutting manual QA effort by 30%."
+      ]
+    },
+    {
+      "role": "NLP Intern",
+      "company": "DataMinds Italia",
+      "period": "Jun 2023 - Jan 2024",
+      "bullets": [
+        "Preprocessed and labeled 25k+ documents for topic classification and named entity recognition using Python and spaCy.",
+        "Evaluated multiple baseline models in scikit-learn, increasing F1 score from 0.71 to 0.83 for the final prototype.",
+        "Created reusable scripts for tokenization, cleaning, and train/validation splits, reducing preprocessing time by 40%.",
+        "Supported weekly model reviews by preparing clear performance reports and error analyses."
+      ]
+    },
+    {
+      "role": "Data Science Trainee",
+      "company": "Alfa Analytics",
+      "period": "Jan 2023 - May 2023",
+      "bullets": [
+        "Assisted with feature engineering and text normalization for a multilingual sentiment analysis proof of concept.",
+        "Worked with SQL to extract and join 100k+ rows of annotated feedback data from internal databases.",
+        "Documented model assumptions and evaluation results, enabling faster handoff to the engineering team.",
+        "Contributed Python notebooks that standardized dataset inspection and baseline benchmarking."
+      ]
+    },
+    {
+      "role": "Research Assistant",
+      "company": "Università degli Studi di Milano",
+      "period": "Sep 2021 - Dec 2022",
+      "bullets": [
+        "Supported an academic project on Italian text mining, cleaning and structuring corpora with Python scripts.",
+        "Compared classical NLP approaches and transformer baselines for document categorization, identifying a 12% lift in macro-F1.",
+        "Prepared datasets and reproducible notebooks used in internal presentations and student workshops.",
+        "Collaborated with supervisors to publish technical notes on error patterns and annotation consistency."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "MSc in Computer Science, Data Science track",
+      "institution": "Università degli Studi di Milano",
+      "year": "2023"
+    },
+    {
+      "degree": "BSc in Computer Engineering",
+      "institution": "Politecnico di Milano",
+      "year": "2021"
+    }
+  ],
+  "languages": [
+    {
+      "language": "Italian",
+      "level": "Native"
+    },
+    {
+      "language": "English",
+      "level": "Fluent"
+    },
+    {
+      "language": "Spanish",
+      "level": "Conversational"
+    }
+  ],
+  "certifications": [
+    "Hugging Face NLP Course Certificate"
+  ]
+}

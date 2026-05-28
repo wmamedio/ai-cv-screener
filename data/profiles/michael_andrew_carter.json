@@ -1,0 +1,95 @@
+{
+  "name": "Michael Andrew Carter",
+  "title": "Mid-Level Cloud Solutions Architect",
+  "email": "michael.carter.cloud@example.com",
+  "phone": "+1-206-555-0148",
+  "location": "Seattle, WA, United States",
+  "linkedin": "https://www.linkedin.com/in/michaelacarter",
+  "summary": "Cloud Solutions Architect with 7+ years of experience designing and migrating secure, scalable cloud environments across AWS and Azure. Strong background in infrastructure as code, Python automation, and cross-functional delivery for enterprise applications, with a focus on reliability, cost optimization, and operational excellence.",
+  "skills": [
+    "AWS",
+    "Azure",
+    "Python",
+    "Terraform",
+    "Kubernetes",
+    "Docker",
+    "CI/CD",
+    "Networking & Security",
+    "Linux"
+  ],
+  "experience": [
+    {
+      "role": "Cloud Solutions Architect",
+      "company": "Northbridge Health Systems",
+      "period": "Feb 2023 - Present",
+      "bullets": [
+        "Led architecture for a multi-account AWS environment supporting 40+ applications, reducing platform deployment time by 35% through standardized Terraform modules and CI/CD pipelines.",
+        "Built Python automation for resource provisioning and compliance checks, cutting manual configuration effort by 60% across engineering teams.",
+        "Partnered with security and infrastructure stakeholders to implement least-privilege IAM, centralized logging, and backup recovery controls aligned with enterprise policy.",
+        "Advised product teams on hybrid connectivity and service selection, helping migrate 18 workloads with zero critical production incidents during cutover."
+      ]
+    },
+    {
+      "role": "Cloud Engineer",
+      "company": "BluePeak Software",
+      "period": "Jul 2020 - Jan 2023",
+      "bullets": [
+        "Designed and maintained Azure landing zones for a SaaS platform serving 1.2M monthly users, improving environment consistency across dev, test, and production.",
+        "Created reusable Terraform and Python automation for deployments, reducing release failures by 28% and enabling weekly delivery cadence.",
+        "Implemented container orchestration on Kubernetes and Docker, improving application uptime to 99.95% for core customer-facing services.",
+        "Worked with FinOps teams to optimize compute and storage usage, lowering monthly cloud spend by 19% without impacting performance."
+      ]
+    },
+    {
+      "role": "Systems Engineer",
+      "company": "Cascade Financial Group",
+      "period": "May 2017 - Jun 2020",
+      "bullets": [
+        "Supported Windows and Linux infrastructure for regulated financial applications, maintaining 99.9% service availability across on-prem and cloud-connected systems.",
+        "Assisted with migration planning and network design for cloud adoption initiatives, documenting dependencies and reducing implementation risk.",
+        "Automated routine operational tasks with Python and PowerShell, saving approximately 12 hours per week for the operations team.",
+        "Participated in incident response and root-cause analysis, decreasing repeat outages by standardizing monitoring and alerting practices."
+      ]
+    },
+    {
+      "role": "Technical Support Analyst",
+      "company": "Evergreen Tech Services",
+      "period": "Aug 2015 - Apr 2017",
+      "bullets": [
+        "Resolved Tier 2 infrastructure and application issues for enterprise clients, consistently meeting 95% of SLA targets.",
+        "Maintained asset, account, and access records while supporting server and endpoint troubleshooting across mixed Windows and Linux environments.",
+        "Collaborated with senior engineers to document runbooks and improve ticket triage workflows, reducing average resolution time by 22%."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Science in Information Systems",
+      "institution": "University of Washington",
+      "year": "2015"
+    },
+    {
+      "degree": "Bachelor of Science in Computer Science",
+      "institution": "Oregon State University",
+      "year": "2013"
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "level": "Native"
+    },
+    {
+      "language": "Spanish",
+      "level": "Conversational"
+    },
+    {
+      "language": "German",
+      "level": "B2"
+    }
+  ],
+  "certifications": [
+    "AWS Certified Solutions Architect – Associate",
+    "Microsoft Certified: Azure Administrator Associate"
+  ]
+}

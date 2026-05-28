@@ -1,0 +1,94 @@
+{
+  "name": "Anna Lindqvist",
+  "title": "Lead Business Analyst",
+  "email": "anna.lindqvist@example.com",
+  "phone": "+46 70 482 61 93",
+  "location": "Stockholm, Sweden",
+  "linkedin": "linkedin.com/in/annalindqvist",
+  "summary": "Senior business analysis leader with experience driving large-scale digital transformation, process optimization, and cross-functional delivery in regulated and customer-facing environments. Known for translating business strategy into actionable requirements, improving operating models, and aligning stakeholders across product, technology, and operations.",
+  "skills": [
+    "Business analysis",
+    "Requirements elicitation",
+    "Process mapping",
+    "Stakeholder management",
+    "Agile delivery",
+    "JIRA",
+    "Confluence",
+    "SQL",
+    "Power BI"
+  ],
+  "experience": [
+    {
+      "role": "Lead Business Analyst",
+      "company": "Nordica Bank AB",
+      "period": "Mar 2022 - Present",
+      "bullets": [
+        "Led a team of 6 analysts supporting a banking platform modernization program across lending, onboarding, and customer servicing.",
+        "Defined and prioritized over 180 business requirements, reducing rework during development by 32%.",
+        "Facilitated workshops with 40+ stakeholders across risk, compliance, and technology to align scope and delivery milestones.",
+        "Improved release readiness by introducing traceability and sign-off controls, cutting approval delays by 25%."
+      ]
+    },
+    {
+      "role": "Senior Business Analyst",
+      "company": "Telia Company",
+      "period": "Aug 2018 - Feb 2022",
+      "bullets": [
+        "Owned analysis for a customer experience initiative affecting 1.2 million mobile and broadband users in Sweden.",
+        "Mapped end-to-end service journeys and identified process bottlenecks that reduced case handling time by 18%.",
+        "Worked closely with product owners and architects to refine backlog items and support quarterly planning for 4 agile teams.",
+        "Built KPI reporting in Power BI to track adoption, churn, and service performance across key markets."
+      ]
+    },
+    {
+      "role": "Business Analyst",
+      "company": "Ericsson",
+      "period": "Jan 2015 - Jul 2018",
+      "bullets": [
+        "Supported global operations and sales process improvements across 12 countries, standardizing core reporting and approval workflows.",
+        "Gathered and documented functional requirements for CRM and internal order management enhancements.",
+        "Coordinated UAT for multiple releases, helping achieve a 96% first-pass acceptance rate.",
+        "Partnered with change managers to prepare training materials and improve end-user adoption after deployment."
+      ]
+    },
+    {
+      "role": "Junior Business Analyst",
+      "company": "SEB",
+      "period": "Jun 2012 - Dec 2014",
+      "bullets": [
+        "Assisted with requirements documentation and process analysis for retail banking operations.",
+        "Prepared dashboards and management summaries used by senior leaders in monthly performance reviews.",
+        "Supported data cleanup and validation activities that improved reporting accuracy by 20%."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "MSc in Information Systems",
+      "institution": "Stockholm University",
+      "year": "2012"
+    },
+    {
+      "degree": "BSc in Business Administration",
+      "institution": "Lund University",
+      "year": "2010"
+    }
+  ],
+  "languages": [
+    {
+      "language": "Swedish",
+      "level": "Native"
+    },
+    {
+      "language": "English",
+      "level": "Fluent"
+    },
+    {
+      "language": "German",
+      "level": "Conversational"
+    }
+  ],
+  "certifications": [
+    "Certified Business Analysis Professional (CBAP)"
+  ]
+}

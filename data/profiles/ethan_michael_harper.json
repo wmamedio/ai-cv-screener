@@ -1,0 +1,93 @@
+{
+  "name": "Ethan Michael Harper",
+  "title": "Junior iOS Developer",
+  "email": "ethan.harper.dev@gmail.com",
+  "phone": "+1 (312) 555-0184",
+  "location": "Chicago, IL, United States",
+  "linkedin": "linkedin.com/in/ethanmharper",
+  "summary": "Junior iOS Developer with hands-on experience building and maintaining Swift-based mobile features for consumer apps. Strong foundation in UIKit, SwiftUI, and REST API integration, with a focus on clean code, responsive UI, and collaboration with product and design teams.",
+  "skills": [
+    "Swift",
+    "SwiftUI",
+    "UIKit",
+    "Xcode",
+    "Combine",
+    "REST APIs",
+    "Git",
+    "Firebase",
+    "Agile/Scrum"
+  ],
+  "experience": [
+    {
+      "role": "Junior iOS Developer",
+      "company": "Northstar Mobile",
+      "period": "Jun 2023 - Present",
+      "bullets": [
+        "Built and shipped 8+ SwiftUI screens for a consumer finance app, contributing to a 15% increase in weekly active users over 6 months.",
+        "Integrated REST APIs for login, account summary, and transaction history, reducing manual data refreshes by 40%.",
+        "Worked with designers and QA to resolve 60+ UI and device-specific issues before release.",
+        "Improved app startup performance by 18% by reducing unnecessary view rendering and optimizing image loading."
+      ]
+    },
+    {
+      "role": "iOS Developer Intern",
+      "company": "BrightPath Apps",
+      "period": "Jan 2023 - May 2023",
+      "bullets": [
+        "Implemented reusable UIKit components for onboarding and profile flows, cutting duplicate UI code by 25%.",
+        "Assisted in debugging crashes using Xcode and Firebase Crashlytics, helping reduce crash rate by 12%.",
+        "Updated network request handling and error states across 3 app modules to improve reliability.",
+        "Participated in weekly sprint planning, code reviews, and release testing for biweekly builds."
+      ]
+    },
+    {
+      "role": "Mobile Development Intern",
+      "company": "Lakeview Digital",
+      "period": "Jun 2022 - Dec 2022",
+      "bullets": [
+        "Supported development of an internal iOS utility app used by 200+ employees for scheduling and notifications.",
+        "Created and maintained unit tests for view models and service layers, increasing coverage from 28% to 41%.",
+        "Documented feature behavior and setup steps, reducing onboarding time for new interns and contractors.",
+        "Collaborated with backend engineers to validate JSON payloads and fix 10+ integration issues."
+      ]
+    },
+    {
+      "role": "Software Engineering Intern",
+      "company": "CivicTech Solutions",
+      "period": "Jan 2022 - May 2022",
+      "bullets": [
+        "Assisted in building mobile-friendly features for a public service portal using Swift and UIKit.",
+        "Worked on accessibility improvements including Dynamic Type and VoiceOver support for key screens.",
+        "Helped triage and reproduce bugs across 2 release cycles, improving turnaround time for fixes.",
+        "Contributed to internal Git workflows and pull request reviews in a small cross-functional team."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.S. in Computer Science",
+      "institution": "University of Illinois Chicago",
+      "year": "2022"
+    },
+    {
+      "degree": "Associate of Science in Information Technology",
+      "institution": "Oakton Community College",
+      "year": "2020"
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "level": "Native"
+    },
+    {
+      "language": "Spanish",
+      "level": "Conversational"
+    },
+    {
+      "language": "French",
+      "level": "B2"
+    }
+  ],
+  "certifications": []
+}

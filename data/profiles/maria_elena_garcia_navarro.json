@@ -1,0 +1,94 @@
+{
+  "name": "María Elena García Navarro",
+  "title": "Principal Product Manager",
+  "email": "maria.garcia.navarro@gmail.com",
+  "phone": "+34 612 345 678",
+  "location": "Barcelona, Spain",
+  "linkedin": "linkedin.com/in/maria-elena-garcia-navarro",
+  "summary": "Principal Product Manager with 12+ years of experience leading B2B and platform products across fintech, SaaS, and digital marketplaces. Known for turning complex business goals into clear product strategy, driving cross-functional execution, and delivering measurable growth in conversion, retention, and revenue.",
+  "skills": [
+    "Product strategy",
+    "Roadmapping",
+    "OKRs",
+    "A/B testing",
+    "Discovery and user research",
+    "Agile / Scrum",
+    "Stakeholder management",
+    "Go-to-market planning",
+    "Product analytics (Amplitude, Mixpanel)"
+  ],
+  "experience": [
+    {
+      "role": "Principal Product Manager",
+      "company": "Nexora Payments",
+      "period": "Jan 2021 - Present",
+      "bullets": [
+        "Led the global product strategy for a B2B payments platform, increasing processed transaction volume by 38% in 24 months.",
+        "Directed a 9-person cross-functional squad across engineering, design, risk, and operations, reducing checkout abandonment by 17%.",
+        "Launched a new merchant onboarding flow across 6 European markets, cutting activation time from 10 days to 3 days.",
+        "Owned quarterly OKRs and portfolio prioritization, improving roadmap predictability by 30%."
+      ]
+    },
+    {
+      "role": "Senior Product Manager",
+      "company": "Glovo",
+      "period": "May 2018 - Dec 2020",
+      "bullets": [
+        "Scaled marketplace features for partner merchants, contributing to a 22% increase in repeat order rate.",
+        "Introduced experimentation frameworks that improved conversion on key purchase flows by 11%.",
+        "Partnered with data and operations teams to reduce support tickets related to order issues by 19%.",
+        "Managed a product backlog spanning logistics, consumer, and merchant experiences in a fast-paced growth environment."
+      ]
+    },
+    {
+      "role": "Product Manager",
+      "company": "Banco Sabadell",
+      "period": "Sep 2014 - Apr 2018",
+      "bullets": [
+        "Led digital banking initiatives for retail customers, growing mobile active users by 26% over two years.",
+        "Delivered a redesigned account-opening funnel that improved completion rates by 14%.",
+        "Worked closely with compliance and legal teams to launch regulated features on schedule and without audit findings.",
+        "Built business cases and dashboards to support executive decision-making on product investments."
+      ]
+    },
+    {
+      "role": "Associate Product Manager",
+      "company": "Ebury",
+      "period": "Feb 2012 - Aug 2014",
+      "bullets": [
+        "Supported development of FX and international payments products for SME clients across Europe.",
+        "Helped define customer journeys and requirements that reduced manual processing steps by 25%.",
+        "Tracked feature adoption and funnel metrics to prioritize enhancements with the highest commercial impact."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "MBA, Strategy and Digital Business",
+      "institution": "IE Business School",
+      "year": "2012"
+    },
+    {
+      "degree": "BSc in Business Administration and Management",
+      "institution": "Universitat Pompeu Fabra",
+      "year": "2009"
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "level": "Native"
+    },
+    {
+      "language": "English",
+      "level": "Fluent"
+    },
+    {
+      "language": "Catalan",
+      "level": "Fluent"
+    }
+  ],
+  "certifications": [
+    "Certified Scrum Product Owner (CSPO)"
+  ]
+}
