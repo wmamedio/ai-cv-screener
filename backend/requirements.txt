@@ -1,12 +1,11 @@
-# LLM + embeddings
-google-genai>=1.0.0
+# LLM + embeddings + image generation
+openai>=1.0.0
 python-dotenv>=1.0.0
 
 # CV generation (text -> HTML -> PDF, with photo)
 jinja2>=3.1.0
 weasyprint>=63.0
 requests>=2.31.0
-openai>=1.0.0          # photo fallback: gpt-image-2 (optional, used only if Gemini fails)
 
 # RAG pipeline
 pypdf>=5.0.0

@@ -113,6 +113,7 @@ backend/
   rag.py                  # retrieval + grounded generation
   requirements.txt
 frontend/                 # React + Vite chat UI
-data/cvs/                 # generated PDFs (gitignored)
+data/cvs/                 # generated PDFs (committed so reviewers see output)
+data/photos/              # AI headshots · data/profiles/ # source JSON
 docs/                     # diagram source / notes
 ```
