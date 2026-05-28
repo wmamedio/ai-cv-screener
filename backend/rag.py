@@ -5,7 +5,7 @@ embed query -> similarity search in Chroma -> grounded Gemini answer + sources.
 import chromadb
 from google.genai import types
 
-from config import (CHAT_MODEL, CHROMA_DIR, COLLECTION, client, embed_query)
+from config import CHAT_MODEL, CHROMA_DIR, COLLECTION, client, embed_query
 
 TOP_K = 12
 
