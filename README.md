@@ -128,17 +128,19 @@ docs/                     # diagram source / notes
 
 ## Trade-offs & scaling path
 
-Two deliberate simplifications keep the prototype focused. Both are sound at this
-scale, each with a clear production path.
+Each CV is embedded as a **single chunk**. For long documents, each one would be
+chunked into smaller passages with page and section metadata, always citing the
+source file.
 
-**One vector per whole CV.** A CV is ~1 page, so each is embedded as a single chunk:
-simple retrieval, exact attribution (one match = one candidate).
-*At scale:* long documents (contracts, reports) get split into overlapping passages
-tagged with page/section, with sources deduped per document.
+Currently, only the **top twelve most similar CVs** are passed to the model — a cap
+that keeps the prompt focused and the response fast.
 
-**Top-12 retrieval (`TOP_K = 12`).** Each question is answered from the 12 most
-relevant CVs — great for focused questions like *"Summarize Jane Doe."* For an
-exhaustive *"who has Python?"*, similarity search can miss someone just outside the
-top 12 — a known limit of RAG on aggregate queries, not a bug.
-*At scale:* the fix isn't a bigger K (it slows every query and degrades as context
-grows) but structured fields per CV (skills, role) plus *filtering* on them.
+That's great for focused questions, but not for *"list all"* or *"who knows X"*
+across hundreds or thousands of records.
+
+The fix: tag each CV with **structured fields** — skills, role, years of experience
+— store them in a database like **Postgres**, and answer those with an exact filter
+instead of similarity search.
+
+A framework like **LangGraph** would route each question to the right method —
+similarity search for open-ended questions, an exact lookup for the *"list-all"* ones.
